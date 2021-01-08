@@ -1,0 +1,146 @@
+2021-01-07 18:54:47,331 - Versa_director - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x0000020BB01C2C40>
+2021-01-07 18:54:52,736 - Versa_director - DEBUG - versa: Automated@VDir-BLR-NEW-01>
+2021-01-07 18:54:53,258 - Versa_director - INFO - CMD>> : request devices device CPE-14 ping
+2021-01-07 18:55:03,785 - Versa_director - INFO - request devices device CPE-14 ping
+result PING 20.20.72.14 (20.20.72.14) 56(84) bytes of data.
+
+--- 20.20.72.14 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+[ok][2021-01-07 13:25:33]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:03,785 - Versa_director - INFO - CONFIG_RESULT:
+2021-01-07 18:55:03,786 - Versa_director - INFO - ['CPE-14', 'VD --> CPE Request ping failed.']
+2021-01-07 18:55:04,290 - Versa_director - INFO - CMD>> : request devices device CPE25-Performance-DUT ping
+2021-01-07 18:55:14,813 - Versa_director - INFO - request devices device CPE25-Performance-DUT ping
+result PING 20.20.90.25 (20.20.90.25) 56(84) bytes of data.
+
+--- 20.20.90.25 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+[ok][2021-01-07 13:25:44]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:14,813 - Versa_director - INFO - CONFIG_RESULT:
+2021-01-07 18:55:14,814 - Versa_director - INFO - ['CPE-14', 'VD --> CPE Request ping failed.']
+2021-01-07 18:55:14,814 - Versa_director - INFO - ['CPE25-Performance-DUT', 'VD --> CPE Request ping failed.']
+2021-01-07 18:55:15,318 - Versa_director - INFO - CMD>> : request devices device CPE26-HKG-SINGLE-CPE-HYBRID-IPC00190-IPV6 ping
+2021-01-07 18:55:25,844 - Versa_director - INFO - request devices device CPE26-HKG-SINGLE-CPE-HYBRID-IPC00190-IPV6 ping
+result PING 20.20.90.26 (20.20.90.26) 56(84) bytes of data.
+
+--- 20.20.90.26 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+[ok][2021-01-07 13:25:55]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:25,845 - Versa_director - INFO - CONFIG_RESULT:
+2021-01-07 18:55:25,845 - Versa_director - INFO - ['CPE-14', 'VD --> CPE Request ping failed.']
+2021-01-07 18:55:25,845 - Versa_director - INFO - ['CPE25-Performance-DUT', 'VD --> CPE Request ping failed.']
+2021-01-07 18:55:25,848 - Versa_director - INFO - ['CPE26-HKG-SINGLE-CPE-HYBRID-IPC00190-IPV6', 'VD --> CPE Request ping failed.']
+2021-01-07 18:55:26,350 - Versa_director - INFO - CMD>> : request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 ping
+2021-01-07 18:55:26,853 - Versa_director - INFO - request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 ping
+result PING 20.20.90.27 (20.20.90.27) 56(84) bytes of data.
+64 bytes from 20.20.90.27: icmp_seq=1 ttl=61 time=6.63 ms
+
+--- 20.20.90.27 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 6.633/6.633/6.633/0.000 ms
+
+[ok][2021-01-07 13:25:56]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:26,853 - Versa_director - INFO - CMD>> : request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 connect
+2021-01-07 18:55:27,961 - Versa_director - INFO - request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 connect
+result true
+info (Automated) Connected to CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 - 20.20.90.27:2022
+[ok][2021-01-07 13:25:57]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:27,962 - Versa_director - INFO - CMD>> : request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 check-sync
+2021-01-07 18:55:29,067 - Versa_director - INFO - request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 check-sync
+result in-sync
+[ok][2021-01-07 13:25:58]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:29,067 - Versa_director - INFO - CMD>> : show devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 live-status bgp neighbor brief IPC00190-Control-VR | tab
+2021-01-07 18:55:30,775 - Versa_director - INFO - show devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 live-status bgp neighbor brief IPC00190-Control-VR | tab
+                                  LOCAL                        REMOTE          REMOTE               TOTAL     TOTAL                  TOTAL     TOTAL        
+                                  ADDRESS               LOCAL  ADDR    REMOTE  AS                   SENT      RECEIVED  ESTABLISHED  RECEIVED  TRANSMITTED  
+ROUTING INSTANCE     NEIGHBOR IP  TYPE     LOCAL ADDR   PORT   TYPE    PORT    NUMBER  STATE        PREFIXES  PREFIXES  TIME         MESSAGES  MESSAGES     
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+IPC00190-Control-VR  10.90.64.15  ipv4     20.20.90.27  0      ipv4    0       65505   Established  5         106       00:06:30     74        25           
+                     10.90.64.17  ipv4     20.20.90.27  0      ipv4    0       65505   Established  5         156       00:06:30     80        25           
+
+[ok][2021-01-07 13:26:00]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:38,467 - Versa_director - INFO - configure private
+Entering configuration mode private
+[ok][2021-01-07 13:26:02]
+
+[edit]
+Automated@VDir-BLR-NEW-01% set devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 config routing-instances IPC00190-Control-VR protocols bgp 90 graceful-restart enable maximum-restart-time 60 recovery-time 60 select-defer-time 60 stalepath-time 60 dynamic-peer-restart-time 0 multiplier 20
+[ok][2021-01-07 13:26:06]
+
+[edit]
+Automated@VDir-BLR-NEW-01% 
+2021-01-07 18:55:38,467 - Versa_director - DEBUG - configure private
+Entering configuration mode private
+[ok][2021-01-07 13:26:02]
+
+[edit]
+Automated@VDir-BLR-NEW-01% set devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 config routing-instances IPC00190-Control-VR protocols bgp 90 graceful-restart enable maximum-restart-time 60 recovery-time 60 select-defer-time 60 stalepath-time 60 dynamic-peer-restart-time 0 multiplier 20
+[ok][2021-01-07 13:26:06]
+
+[edit]
+Automated@VDir-BLR-NEW-01% 
+2021-01-07 18:55:38,969 - Versa_director - DEBUG - commit
+No modifications to commit.
+[ok][2021-01-07 13:26:08]
+
+[edit]
+Automated@VDir-BLR-NEW-01% 
+2021-01-07 18:55:39,486 - Versa_director - DEBUG - exit no-confirm
+[ok][2021-01-07 13:26:09]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:39,486 - Versa_director - DEBUG - No modifications to commit.
+2021-01-07 18:55:39,988 - Versa_director - INFO - CMD>> : request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 ping
+2021-01-07 18:55:40,491 - Versa_director - INFO - request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 ping
+result PING 20.20.90.27 (20.20.90.27) 56(84) bytes of data.
+64 bytes from 20.20.90.27: icmp_seq=1 ttl=61 time=5.91 ms
+
+--- 20.20.90.27 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 5.916/5.916/5.916/0.000 ms
+
+[ok][2021-01-07 13:26:10]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:40,492 - Versa_director - INFO - CMD>> : request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 connect
+2021-01-07 18:55:41,396 - Versa_director - INFO - request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 connect
+result true
+info (Automated) Connected to CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 - 20.20.90.27:2022
+[ok][2021-01-07 13:26:11]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:41,396 - Versa_director - INFO - CMD>> : request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 check-sync
+2021-01-07 18:55:42,501 - Versa_director - INFO - request devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 check-sync
+result in-sync
+[ok][2021-01-07 13:26:12]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:42,501 - Versa_director - INFO - CMD>> : show devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 live-status bgp neighbor brief IPC00190-Control-VR | tab
+2021-01-07 18:55:44,214 - Versa_director - INFO - show devices device CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190 live-status bgp neighbor brief IPC00190-Control-VR | tab
+                                  LOCAL                        REMOTE          REMOTE               TOTAL     TOTAL                  TOTAL     TOTAL        
+                                  ADDRESS               LOCAL  ADDR    REMOTE  AS                   SENT      RECEIVED  ESTABLISHED  RECEIVED  TRANSMITTED  
+ROUTING INSTANCE     NEIGHBOR IP  TYPE     LOCAL ADDR   PORT   TYPE    PORT    NUMBER  STATE        PREFIXES  PREFIXES  TIME         MESSAGES  MESSAGES     
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+IPC00190-Control-VR  10.90.64.15  ipv4     20.20.90.27  0      ipv4    0       65505   Established  5         106       00:06:44     75        26           
+                     10.90.64.17  ipv4     20.20.90.27  0      ipv4    0       65505   Established  5         156       00:06:44     81        26           
+
+[ok][2021-01-07 13:26:14]
+Automated@VDir-BLR-NEW-01> 
+2021-01-07 18:55:44,215 - Versa_director - INFO - CONFIG_RESULT:
+2021-01-07 18:55:44,216 - Versa_director - INFO - ['CPE-14', 'VD --> CPE Request ping failed.']
+2021-01-07 18:55:44,216 - Versa_director - INFO - ['CPE25-Performance-DUT', 'VD --> CPE Request ping failed.']
+2021-01-07 18:55:44,216 - Versa_director - INFO - ['CPE26-HKG-SINGLE-CPE-HYBRID-IPC00190-IPV6', 'VD --> CPE Request ping failed.']
+2021-01-07 18:55:44,217 - Versa_director - INFO - ['CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190', 'No modifications to commit.After Commit, PASSAfter Commit, BGP nbr check passed.BGP established nbr  count:2']
+2021-01-07 18:55:44,224 - Versa_director - INFO - Time elapsed: 0:00:51.487569
+
+2021-01-07 18:55:44,225 - Versa_director - INFO - LOGS Stored in : C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit/LOGS/2021_01_07_18_54_41_988562/
+2021-01-07 18:55:44,226 - Versa_director - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x0000020BB01C2C40> connection closed

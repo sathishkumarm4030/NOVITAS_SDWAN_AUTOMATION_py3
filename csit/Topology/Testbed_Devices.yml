@@ -1,0 +1,50 @@
+POD1_VD1:
+    POD: 1
+    device_type: versa_director
+    MIN_SW_VERSION:16.1R2-S9
+    mgmt_ip: 10.91.127.194
+    username: Automated
+    password: Auto@12345
+    GUIusername: Automated
+    GUIpassword: Auto@12345
+
+POD1_VD2:
+    POD: 1
+    device_type: versa_director
+    MIN_SW_VERSION:16.1R2-S9
+    mgmt_ip: 10.91.127.195
+    username: Automated
+    password: Auto@12345
+    GUIusername: Automated
+    GUIpassword: Auto@12345
+
+CPE11-HKG-HYBRD-IPC00190:
+    POD: 1
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4275
+    Serial_Number: CPE11INOVA90
+    MIN_SW_VERSION: 16.1R2-S9
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    ESP_IP: 20.20.90.11
+    VXLAN_IP: 10.10.90.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    NODE: HKG
+

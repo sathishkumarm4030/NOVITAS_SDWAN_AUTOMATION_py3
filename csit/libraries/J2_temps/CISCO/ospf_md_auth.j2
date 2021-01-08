@@ -1,0 +1,6 @@
+router ospf {{ ospf_instance_id }}
+ area {{ ospf_area_id }} authentication message-digest
+ network {{ loopback_ip }}  mask 255.255.255.255 area {{ ospf_area_id }}
+ network {{ loopback_ip }}  mask 255.255.255.255 area {{ ospf_area_id }}
+ !
+end

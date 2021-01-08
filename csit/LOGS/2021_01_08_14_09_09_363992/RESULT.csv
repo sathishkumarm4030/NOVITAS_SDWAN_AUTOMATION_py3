@@ -1,0 +1,5 @@
+Device_name,Config_Result
+CPE-14,VD --> CPE Request ping failed.
+CPE25-Performance-DUT,VD --> CPE Request ping failed.
+CPE26-HKG-SINGLE-CPE-HYBRID-IPC00190-IPV6,VD --> CPE Request ping failed.
+CPE27-SIN-SINGLE-CPE-HYBRID-IPC00190,No modifications to commit.

@@ -1,0 +1,4 @@
+set devices device {{ Device_name }} config routing-instances {{ Customer_ORG_Name }} protocols bgp {{ Customer_ORG_ID }} routing-peer-policy {{ sdwan_policy_name }} term REJECT-DYNAMIC-COMMUNITY match community {{ community_id }}
+set devices device {{ Device_name }} config routing-instances {{ Customer_ORG_Name }} protocols bgp {{ Customer_ORG_ID }} routing-peer-policy {{ sdwan_policy_name }} term REJECT-DYNAMIC-COMMUNITY action reject
+move devices device {{ Device_name }} config routing-instances {{ Customer_ORG_Name }} protocols bgp {{ Customer_ORG_ID }} routing-peer-policy {{ sdwan_policy_name }} term REJECT-DYNAMIC-COMMUNITY first
+

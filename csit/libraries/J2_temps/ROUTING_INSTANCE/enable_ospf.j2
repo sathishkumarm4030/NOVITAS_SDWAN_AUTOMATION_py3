@@ -1,0 +1,8 @@
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} router-id {{ ospf_router_id }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} area {{ ospf_area_id }} network-name LAN{{ lan_number }} authentication type none
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} area {{ ospf_area_id }} network-name LAN{{ lan_number }} network-type broadcast
+
+
+
+
+

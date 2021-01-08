@@ -1,0 +1,5 @@
+delete devices device {{ Device_name }} config routing-instances {{ Customer_ORG_Name }} protocols bgp {{ Customer_ORG_ID }} routing-peer-policy {{ sdwan_policy_name }} term REJECT-DYNAMIC-COMMUNITY 
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF policy-options redistribution-policy {{ redis_policy_name }} term T2-DIRECT action set-community {{ community_id }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF policy-options redistribution-policy {{ redis_policy_name }} term T3-STATIC action set-community {{ community_id }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF policy-options redistribution-policy {{ redis_policy_name }} term T4-BGP action set-community {{ community_id }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF policy-options redistribute-to-bgp {{ redis_policy_name }}

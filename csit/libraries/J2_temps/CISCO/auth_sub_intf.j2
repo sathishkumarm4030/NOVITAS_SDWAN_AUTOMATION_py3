@@ -1,0 +1,8 @@
+no interface BDI{{ VLAN }}
+interface BDI{{ VLAN }}
+ ip address {{ ip }} {{ nmask }}
+ ip ospf authentication-key {{ password }}
+ load-interval 30
+ arp timeout 300
+ no shutdown
+!

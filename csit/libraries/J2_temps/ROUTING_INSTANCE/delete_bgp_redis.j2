@@ -1,0 +1,3 @@
+delete devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF policy-options redistribution-policy {{ redis_policy_name }}
+delete devices device {{ Device_name }} config routing-instances {{ Customer_ORG_Name }} protocols bgp {{ bgp_instance_id }} routing-peer-policy {{ sdwan_policy_name }}
+

@@ -1,0 +1,3 @@
+DUTs,mgmt_ip,username,password,device_type,LAN_INTF,START_VLAN,START_LAN_IP_SUBNET,NO_OF_VRFS
+CISCO_ASR920_R6,10.91.240.49,colt123,colt123,cisco_xr,GigabitEthernet0/0/1,750,192.170.1.0/24,1
+CISCO_ASR920_R5,10.91.240.54,colt123,colt123,cisco_xr,GigabitEthernet0/0/1,600,192.169.101.0/24,1

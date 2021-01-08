@@ -1,0 +1,2903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20201127 20:28:25.946" rpa="false">
+<suite id="s1" name="SINGLE CPE HYBRID SOLUTION TEST" source="C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\ROBOT_TESTSUITES\SINGLE_CPE_HYBRID_SOLUTION_TEST.robot">
+<kw name="STARTUP" type="setup">
+<doc>Make connecection to Versa devices</doc>
+<msg timestamp="20201127 20:28:54.111" level="TRACE">Arguments: [  ]</msg>
+<kw name="Login" library="VD1">
+<msg timestamp="20201127 20:28:54.111" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:28:54.195" level="DEBUG">Adding ssh-ed25519 host key for 10.91.116.35: b'bdd651375ff69331eb30d5151aa8cb04'</msg>
+<msg timestamp="20201127 20:28:54.274" level="DEBUG">[chan 0] Max packet in: 32768 bytes</msg>
+<msg timestamp="20201127 20:28:55.444" level="DEBUG">read_channel: ===============================================================================
+WARNING!
+This is a Proprietary System
+You have accessed a Proprietary System
+
+If you are not authorized to use this computer system, you MUST log off now.
+Unauthorized use of this computer system, including unauthorized attempts or
+acts to deny service on, upload information to, download information from,
+change information on, or access a non-public site from, this computer system,
+are strictly prohibited and may be punishable under federal and state criminal
+and civil laws. All data contained on this computer systems may be monitored,
+intercepted, recorded, read, copied, or captured in any manner by authorized
+System personnel. System personnel may use or transfer this data as required or
+permitted under applicable law. Without limiting the previous sentence, system
+personnel may give to law enforcement officials any potential evidence of crime
+found on this computer system. Use of this system by any user, authorized or
+unauthorized, constitutes EXPRESS CONSENT to this monitoring, interception,
+recording, reading, copying, or capturing, and use and transfer. Please verify
+if this is the current version of the banner when deploying to the system.
+===============================================================================
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+Release     : 16.1R2
+Release date: 20200719
+Package ID  : eae49fb
+
+ *****************************************************************************
+ *                            IMPORTANT NOTICE                               *
+ * Access to this network is restricted to COLT authorised users and is      *
+ * permitted only for legitimate business purposes and only on the terms and *
+ * conditions of COLT's Acceptable Use Policy.  Your electronic login to     *
+ * this network indicates acceptance of the terms and conditions of COLT's   *
+ * Acceptable Use Policy.                                                    *
+ *                                                                           *
+ * COLT reserves the right to audit the network, in accordance with the      *
+ * Logging and Monitoring Policy.                                            *
+ *                                                                           *
+ *****************************************************************************
+
+Last login: Fri Nov 27 14:27:53 2020 from 10.91.194.9
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+
+Automated connected from 10.91.194.9 using ssh on Versa-Dir-BLR-1
+[?7hAutomated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:28:55.559" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:28:57.563" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:28:57.563" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:28:57.663" level="DEBUG">read_channel: 
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:28:57.663" level="DEBUG">write_channel: b'cli\n'</msg>
+<msg timestamp="20201127 20:28:58.064" level="DEBUG">read_channel: cli
+---------------------------^
+syntax error: expecting 
+  clear      - Clear parameter
+  compare    - Compare running configuration to another configuration or a file
+  configure  - Manipulate software configuration information
+  describe   - Display transparent command  information
+  exit       - Exit the management session
+  file       - Perform file operations
+  help       - Provide help information
+  id         - Show user id information
+  monitor    - Real-time debugging
+  ping       - Ping a host
+  quit       - Exit the management session
+  request    - Make system-level requests
+  script     - Script actions
+  set        - Set CLI properties
+  set-path   - Set relative show path
+  shell      - Open a shell
+  show       - Show information about the system
+  source     - File to source
+  ssh        - Open a secure shell on another Host
+  switch     - Change CLI style
+  telnet     - Open a telnet session to another host
+  top        - Exit to top level and optionally run command
+  traceroute - Trace the route to a remote host
+  up         - Exit one level of configuration
+[error][2020-11-27 14:58:59]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:28:58.064" level="DEBUG">Clear buffer detects data in the channel</msg>
+<msg timestamp="20201127 20:28:58.265" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:28:58.365" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:28:58.365" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:28:58.465" level="DEBUG">read_channel: 
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:28:58.665" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:28:58.665" level="DEBUG">[find_prompt()]: prompt is Automated@Versa-Dir-BLR-1&gt;</msg>
+<msg timestamp="20201127 20:28:58.881" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:28:58.881" level="DEBUG">In disable_paging</msg>
+<msg timestamp="20201127 20:28:58.881" level="DEBUG">Command: set screen length 0
+</msg>
+<msg timestamp="20201127 20:28:58.881" level="DEBUG">write_channel: b'set screen length 0\n'</msg>
+<msg timestamp="20201127 20:28:58.881" level="DEBUG">Pattern is: Automated@Versa\-Dir\-BLR\-1</msg>
+<msg timestamp="20201127 20:28:58.881" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20201127 20:28:58.981" level="DEBUG">_read_channel_expect read_data:  screen</msg>
+<msg timestamp="20201127 20:28:59.097" level="DEBUG">_read_channel_expect read_data:  length 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:28:59.097" level="DEBUG">Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen length 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:28:59.097" level="DEBUG">set screen length 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:28:59.097" level="DEBUG">Exiting disable_paging</msg>
+<msg timestamp="20201127 20:28:59.097" level="DEBUG">write_channel: b'set screen width 0\n'</msg>
+<msg timestamp="20201127 20:28:59.097" level="DEBUG">Pattern is: Automated@Versa\-Dir\-BLR\-1</msg>
+<msg timestamp="20201127 20:28:59.103" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20201127 20:28:59.219" level="DEBUG">_read_channel_expect read_data:  screen width 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:28:59.219" level="DEBUG">Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen width 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:28:59.619" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:28:59.619" level="DEBUG">&lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C53FE5190&gt;</msg>
+<msg timestamp="20201127 20:29:04.729" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:04.729" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:04.829" level="DEBUG">read_channel: 
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:05.030" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:05.030" level="DEBUG">[find_prompt()]: prompt is Automated@Versa-Dir-BLR-1&gt;</msg>
+<msg timestamp="20201127 20:29:05.030" level="DEBUG">versa: Automated@Versa-Dir-BLR-1&gt;</msg>
+<msg timestamp="20201127 20:29:05.030" level="TRACE">Return: &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C53FE5190&gt;</msg>
+<status status="PASS" starttime="20201127 20:28:54.111" endtime="20201127 20:29:05.030"></status>
+</kw>
+<kw name="Get Data Dict" library="VD1">
+<assign>
+<var>${VD1}</var>
+</assign>
+<msg timestamp="20201127 20:29:05.030" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:29:05.030" level="TRACE">Return: {'Device_name': 'POD2_VD1',
+ 'GUIpassword': 'Auto@12345',
+ 'GUIusername': 'Automated',
+ 'LCC_dict': {'BLR': '91', 'LON': '44', 'MUM': '1091'},
+ 'MGMT_NW_SBNT': '10.91.140.0/22',
+ 'MIN_SW_VERSION': '16.1R2-S9',
+ 'POD': 2,
+ 'RR_Clients': {'NV-WC01-N2-BLR': ['NV-WC01-N4-MUM', 'NV-WC01-N5-LON'],
+                'NV-WC02-N4-MUM': ['NV-WC02-N2-BLR', 'NV-WC02-N5-LON']},
+ 'RR_SERVER': ['NV-WC01-N2-BLR', 'NV-WC02-N4-MUM'],
+ 'SOLUTIONS_list': ['SINGLE-CPE-HYBRID',
+                    'SINGLE-CPE-INTERNET-ONLY',
+                    'SINGLE-CPE-MPLS-ONLY',
+                    'SINGLE-CPE-DUAL-INTERNET',
+                    'DUAL-CPE-DUAL-MPLS',
+                    'DUAL-CPE-HYBRID',
+                    'DUAL-CPE-DUAL-INTERNET'],
+ 'TRACK_MANAGEMENT_SUBNET': '10.91.113.58/32',
+ 'VNF_IPADDRESS': ['10.91.116.67/32', '10.91.116.68/32'],
+ 'ctlr_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+               'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+               'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'ctlr_list': ['NV-WC01-N2-BLR', 'NV-WC02-N4-MUM'],
+ 'curr_file_dir': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit',
+ 'device_type': 'versa_director',
+ 'gw_dict': {'BLR': ['NV-GW01-N2-BLR', 'NV-GW02-N2-BLR'],
+             'LON': ['NV-GW01-N5-LON', 'NV-GW02-N5-LON'],
+             'MUM': ['NV-GW01-N4-MUM', 'NV-GW02-N4-MUM']},
+ 'gw_list': [],
+ 'log_collector': 'LogCollectors',
+ 'logfile': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit/LOGS/2020_11_27_20_28_31_715421/MAIN.log',
+ 'main_logger': &lt;Logger POD2_VD1 (DEBUG)&gt;,
+ 'mgmt_ip': '10.91.116.35',
+ 'nc': &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C53FE5190&gt;,
+ 'ndb': {},
+ 'password': 'Auto@12345',
+ 'staging_servers_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+                          'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+                          'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'topofile': 'Devices.yml',
+ 'username': 'Automated',
+ 'vddata_dict': &lt;Recursion on dict with id=2732986251712&gt;,
+ 'vdhead': 'https://10.91.116.35:9182',
+ 'vlans': []}</msg>
+<msg timestamp="20201127 20:29:05.030" level="INFO">${VD1} = {'ndb': {}, 'topofile': 'Devices.yml', 'Device_name': 'POD2_VD1', 'POD': 2, 'device_type': 'versa_director', 'MIN_SW_VERSION': '16.1R2-S9', 'mgmt_ip': '10.91.116.35', 'username': 'Automated', 'passwor...</msg>
+<status status="PASS" starttime="20201127 20:29:05.030" endtime="20201127 20:29:05.030"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${VM1}</arg>
+</arguments>
+<msg timestamp="20201127 20:29:05.030" level="TRACE">Arguments: [ '${VM1}' ]</msg>
+<msg timestamp="20201127 20:29:05.030" level="INFO">${VM1} = CPE11_LAN_HOST1</msg>
+<msg timestamp="20201127 20:29:05.030" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:29:05.030" endtime="20201127 20:29:05.030"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${VM2}</arg>
+</arguments>
+<msg timestamp="20201127 20:29:05.030" level="TRACE">Arguments: [ '${VM2}' ]</msg>
+<msg timestamp="20201127 20:29:05.030" level="INFO">${VM2} = CPE26_LAN_HOST1</msg>
+<msg timestamp="20201127 20:29:05.030" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:29:05.030" endtime="20201127 20:29:05.030"></status>
+</kw>
+<kw name="Cross Login" library="CPE1">
+<msg timestamp="20201127 20:29:05.030" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:29:05.108" level="DEBUG">Adding ssh-ed25519 host key for 10.91.116.35: b'bdd651375ff69331eb30d5151aa8cb04'</msg>
+<msg timestamp="20201127 20:29:05.193" level="DEBUG">[chan 0] Max packet in: 32768 bytes</msg>
+<msg timestamp="20201127 20:29:06.365" level="DEBUG">read_channel: ===============================================================================
+WARNING!
+This is a Proprietary System
+You have accessed a Proprietary System
+
+If you are not authorized to use this computer system, you MUST log off now.
+Unauthorized use of this computer system, including unauthorized attempts or
+acts to deny service on, upload information to, download information from,
+change information on, or access a non-public site from, this computer system,
+are strictly prohibited and may be punishable under federal and state criminal
+and civil laws. All data contained on this computer systems may be monitored,
+intercepted, recorded, read, copied, or captured in any manner by authorized
+System personnel. System personnel may use or transfer this data as required or
+permitted under applicable law. Without limiting the previous sentence, system
+personnel may give to law enforcement officials any potential evidence of crime
+found on this computer system. Use of this system by any user, authorized or
+unauthorized, constitutes EXPRESS CONSENT to this monitoring, interception,
+recording, reading, copying, or capturing, and use and transfer. Please verify
+if this is the current version of the banner when deploying to the system.
+===============================================================================
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+Release     : 16.1R2
+Release date: 20200719
+Package ID  : eae49fb
+
+ *****************************************************************************
+ *                            IMPORTANT NOTICE                               *
+ * Access to this network is restricted to COLT authorised users and is      *
+ * permitted only for legitimate business purposes and only on the terms and *
+ * conditions of COLT's Acceptable Use Policy.  Your electronic login to     *
+ * this network indicates acceptance of the terms and conditions of COLT's   *
+ * Acceptable Use Policy.                                                    *
+ *                                                                           *
+ * COLT reserves the right to audit the network, in accordance with the      *
+ * Logging and Monitoring Policy.                                            *
+ *                                                                           *
+ *****************************************************************************
+
+Last login: Fri Nov 27 14:58:55 2020 from 10.91.194.9
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+
+Automated connected from 10.91.194.9 using ssh on Versa-Dir-BLR-1
+[?7hAutomated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:06.465" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:08.469" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:08.469" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:08.569" level="DEBUG">read_channel: 
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:08.569" level="DEBUG">write_channel: b'cli\n'</msg>
+<msg timestamp="20201127 20:29:08.970" level="DEBUG">read_channel: cli
+---------------------------^
+syntax error: expecting 
+  clear      - Clear parameter
+  compare    - Compare running configuration to another configuration or a file
+  configure  - Manipulate software configuration information
+  describe   - Display transparent command  information
+  exit       - Exit the management session
+  file       - Perform file operations
+  help       - Provide help information
+  id         - Show user id information
+  monitor    - Real-time debugging
+  ping       - Ping a host
+  quit       - Exit the management session
+  request    - Make system-level requests
+  script     - Script actions
+  set        - Set CLI properties
+  set-path   - Set relative show path
+  shell      - Open a shell
+  show       - Show information about the system
+  source     - File to source
+  ssh        - Open a secure shell on another Host
+  switch     - Change CLI style
+  telnet     - Open a telnet session to another host
+  top        - Exit to top level and optionally run command
+  traceroute - Trace the route to a remote host
+  up         - Exit one level of configuration
+[error][2020-11-27 14:59:09]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:08.970" level="DEBUG">Clear buffer detects data in the channel</msg>
+<msg timestamp="20201127 20:29:09.170" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:09.273" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:09.273" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:09.386" level="DEBUG">read_channel: 
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:09.586" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:09.586" level="DEBUG">[find_prompt()]: prompt is Automated@Versa-Dir-BLR-1&gt;</msg>
+<msg timestamp="20201127 20:29:09.786" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:09.786" level="DEBUG">In disable_paging</msg>
+<msg timestamp="20201127 20:29:09.786" level="DEBUG">Command: set screen length 0
+</msg>
+<msg timestamp="20201127 20:29:09.786" level="DEBUG">write_channel: b'set screen length 0\n'</msg>
+<msg timestamp="20201127 20:29:09.786" level="DEBUG">Pattern is: Automated@Versa\-Dir\-BLR\-1</msg>
+<msg timestamp="20201127 20:29:09.801" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20201127 20:29:09.901" level="DEBUG">_read_channel_expect read_data:  screen length 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:09.901" level="DEBUG">Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen length 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:09.901" level="DEBUG">set screen length 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:09.901" level="DEBUG">Exiting disable_paging</msg>
+<msg timestamp="20201127 20:29:09.901" level="DEBUG">write_channel: b'set screen width 0\n'</msg>
+<msg timestamp="20201127 20:29:09.901" level="DEBUG">Pattern is: Automated@Versa\-Dir\-BLR\-1</msg>
+<msg timestamp="20201127 20:29:09.901" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20201127 20:29:10.002" level="DEBUG">_read_channel_expect read_data:  screen width 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:10.002" level="DEBUG">Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen width 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:10.403" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:10.403" level="DEBUG">&lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C54006E50&gt;</msg>
+<msg timestamp="20201127 20:29:15.512" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:15.512" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:15.613" level="DEBUG">read_channel: 
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:15.814" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:15.814" level="DEBUG">[find_prompt()]: prompt is Automated@Versa-Dir-BLR-1&gt;</msg>
+<msg timestamp="20201127 20:29:15.814" level="DEBUG">versa: Automated@Versa-Dir-BLR-1&gt;</msg>
+<msg timestamp="20201127 20:29:15.814" level="DEBUG">write_channel: b'ssh admin@20.20.73.11\n'</msg>
+<msg timestamp="20201127 20:29:20.822" level="DEBUG">read_channel: ssh admin@20.20.73.11
+admin@20.20.73.11's password: </msg>
+<msg timestamp="20201127 20:29:20.822" level="DEBUG">write_channel: b'versa123\n'</msg>
+<msg timestamp="20201127 20:29:25.833" level="DEBUG">read_channel: 
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| &gt;  &lt; \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R2 (S9)
+Release date:	20190628
+Package ID  :	80561de	
+
+Last login: Fri Nov 27 14:40:54 2020 from 10.91.194.9
+admin@CPE11-LON-HYBRD-IPC00073:~$ </msg>
+<msg timestamp="20201127 20:29:26.934" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:28.937" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:28.937" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:29.153" level="DEBUG">read_channel: 
+admin@CPE11-LON-HYBRD-IPC00073:~$ </msg>
+<msg timestamp="20201127 20:29:29.253" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:31.259" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:31.261" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:31.381" level="DEBUG">read_channel: 
+admin@CPE11-LON-HYBRD-IPC00073:~$ </msg>
+<msg timestamp="20201127 20:29:31.381" level="DEBUG">write_channel: b'cli\n'</msg>
+<msg timestamp="20201127 20:29:31.782" level="DEBUG">read_channel: cli
+Access to this network/system is limited to users authorised by Colt for its legitimate business purposes. Unauthorised access, use, installation of files or modification of any data is prohibited. Use of this system/network will be audited
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' &lt;\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.116.67 using ssh on CPE11-LON-HYBRD-IPC00073
+[?7hadmin@CPE11-LON-HYBRD-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:29:31.782" level="DEBUG">Clear buffer detects data in the channel</msg>
+<msg timestamp="20201127 20:29:31.983" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:32.084" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:32.084" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:32.184" level="DEBUG">read_channel: 
+admin@CPE11-LON-HYBRD-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:29:32.384" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:32.384" level="DEBUG">[find_prompt()]: prompt is admin@CPE11-LON-HYBRD-IPC00073-cli&gt;</msg>
+<msg timestamp="20201127 20:29:32.584" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:32.584" level="DEBUG">In disable_paging</msg>
+<msg timestamp="20201127 20:29:32.584" level="DEBUG">Command: set screen length 0
+</msg>
+<msg timestamp="20201127 20:29:32.584" level="DEBUG">write_channel: b'set screen length 0\n'</msg>
+<msg timestamp="20201127 20:29:32.584" level="DEBUG">Pattern is: admin@CPE11\-LON\-HYBRD\-IPC00073\-cli</msg>
+<msg timestamp="20201127 20:29:32.647" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20201127 20:29:32.747" level="DEBUG">_read_channel_expect read_data:  screen</msg>
+<msg timestamp="20201127 20:29:32.847" level="DEBUG">_read_channel_expect read_data:  length</msg>
+<msg timestamp="20201127 20:29:32.948" level="DEBUG">_read_channel_expect read_data:  0
+</msg>
+<msg timestamp="20201127 20:29:33.048" level="DEBUG">_read_channel_expect read_data: [ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:29:33.048" level="DEBUG">Pattern found: admin@CPE11\-LON\-HYBRD\-IPC00073\-cli set screen length 0
+[ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:29:33.048" level="DEBUG">set screen length 0
+[ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:29:33.048" level="DEBUG">Exiting disable_paging</msg>
+<msg timestamp="20201127 20:29:33.048" level="DEBUG">write_channel: b'set screen width 0\n'</msg>
+<msg timestamp="20201127 20:29:33.048" level="DEBUG">Pattern is: admin@CPE11\-LON\-HYBRD\-IPC00073\-cli</msg>
+<msg timestamp="20201127 20:29:33.117" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20201127 20:29:33.217" level="DEBUG">_read_channel_expect read_data:  screen</msg>
+<msg timestamp="20201127 20:29:33.318" level="DEBUG">_read_channel_expect read_data:  width</msg>
+<msg timestamp="20201127 20:29:33.418" level="DEBUG">_read_channel_expect read_data:  0
+</msg>
+<msg timestamp="20201127 20:29:33.518" level="DEBUG">_read_channel_expect read_data: [ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:29:33.518" level="DEBUG">Pattern found: admin@CPE11\-LON\-HYBRD\-IPC00073\-cli set screen width 0
+[ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:29:33.919" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:36.222" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:36.222" level="DEBUG">write_channel: b'set idle-timeout 0\n'</msg>
+<msg timestamp="20201127 20:29:36.423" level="DEBUG">read_channel: set idle-timeout</msg>
+<msg timestamp="20201127 20:29:36.623" level="DEBUG">read_channel:  0
+[ok][2020-11-27 14:59:36]
+admin@CPE11-LON-HYBRD-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:29:36.623" level="INFO">ssh admin@20.20.73.11
+admin@20.20.73.11's password: 
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| &gt;  &lt; \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R2 (S9)
+Release date:	20190628
+Package ID  :	80561de	
+
+Last login: Fri Nov 27 14:40:54 2020 from 10.91.194.9
+admin@CPE11-LON-HYBRD-IPC00073:~$ 
+doing redispatch
+set idle-timeout 0
+[ok][2020-11-27 14:59:36]
+admin@CPE11-LON-HYBRD-IPC00073-cli&gt;</msg>
+<msg timestamp="20201127 20:29:36.623" level="TRACE">Return: &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C54006E50&gt;</msg>
+<status status="PASS" starttime="20201127 20:29:05.030" endtime="20201127 20:29:36.623"></status>
+</kw>
+<kw name="Cross Login" library="CPE2">
+<msg timestamp="20201127 20:29:36.623" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:29:36.692" level="DEBUG">Adding ssh-ed25519 host key for 10.91.116.35: b'bdd651375ff69331eb30d5151aa8cb04'</msg>
+<msg timestamp="20201127 20:29:36.776" level="DEBUG">[chan 0] Max packet in: 32768 bytes</msg>
+<msg timestamp="20201127 20:29:37.925" level="DEBUG">read_channel: ===============================================================================
+WARNING!
+This is a Proprietary System
+You have accessed a Proprietary System
+
+If you are not authorized to use this computer system, you MUST log off now.
+Unauthorized use of this computer system, including unauthorized attempts or
+acts to deny service on, upload information to, download information from,
+change information on, or access a non-public site from, this computer system,
+are strictly prohibited and may be punishable under federal and state criminal
+and civil laws. All data contained on this computer systems may be monitored,
+intercepted, recorded, read, copied, or captured in any manner by authorized
+System personnel. System personnel may use or transfer this data as required or
+permitted under applicable law. Without limiting the previous sentence, system
+personnel may give to law enforcement officials any potential evidence of crime
+found on this computer system. Use of this system by any user, authorized or
+unauthorized, constitutes EXPRESS CONSENT to this monitoring, interception,
+recording, reading, copying, or capturing, and use and transfer. Please verify
+if this is the current version of the banner when deploying to the system.
+===============================================================================
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+Release     : 16.1R2
+Release date: 20200719
+Package ID  : eae49fb
+
+ *****************************************************************************
+ *                            IMPORTANT NOTICE                               *
+ * Access to this network is restricted to COLT authorised users and is      *
+ * permitted only for legitimate business purposes and only on the terms and *
+ * conditions of COLT's Acceptable Use Policy.  Your electronic login to     *
+ * this network indicates acceptance of the terms and conditions of COLT's   *
+ * Acceptable Use Policy.                                                    *
+ *                                                                           *
+ * COLT reserves the right to audit the network, in accordance with the      *
+ * Logging and Monitoring Policy.                                            *
+ *                                                                           *
+ *****************************************************************************
+
+Last login: Fri Nov 27 14:59:06 2020 from 10.91.194.9
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+
+Automated connected from 10.91.194.9 using ssh on Versa-Dir-BLR-1
+[?7hAutomated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:38.026" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:40.029" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:40.029" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:40.130" level="DEBUG">read_channel: 
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:40.130" level="DEBUG">write_channel: b'cli\n'</msg>
+<msg timestamp="20201127 20:29:40.530" level="DEBUG">read_channel: cli
+---------------------------^
+syntax error: expecting 
+  clear      - Clear parameter
+  compare    - Compare running configuration to another configuration or a file
+  configure  - Manipulate software configuration information
+  describe   - Display transparent command  information
+  exit       - Exit the management session
+  file       - Perform file operations
+  help       - Provide help information
+  id         - Show user id information
+  monitor    - Real-time debugging
+  ping       - Ping a host
+  quit       - Exit the management session
+  request    - Make system-level requests
+  script     - Script actions
+  set        - Set CLI properties
+  set-path   - Set relative show path
+  shell      - Open a shell
+  show       - Show information about the system
+  source     - File to source
+  ssh        - Open a secure shell on another Host
+  switch     - Change CLI style
+  telnet     - Open a telnet session to another host
+  top        - Exit to top level and optionally run command
+  traceroute - Trace the route to a remote host
+  up         - Exit one level of configuration
+[error][2020-11-27 14:59:41]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:40.530" level="DEBUG">Clear buffer detects data in the channel</msg>
+<msg timestamp="20201127 20:29:40.730" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:40.831" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:40.831" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:40.931" level="DEBUG">read_channel: 
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:41.131" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:41.131" level="DEBUG">[find_prompt()]: prompt is Automated@Versa-Dir-BLR-1&gt;</msg>
+<msg timestamp="20201127 20:29:41.331" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:41.331" level="DEBUG">In disable_paging</msg>
+<msg timestamp="20201127 20:29:41.331" level="DEBUG">Command: set screen length 0
+</msg>
+<msg timestamp="20201127 20:29:41.331" level="DEBUG">write_channel: b'set screen length 0\n'</msg>
+<msg timestamp="20201127 20:29:41.331" level="DEBUG">Pattern is: Automated@Versa\-Dir\-BLR\-1</msg>
+<msg timestamp="20201127 20:29:41.331" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20201127 20:29:41.431" level="DEBUG">_read_channel_expect read_data:  screen length 0
+</msg>
+<msg timestamp="20201127 20:29:41.532" level="DEBUG">_read_channel_expect read_data: [ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:41.532" level="DEBUG">Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen length 0
+[ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:41.532" level="DEBUG">set screen length 0
+[ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:41.532" level="DEBUG">Exiting disable_paging</msg>
+<msg timestamp="20201127 20:29:41.532" level="DEBUG">write_channel: b'set screen width 0\n'</msg>
+<msg timestamp="20201127 20:29:41.532" level="DEBUG">Pattern is: Automated@Versa\-Dir\-BLR\-1</msg>
+<msg timestamp="20201127 20:29:41.532" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20201127 20:29:41.648" level="DEBUG">_read_channel_expect read_data:  screen width 0
+[ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:41.648" level="DEBUG">Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen width 0
+[ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:42.048" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:42.048" level="DEBUG">&lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C540B22E0&gt;</msg>
+<msg timestamp="20201127 20:29:47.153" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:47.153" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:29:47.254" level="DEBUG">read_channel: 
+Automated@Versa-Dir-BLR-1&gt; </msg>
+<msg timestamp="20201127 20:29:47.469" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:29:47.469" level="DEBUG">[find_prompt()]: prompt is Automated@Versa-Dir-BLR-1&gt;</msg>
+<msg timestamp="20201127 20:29:47.469" level="DEBUG">versa: Automated@Versa-Dir-BLR-1&gt;</msg>
+<msg timestamp="20201127 20:29:47.469" level="DEBUG">write_channel: b'ssh admin@20.20.73.26\n'</msg>
+<msg timestamp="20201127 20:29:52.481" level="DEBUG">read_channel: ssh admin@20.20.73.26
+admin@20.20.73.26's password: </msg>
+<msg timestamp="20201127 20:29:52.481" level="DEBUG">write_channel: b'versa123\n'</msg>
+<msg timestamp="20201127 20:29:57.484" level="DEBUG">read_channel: 
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| &gt;  &lt; \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R2 (S9)
+Release date:	20190628
+Package ID  :	80561de	
+
+Last login: Fri Nov 27 14:28:08 2020 from 10.91.116.67
+[admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073: ~] $ </msg>
+<msg timestamp="20201127 20:29:58.587" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:00.590" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:00.590" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:00.807" level="DEBUG">read_channel: 
+[admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073: ~] $ </msg>
+<msg timestamp="20201127 20:30:00.907" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:02.911" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:02.911" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:03.011" level="DEBUG">read_channel: 
+[admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073: ~] $ </msg>
+<msg timestamp="20201127 20:30:03.011" level="DEBUG">write_channel: b'cli\n'</msg>
+<msg timestamp="20201127 20:30:03.433" level="DEBUG">read_channel: cli
+Access to this network/system is limited to users authorised by Colt for its legitimate business purposes. Unauthorised access, use, installation of files or modification of any data is prohibited. Use of this system/network will be audited
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' &lt;\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.116.67 using ssh on CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073
+[?7hadmin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:30:03.433" level="DEBUG">Clear buffer detects data in the channel</msg>
+<msg timestamp="20201127 20:30:03.634" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:03.734" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:03.734" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:03.834" level="DEBUG">read_channel: 
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:30:04.035" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:04.035" level="DEBUG">[find_prompt()]: prompt is admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt;</msg>
+<msg timestamp="20201127 20:30:04.250" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:04.250" level="DEBUG">In disable_paging</msg>
+<msg timestamp="20201127 20:30:04.250" level="DEBUG">Command: set screen length 0
+</msg>
+<msg timestamp="20201127 20:30:04.250" level="DEBUG">write_channel: b'set screen length 0\n'</msg>
+<msg timestamp="20201127 20:30:04.250" level="DEBUG">Pattern is: admin@CPE26\-MUM\-SINGLE\-CPE\-HYBRID\-IPC00073\-cli</msg>
+<msg timestamp="20201127 20:30:04.297" level="DEBUG">_read_channel_expect read_data: set screen</msg>
+<msg timestamp="20201127 20:30:04.398" level="DEBUG">_read_channel_expect read_data:  length 0
+[ok][2020-11-27 15:00:04]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:30:04.398" level="DEBUG">Pattern found: admin@CPE26\-MUM\-SINGLE\-CPE\-HYBRID\-IPC00073\-cli set screen length 0
+[ok][2020-11-27 15:00:04]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:30:04.398" level="DEBUG">set screen length 0
+[ok][2020-11-27 15:00:04]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:30:04.398" level="DEBUG">Exiting disable_paging</msg>
+<msg timestamp="20201127 20:30:04.398" level="DEBUG">write_channel: b'set screen width 0\n'</msg>
+<msg timestamp="20201127 20:30:04.398" level="DEBUG">Pattern is: admin@CPE26\-MUM\-SINGLE\-CPE\-HYBRID\-IPC00073\-cli</msg>
+<msg timestamp="20201127 20:30:04.435" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20201127 20:30:04.551" level="DEBUG">_read_channel_expect read_data:  screen width 0
+</msg>
+<msg timestamp="20201127 20:30:04.651" level="DEBUG">_read_channel_expect read_data: [ok][2020-11-27 15:00:05]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:30:04.651" level="DEBUG">Pattern found: admin@CPE26\-MUM\-SINGLE\-CPE\-HYBRID\-IPC00073\-cli set screen width 0
+[ok][2020-11-27 15:00:05]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:30:05.067" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:07.385" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:07.385" level="DEBUG">write_channel: b'set idle-timeout 0\n'</msg>
+<msg timestamp="20201127 20:30:07.585" level="DEBUG">read_channel: set idle-timeout 0
+[ok][2020-11-27 15:00:08]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt; </msg>
+<msg timestamp="20201127 20:30:07.585" level="INFO">ssh admin@20.20.73.26
+admin@20.20.73.26's password: 
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| &gt;  &lt; \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R2 (S9)
+Release date:	20190628
+Package ID  :	80561de	
+
+Last login: Fri Nov 27 14:28:08 2020 from 10.91.116.67
+[admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073: ~] $ 
+doing redispatch
+set idle-timeout 0
+[ok][2020-11-27 15:00:08]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli&gt;</msg>
+<msg timestamp="20201127 20:30:07.585" level="TRACE">Return: &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C540B22E0&gt;</msg>
+<status status="PASS" starttime="20201127 20:29:36.623" endtime="20201127 20:30:07.585"></status>
+</kw>
+<kw name="Connect And Reserve Ports" library="spirent1">
+<msg timestamp="20201127 20:30:07.585" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:22.467" level="INFO">reserved ports 10/1 : port1 : port_handle[0]
+
+ reserved ports 10/2 : port2 : port_handle[1]
+***** run sth.interface_config successfully
+***** run sth.interface_config successfully</msg>
+<msg timestamp="20201127 20:30:22.467" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:07.585" endtime="20201127 20:30:22.467"></status>
+</kw>
+<kw name="Get Device Info" library="CPE1">
+<assign>
+<var>${CPE1_dev_info_on_vd}</var>
+</assign>
+<msg timestamp="20201127 20:30:22.467" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:22.467" level="DEBUG">Starting new HTTPS connection (1): 10.91.116.35:9182</msg>
+<msg timestamp="20201127 20:30:22.899" level="DEBUG">https://10.91.116.35:9182 "GET /vnms/appliance/appliance?offset=0&amp;limit=1000 HTTP/1.1" 200 None</msg>
+<msg timestamp="20201127 20:30:22.946" level="TRACE">Return: {'ipAddress': '20.20.73.11',
+ 'model': 'FWA-2320',
+ 'name': 'CPE11-LON-HYBRD-IPC00073',
+ 'ownerOrg': 'IPC00073',
+ 'packageName': 'versa-flexvnf-20190628-153930-80561de-16.1R2S9-wsm',
+ 'ping_status': 'REACHABLE',
+ 'serialNo': 'CPE11nov27',
+ 'softwareVersion': '16.1-R2-S9 80561de 20190628',
+ 'sync_status': 'IN_SYNC',
+ 'type': 'branch',
+ 'uuid': 'c1e0f817-ef0c-432c-904b-958c36014471'}</msg>
+<msg timestamp="20201127 20:30:22.946" level="INFO">${CPE1_dev_info_on_vd} = {'name': 'CPE11-LON-HYBRD-IPC00073', 'uuid': 'c1e0f817-ef0c-432c-904b-958c36014471', 'ipAddress': '20.20.73.11', 'ownerOrg': 'IPC00073', 'type': 'branch', 'ping_status': 'REACHABLE', 'sync_status': 'I...</msg>
+<status status="PASS" starttime="20201127 20:30:22.467" endtime="20201127 20:30:22.946"></status>
+</kw>
+<kw name="Get Data Dict" library="CPE1">
+<assign>
+<var>${CPE1}</var>
+</assign>
+<msg timestamp="20201127 20:30:22.946" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:22.946" level="TRACE">Return: {'DEV_ONBAORD': True,
+ 'DEV_TEMPALTE_CREATION': True,
+ 'DEV_VRRP_LIB_CONFIG': False,
+ 'DG_CREATION': True,
+ 'Device_name': 'CPE11-LON-HYBRD-IPC00073',
+ 'ESP_IP': '20.20.73.11',
+ 'LAN_INTF': 'vni-0/4',
+ 'LCC_dict': {'BLR': '91', 'LON': '44', 'MUM': '1091'},
+ 'LIB1': True,
+ 'MGMT_NW_SBNT': '10.91.140.0/22',
+ 'MIN_SW_VERSION': '16.1R2-S9',
+ 'NODE': 'LON',
+ 'NO_OF_VRFS': 1,
+ 'ORG_ID': 73,
+ 'ORG_NAME': 'IPC00073',
+ 'POD': 2,
+ 'PST_CREATION': True,
+ 'PS_TEMPLATE_NAME': 'LON_HYBRID01',
+ 'RR_Clients': {'NV-WC01-N2-BLR': ['NV-WC01-N4-MUM', 'NV-WC01-N5-LON'],
+                'NV-WC02-N4-MUM': ['NV-WC02-N2-BLR', 'NV-WC02-N5-LON']},
+ 'RR_SERVER': ['NV-WC01-N2-BLR', 'NV-WC02-N4-MUM'],
+ 'SOLUTIONS_list': ['SINGLE-CPE-HYBRID',
+                    'SINGLE-CPE-INTERNET-ONLY',
+                    'SINGLE-CPE-MPLS-ONLY',
+                    'SINGLE-CPE-DUAL-INTERNET',
+                    'DUAL-CPE-DUAL-MPLS',
+                    'DUAL-CPE-HYBRID',
+                    'DUAL-CPE-DUAL-INTERNET'],
+ 'STAGING_INTF': 'WAN1',
+ 'STAGING_SERVER': 'NV-WC01-N4-MUM',
+ 'STAGING_WAN': 'MPLS',
+ 'STAGING_WAN_DHCP': False,
+ 'START_LAN_IP_SUBNET': '192.169.101.0/24',
+ 'START_VLAN': 600,
+ 'Serial_Number': 'CPE11nov27',
+ 'Site_id': 4275,
+ 'Solution_type': 'SINGLE-CPE-HYBRID',
+ 'TRACK_MANAGEMENT_SUBNET': '10.91.113.58/32',
+ 'VNF_IPADDRESS': ['10.91.116.67/32', '10.91.116.68/32'],
+ 'VXLAN_IP': '10.10.73.11',
+ 'WAN1_INTF': 'vni-0/1',
+ 'WAN1_INTF_IP': '172.16.7.42/30',
+ 'WAN1_INTF_NEXTHOP': '172.16.7.41',
+ 'WAN1_IP_ALLOC': 'STATIC',
+ 'WAN2_INTF': 'vni-0/2',
+ 'WAN2_INTF_IP': '172.16.6.42/30',
+ 'WAN2_INTF_NEXTHOP': '172.16.6.41',
+ 'WAN2_IP_ALLOC': 'STATIC',
+ 'cnc': &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C54006E50&gt;,
+ 'ctlr_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+               'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+               'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'ctlr_list': ['NV-WC01-N2-BLR', 'NV-WC02-N4-MUM'],
+ 'curr_file_dir': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit',
+ 'dev_dict': {'ipAddress': '20.20.73.11',
+              'model': 'FWA-2320',
+              'name': 'CPE11-LON-HYBRD-IPC00073',
+              'ownerOrg': 'IPC00073',
+              'packageName': 'versa-flexvnf-20190628-153930-80561de-16.1R2S9-wsm',
+              'ping_status': 'REACHABLE',
+              'serialNo': 'CPE11nov27',
+              'softwareVersion': '16.1-R2-S9 80561de 20190628',
+              'sync_status': 'IN_SYNC',
+              'type': 'branch',
+              'uuid': 'c1e0f817-ef0c-432c-904b-958c36014471'},
+ 'dev_present': 'true',
+ 'device_type': 'branch',
+ 'esp_tvi_interface': 147,
+ 'gw_dict': {'BLR': ['NV-GW01-N2-BLR', 'NV-GW02-N2-BLR'],
+             'LON': ['NV-GW01-N5-LON', 'NV-GW02-N5-LON'],
+             'MUM': ['NV-GW01-N4-MUM', 'NV-GW02-N4-MUM']},
+ 'gw_list': [],
+ 'lan': {1: {'bgp_instance_id': '3862',
+             'eighth_host': '192.169.101.8',
+             'eighth_host_ipv6': '2001:192:169:101::8',
+             'fifth_host': '192.169.101.5',
+             'fifth_host_ipv6': '2001:192:169:101::5',
+             'first_host': '192.169.101.1',
+             'first_host_ipv6': '2001:192:169:101::1',
+             'fourth_host': '192.169.101.4',
+             'fourth_host_ipv6': '2001:192:169:101::4',
+             'ipv6_nw': '2001:192:169:101::',
+             'ipv6_nw_with_prefixlen': '2001:192:169:101::/64',
+             'ipv6_prefixlen': '64',
+             'netmask': '255.255.255.0',
+             'ninth_host': '192.169.101.9',
+             'ninth_host_ipv6': '2001:192:169:101::9',
+             'nw': CalcIPv4Network('192.169.101.0/24'),
+             'nw_with_prefixlen': '192.169.101.0/24',
+             'prefixlen': '24',
+             'second_host': '192.169.101.2',
+             'second_host_ipv6': '2001:192:169:101::2',
+             'seventh_host': '192.169.101.7',
+             'seventh_host_ipv6': '2001:192:169:101::7',
+             'sixth_host': '192.169.101.6',
+             'sixth_host_ipv6': '2001:192:169:101::6',
+             'tenth_host': '192.169.101.10',
+             'tenth_host_ipv6': '2001:192:169:101::10',
+             'third_host': '192.169.101.3',
+             'third_host_ipv6': '2001:192:169:101::3',
+             'vlan': 600}},
+ 'lan_vlan': [600],
+ 'log_collector': 'LogCollectors',
+ 'logfile': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit/LOGS/2020_11_27_20_28_31_715421/MAIN.log',
+ 'main_logger': &lt;Logger CPE11-LON-HYBRD-IPC00073 (DEBUG)&gt;,
+ 'mgmt_ip': '10.91.240.11',
+ 'nc': &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C54006E50&gt;,
+ 'ndb': {},
+ 'password': 'versa123',
+ 'ptvi_intf_wc1': 'ptvi146',
+ 'ptvi_intf_wc2': 'ptvi147',
+ 'staging_servers_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+                          'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+                          'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'start_vrf_id': 850,
+ 'topofile': 'Devices.yml',
+ 'username': 'admin',
+ 'vddata_dict': {'GUIpassword': 'Auto@12345',
+                 'GUIusername': 'Automated',
+                 'MIN_SW_VERSION': None,
+                 'device_type': 'versa_director',
+                 'mgmt_ip': '10.91.116.35',
+                 'password': 'Auto@12345',
+                 'username': 'Automated'},
+ 'vdhead': 'https://10.91.116.35:9182',
+ 'vlans': [],
+ 'vxlan_tvi_interface': 146}</msg>
+<msg timestamp="20201127 20:30:22.952" level="INFO">${CPE1} = {'ndb': {}, 'topofile': 'Devices.yml', 'Device_name': 'CPE11-LON-HYBRD-IPC00073', 'POD': 2, 'Solution_type': 'SINGLE-CPE-HYBRID', 'Site_id': 4275, 'Serial_Number': 'CPE11nov27', 'MIN_SW_VERSION': '16....</msg>
+<status status="PASS" starttime="20201127 20:30:22.946" endtime="20201127 20:30:22.952"></status>
+</kw>
+<kw name="Get Data Dict" library="CPE2">
+<assign>
+<var>${CPE2}</var>
+</assign>
+<msg timestamp="20201127 20:30:22.952" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:22.952" level="TRACE">Return: {'DEV_ONBAORD': True,
+ 'DEV_TEMPALTE_CREATION': True,
+ 'DEV_VRRP_LIB_CONFIG': False,
+ 'DG_CREATION': True,
+ 'Device_name': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073',
+ 'ESP_IP': '20.20.73.26',
+ 'LAN_INTF': 'vni-0/4',
+ 'LAN_IPV6_STATIC': True,
+ 'LCC_dict': {'BLR': '91', 'LON': '44', 'MUM': '1091'},
+ 'LIB1': True,
+ 'MGMT_NW_SBNT': '10.91.140.0/22',
+ 'MIN_SW_VERSION': '16.1R2-S9',
+ 'NODE': 'MUM',
+ 'NO_OF_VRFS': 1,
+ 'ORG_ID': 73,
+ 'ORG_NAME': 'IPC00073',
+ 'POD': 2,
+ 'PST_CREATION': True,
+ 'PS_TEMPLATE_NAME': 'IPC00073-MUM01-NEW-PS-HYBRID1234',
+ 'RR_Clients': {'NV-WC01-N2-BLR': ['NV-WC01-N4-MUM', 'NV-WC01-N5-LON'],
+                'NV-WC02-N4-MUM': ['NV-WC02-N2-BLR', 'NV-WC02-N5-LON']},
+ 'RR_SERVER': ['NV-WC01-N2-BLR', 'NV-WC02-N4-MUM'],
+ 'SOLUTIONS_list': ['SINGLE-CPE-HYBRID',
+                    'SINGLE-CPE-INTERNET-ONLY',
+                    'SINGLE-CPE-MPLS-ONLY',
+                    'SINGLE-CPE-DUAL-INTERNET',
+                    'DUAL-CPE-DUAL-MPLS',
+                    'DUAL-CPE-HYBRID',
+                    'DUAL-CPE-DUAL-INTERNET'],
+ 'STAGING_INTF': 'WAN1',
+ 'STAGING_SERVER': 'NV-WC01-N4-MUM',
+ 'STAGING_WAN': 'MPLS',
+ 'STAGING_WAN_DHCP': False,
+ 'START_LAN_IP_SUBNET': '192.170.1.0/24',
+ 'START_VLAN': 750,
+ 'Serial_Number': 'CPE26Nov27',
+ 'Site_id': 4300,
+ 'Solution_type': 'SINGLE-CPE-HYBRID',
+ 'TRACK_MANAGEMENT_SUBNET': '10.91.113.58/32',
+ 'VNF_IPADDRESS': ['10.91.116.67/32', '10.91.116.68/32'],
+ 'VXLAN_IP': '10.10.73.26',
+ 'WAN1_INTF': 'vni-0/1',
+ 'WAN1_INTF_IP': '172.16.7.102/30',
+ 'WAN1_INTF_NEXTHOP': '172.16.7.101',
+ 'WAN1_IP_ALLOC': 'STATIC',
+ 'WAN2_INTF': 'vni-0/2',
+ 'WAN2_INTF_IP': '172.16.6.102/30',
+ 'WAN2_INTF_NEXTHOP': '172.16.6.101',
+ 'WAN2_IP_ALLOC': 'STATIC',
+ 'cnc': &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C540B22E0&gt;,
+ 'ctlr_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+               'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+               'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'ctlr_list': ['NV-WC01-N2-BLR', 'NV-WC02-N4-MUM'],
+ 'curr_file_dir': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit',
+ 'device_type': 'branch',
+ 'esp_tvi_interface': 147,
+ 'gw_dict': {'BLR': ['NV-GW01-N2-BLR', 'NV-GW02-N2-BLR'],
+             'LON': ['NV-GW01-N5-LON', 'NV-GW02-N5-LON'],
+             'MUM': ['NV-GW01-N4-MUM', 'NV-GW02-N4-MUM']},
+ 'gw_list': [],
+ 'lan': {1: {'bgp_instance_id': '3862',
+             'eighth_host': '192.170.1.8',
+             'eighth_host_ipv6': '2001:192:170:1::8',
+             'fifth_host': '192.170.1.5',
+             'fifth_host_ipv6': '2001:192:170:1::5',
+             'first_host': '192.170.1.1',
+             'first_host_ipv6': '2001:192:170:1::1',
+             'fourth_host': '192.170.1.4',
+             'fourth_host_ipv6': '2001:192:170:1::4',
+             'ipv6_nw': '2001:192:170:1::',
+             'ipv6_nw_with_prefixlen': '2001:192:170:1::/64',
+             'ipv6_prefixlen': '64',
+             'netmask': '255.255.255.0',
+             'ninth_host': '192.170.1.9',
+             'ninth_host_ipv6': '2001:192:170:1::9',
+             'nw': CalcIPv4Network('192.170.1.0/24'),
+             'nw_with_prefixlen': '192.170.1.0/24',
+             'prefixlen': '24',
+             'second_host': '192.170.1.2',
+             'second_host_ipv6': '2001:192:170:1::2',
+             'seventh_host': '192.170.1.7',
+             'seventh_host_ipv6': '2001:192:170:1::7',
+             'sixth_host': '192.170.1.6',
+             'sixth_host_ipv6': '2001:192:170:1::6',
+             'tenth_host': '192.170.1.10',
+             'tenth_host_ipv6': '2001:192:170:1::10',
+             'third_host': '192.170.1.3',
+             'third_host_ipv6': '2001:192:170:1::3',
+             'vlan': 750}},
+ 'lan_vlan': [750],
+ 'log_collector': 'LogCollectors',
+ 'logfile': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit/LOGS/2020_11_27_20_28_31_715421/MAIN.log',
+ 'main_logger': &lt;Logger CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073 (DEBUG)&gt;,
+ 'mgmt_ip': '10.91.240.26',
+ 'nc': &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C540B22E0&gt;,
+ 'ndb': {},
+ 'password': 'versa123',
+ 'ptvi_intf_wc1': 'ptvi146',
+ 'ptvi_intf_wc2': 'ptvi147',
+ 'staging_servers_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+                          'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+                          'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'start_vrf_id': 850,
+ 'topofile': 'Devices.yml',
+ 'username': 'admin',
+ 'vddata_dict': {'GUIpassword': 'Auto@12345',
+                 'GUIusername': 'Automated',
+                 'MIN_SW_VERSION': None,
+                 'device_type': 'versa_director',
+                 'mgmt_ip': '10.91.116.35',
+                 'password': 'Auto@12345',
+                 'username': 'Automated'},
+ 'vdhead': 'https://10.91.116.35:9182',
+ 'vlans': [],
+ 'vxlan_tvi_interface': 146}</msg>
+<msg timestamp="20201127 20:30:22.952" level="INFO">${CPE2} = {'ndb': {}, 'topofile': 'Devices.yml', 'Device_name': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073', 'POD': 2, 'Solution_type': 'SINGLE-CPE-HYBRID', 'Site_id': 4300, 'Serial_Number': 'CPE26Nov27', 'MIN_SW_VE...</msg>
+<status status="PASS" starttime="20201127 20:30:22.952" endtime="20201127 20:30:22.952"></status>
+</kw>
+<kw name="Create Controller List" library="CPE1">
+<arguments>
+<arg>${CPE1['ORG_NAME']}</arg>
+<arg>${CPE1['ORG_ID']}</arg>
+<arg>${CPE1['NO_OF_VRFS']}</arg>
+<arg>${CPE1['NODE']}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:22.952" level="TRACE">Arguments: [ 'IPC00073' | 73 | 1 | 'LON' ]</msg>
+<msg timestamp="20201127 20:30:22.983" level="TRACE">Return: ['NV-WC01-N2-BLR', 'NV-WC02-N4-MUM', 'NV-WC01-N5-LON', 'NV-WC02-N5-LON']</msg>
+<status status="PASS" starttime="20201127 20:30:22.952" endtime="20201127 20:30:22.983"></status>
+</kw>
+<kw name="Create Gateway List" library="CPE1">
+<arguments>
+<arg>${CPE1['ORG_NAME']}</arg>
+<arg>${CPE1['ORG_ID']}</arg>
+<arg>${CPE1['NO_OF_VRFS']}</arg>
+<arg>${CPE1['NODE']}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:22.983" level="TRACE">Arguments: [ 'IPC00073' | 73 | 1 | 'LON' ]</msg>
+<msg timestamp="20201127 20:30:22.999" level="TRACE">Return: ['NV-GW01-N5-LON', 'NV-GW02-N5-LON']</msg>
+<status status="PASS" starttime="20201127 20:30:22.983" endtime="20201127 20:30:22.999"></status>
+</kw>
+<kw name="Create Cpe Data" library="CPE1">
+<msg timestamp="20201127 20:30:22.999" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:22.999" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:22.999" endtime="20201127 20:30:22.999"></status>
+</kw>
+<kw name="Create Controller List" library="CPE2">
+<arguments>
+<arg>${CPE2['ORG_NAME']}</arg>
+<arg>${CPE2['ORG_ID']}</arg>
+<arg>${CPE2['NO_OF_VRFS']}</arg>
+<arg>${CPE2['NODE']}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:22.999" level="TRACE">Arguments: [ 'IPC00073' | 73 | 1 | 'MUM' ]</msg>
+<msg timestamp="20201127 20:30:23.015" level="TRACE">Return: ['NV-WC01-N2-BLR',
+ 'NV-WC02-N4-MUM',
+ 'NV-WC01-N5-LON',
+ 'NV-WC02-N5-LON',
+ 'NV-WC01-N4-MUM']</msg>
+<status status="PASS" starttime="20201127 20:30:22.999" endtime="20201127 20:30:23.015"></status>
+</kw>
+<kw name="Create Gateway List" library="CPE2">
+<arguments>
+<arg>${CPE2['ORG_NAME']}</arg>
+<arg>${CPE2['ORG_ID']}</arg>
+<arg>${CPE2['NO_OF_VRFS']}</arg>
+<arg>${CPE2['NODE']}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:23.015" level="TRACE">Arguments: [ 'IPC00073' | 73 | 1 | 'MUM' ]</msg>
+<msg timestamp="20201127 20:30:23.030" level="TRACE">Return: ['NV-GW01-N5-LON', 'NV-GW02-N5-LON', 'NV-GW01-N4-MUM', 'NV-GW02-N4-MUM']</msg>
+<status status="PASS" starttime="20201127 20:30:23.015" endtime="20201127 20:30:23.030"></status>
+</kw>
+<kw name="Create Cpe Data" library="CPE2">
+<msg timestamp="20201127 20:30:23.030" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:23.030" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:23.030" endtime="20201127 20:30:23.030"></status>
+</kw>
+<kw name="Get Data Dict" library="CPE1">
+<assign>
+<var>${CPE1}</var>
+</assign>
+<msg timestamp="20201127 20:30:23.030" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:23.030" level="TRACE">Return: {'AUTH_KEY': 'CPE11-LON-HYBRD-IPC00073',
+ 'AUTH_STRING': 'CPE11-LON-HYBRD-IPC00073@colt.net',
+ 'DEV_ONBAORD': True,
+ 'DEV_TEMPALTE_CREATION': True,
+ 'DEV_VRRP_LIB_CONFIG': False,
+ 'DG_CREATION': True,
+ 'DG_TEMPLATE_NAME': 'LON_HYBRID01-DG',
+ 'Device_name': 'CPE11-LON-HYBRD-IPC00073',
+ 'ESP_IP': '20.20.73.11',
+ 'FW_PROFILE': 'COMMON-SFW-TEMPLATE',
+ 'GW1_ESP_IP': '60.73.4.11',
+ 'GW1_NAME': 'NV-GW01-N5-LON',
+ 'GW2_ESP_IP': '60.73.4.12',
+ 'GW2_NAME': 'NV-GW02-N5-LON',
+ 'INTF_LAN_SET': 'Intf-LAN1-Zone ',
+ 'LAN_INTF': 'vni-0/4',
+ 'LAN_ST_LAN_SET': 'L-ST-LAN1-VRF-INT-WAN ',
+ 'LCC': '44',
+ 'LCC_dict': {'BLR': '91', 'LON': '44', 'MUM': '1091'},
+ 'LIB1': True,
+ 'MGMT_NW_SBNT': '10.91.140.0/22',
+ 'MIN_SW_VERSION': '16.1R2-S9',
+ 'NODE': 'LON',
+ 'NO_OF_VRFS': 1,
+ 'ORG_ID': 73,
+ 'ORG_NAME': 'IPC00073',
+ 'POD': 2,
+ 'PST_CREATION': True,
+ 'PS_TEMPLATE_NAME': 'LON_HYBRID01',
+ 'RR_Clients': {'NV-WC01-N2-BLR': ['NV-WC01-N4-MUM', 'NV-WC01-N5-LON'],
+                'NV-WC02-N4-MUM': ['NV-WC02-N2-BLR', 'NV-WC02-N5-LON']},
+ 'RR_SERVER': ['NV-WC01-N2-BLR', 'NV-WC02-N4-MUM'],
+ 'SOLUTIONS_list': ['SINGLE-CPE-HYBRID',
+                    'SINGLE-CPE-INTERNET-ONLY',
+                    'SINGLE-CPE-MPLS-ONLY',
+                    'SINGLE-CPE-DUAL-INTERNET',
+                    'DUAL-CPE-DUAL-MPLS',
+                    'DUAL-CPE-HYBRID',
+                    'DUAL-CPE-DUAL-INTERNET'],
+ 'STAGING_INTF': 'WAN1',
+ 'STAGING_SERVER': 'NV-WC01-N4-MUM',
+ 'STAGING_WAN': 'MPLS',
+ 'STAGING_WAN_DHCP': False,
+ 'START_LAN_IP_SUBNET': '192.169.101.0/24',
+ 'START_VLAN': 600,
+ 'Serial_Number': 'CPE11nov27',
+ 'Site_id': 4275,
+ 'Solution_type': 'SINGLE-CPE-HYBRID',
+ 'TRACK_MANAGEMENT_SUBNET': '10.91.113.58/32',
+ 'VNF_IPADDRESS': ['10.91.116.67/32', '10.91.116.68/32'],
+ 'VNF_IPADDRESS1': '10.91.116.67/32',
+ 'VNF_IPADDRESS2': '10.91.116.68/32',
+ 'VXLAN_IP': '10.10.73.11',
+ 'WAN1_INTF': 'vni-0/1',
+ 'WAN1_INTF_IP': '172.16.7.42/30',
+ 'WAN1_INTF_NEXTHOP': '172.16.7.41',
+ 'WAN1_IP_ALLOC': 'STATIC',
+ 'WAN1_NAME': 'MPLS-WAN',
+ 'WAN2_INTF': 'vni-0/2',
+ 'WAN2_INTF_IP': '172.16.6.42/30',
+ 'WAN2_INTF_NEXTHOP': '172.16.6.41',
+ 'WAN2_IP_ALLOC': 'STATIC',
+ 'WAN2_NAME': 'INT-WAN',
+ 'WAN_ST_LAN_SET': 'W-ST-LAN1-VRF-INT-WAN ',
+ 'WC1_ESP_IP': '10.73.64.11',
+ 'WC1_NAME': 'NV-WC01-N5-LON',
+ 'WC1_local_ike_id': 'CPE11-LON-HYBRD-IPC00073@colt.net',
+ 'WC1_local_ike_key': 'CPE11-LON-HYBRD-IPC00073',
+ 'WC2_ESP_IP': '10.73.64.12',
+ 'WC2_NAME': 'NV-WC02-N5-LON',
+ 'WC2_local_ike_id': 'CPE11-LON-HYBRD-IPC00073@colt.net',
+ 'WC2_local_ike_key': 'CPE11-LON-HYBRD-IPC00073',
+ 'cnc': &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C54006E50&gt;,
+ 'ctlr_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+               'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+               'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'ctlr_list': ['NV-WC01-N2-BLR',
+               'NV-WC02-N4-MUM',
+               'NV-WC01-N5-LON',
+               'NV-WC02-N5-LON',
+               'NV-WC01-N4-MUM'],
+ 'curr_file_dir': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit',
+ 'dev_dict': {'ipAddress': '20.20.73.11',
+              'model': 'FWA-2320',
+              'name': 'CPE11-LON-HYBRD-IPC00073',
+              'ownerOrg': 'IPC00073',
+              'packageName': 'versa-flexvnf-20190628-153930-80561de-16.1R2S9-wsm',
+              'ping_status': 'REACHABLE',
+              'serialNo': 'CPE11nov27',
+              'softwareVersion': '16.1-R2-S9 80561de 20190628',
+              'sync_status': 'IN_SYNC',
+              'type': 'branch',
+              'uuid': 'c1e0f817-ef0c-432c-904b-958c36014471'},
+ 'dev_present': 'true',
+ 'device_type': 'branch',
+ 'esp_tvi_interface': 147,
+ 'gw_dict': {'BLR': ['NV-GW01-N2-BLR', 'NV-GW02-N2-BLR'],
+             'LON': ['NV-GW01-N5-LON', 'NV-GW02-N5-LON'],
+             'MUM': ['NV-GW01-N4-MUM', 'NV-GW02-N4-MUM']},
+ 'gw_list': ['NV-GW01-N5-LON',
+             'NV-GW02-N5-LON',
+             'NV-GW01-N4-MUM',
+             'NV-GW02-N4-MUM'],
+ 'lan': {1: {'bgp_instance_id': '3862',
+             'eighth_host': '192.169.101.8',
+             'eighth_host_ipv6': '2001:192:169:101::8',
+             'fifth_host': '192.169.101.5',
+             'fifth_host_ipv6': '2001:192:169:101::5',
+             'first_host': '192.169.101.1',
+             'first_host_ipv6': '2001:192:169:101::1',
+             'fourth_host': '192.169.101.4',
+             'fourth_host_ipv6': '2001:192:169:101::4',
+             'ipv6_nw': '2001:192:169:101::',
+             'ipv6_nw_with_prefixlen': '2001:192:169:101::/64',
+             'ipv6_prefixlen': '64',
+             'netmask': '255.255.255.0',
+             'ninth_host': '192.169.101.9',
+             'ninth_host_ipv6': '2001:192:169:101::9',
+             'nw': CalcIPv4Network('192.169.101.0/24'),
+             'nw_with_prefixlen': '192.169.101.0/24',
+             'prefixlen': '24',
+             'second_host': '192.169.101.2',
+             'second_host_ipv6': '2001:192:169:101::2',
+             'seventh_host': '192.169.101.7',
+             'seventh_host_ipv6': '2001:192:169:101::7',
+             'sixth_host': '192.169.101.6',
+             'sixth_host_ipv6': '2001:192:169:101::6',
+             'tenth_host': '192.169.101.10',
+             'tenth_host_ipv6': '2001:192:169:101::10',
+             'third_host': '192.169.101.3',
+             'third_host_ipv6': '2001:192:169:101::3',
+             'vlan': 600}},
+ 'lan_vlan': [600],
+ 'log_collector': 'LogCollectors',
+ 'logfile': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit/LOGS/2020_11_27_20_28_31_715421/MAIN.log',
+ 'main_logger': &lt;Logger CPE11-LON-HYBRD-IPC00073 (DEBUG)&gt;,
+ 'mgmt_ip': '10.91.240.11',
+ 'nc': &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C54006E50&gt;,
+ 'ndb': {'NV-GW01-N5-LON': {'AUTH_KEY': 'NV-GW01-N5-LON',
+                            'AUTH_STRING': 'NV-GW01-N5-LON@IPC00073.com',
+                            'DEVICE_NAME': 'NV-GW01-N5-LON',
+                            'DEVICE_TYPE': 'GW',
+                            'ESP_IP': '60.73.4.11',
+                            'GW_NUMBER': 1,
+                            'INTERNET_INTERFACE': 'vni-0/1.396',
+                            'LCC': '44',
+                            'LOG_COLLECTOR1_ADDRESS': '10.91.116.71',
+                            'LOG_COLLECTOR2_ADDRESS': '10.91.116.72',
+                            'MPLS_INTERFACE': 'vni-0/1.397',
+                            'NNI1_GATEWAY_ADDRESS': '193.73.11.1',
+                            'NNI1_INTERFACE_ADDRESS': '193.73.11.2',
+                            'NNI1_SUBNET': '193.73.11.0/30',
+                            'NODE': 'LON',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'PAIRED_TVI_SUBNET': '10.73.47.64/30',
+                            'POD': 2,
+                            'VXLAN_IP': '50.73.4.11',
+                            'WC_list': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON']},
+         'NV-GW02-N5-LON': {'AUTH_KEY': 'NV-GW02-N5-LON',
+                            'AUTH_STRING': 'NV-GW02-N5-LON@IPC00073.com',
+                            'DEVICE_NAME': 'NV-GW02-N5-LON',
+                            'DEVICE_TYPE': 'GW',
+                            'ESP_IP': '60.73.4.12',
+                            'GW_NUMBER': 2,
+                            'INTERNET_INTERFACE': 'vni-0/1.398',
+                            'LCC': '44',
+                            'LOG_COLLECTOR1_ADDRESS': '10.91.116.71',
+                            'LOG_COLLECTOR2_ADDRESS': '10.91.116.72',
+                            'MPLS_INTERFACE': 'vni-0/1.399',
+                            'NNI1_GATEWAY_ADDRESS': '193.73.12.1',
+                            'NNI1_INTERFACE_ADDRESS': '193.73.12.2',
+                            'NNI1_SUBNET': '193.73.12.0/30',
+                            'NODE': 'LON',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'PAIRED_TVI_SUBNET': '10.73.47.64/30',
+                            'POD': 2,
+                            'VXLAN_IP': '50.73.4.12',
+                            'WC_list': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON']},
+         'NV-WC01-N2-BLR': {'AUTH_KEY': 'NV-WC01-N2-BLR',
+                            'AUTH_STRING': 'NV-WC01-N2-BLR@IPC00073.com',
+                            'DEVICE_NAME': 'NV-WC01-N2-BLR',
+                            'DEVICE_TYPE': 'WC',
+                            'ESP_IP': '10.73.64.23',
+                            'LCC': '44',
+                            'MANAGEMENT_NW_SUBNET': '10.91.140.0/22',
+                            'NODE': 'BLR',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'POD': 2,
+                            'RR_CLIENTS': ['NV-WC01-N4-MUM', 'NV-WC01-N5-LON'],
+                            'VNF_GWS': ['NV-GW01-N2-BLR', 'NV-GW02-N2-BLR'],
+                            'VXLAN_IP': '10.73.0.23'},
+         'NV-WC01-N5-LON': {'AUTH_KEY': 'NV-WC01-N5-LON',
+                            'AUTH_STRING': 'NV-WC01-N5-LON@IPC00073.com',
+                            'DEVICE_NAME': 'NV-WC01-N5-LON',
+                            'DEVICE_TYPE': 'WC',
+                            'ESP_IP': '10.73.64.11',
+                            'LCC': '44',
+                            'MANAGEMENT_NW_SUBNET': '10.91.140.0/22',
+                            'NODE': 'LON',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'POD': 2,
+                            'RR_SERVER': 'NV-WC01-N2-BLR',
+                            'VNF_GWS': ['NV-GW01-N5-LON', 'NV-GW02-N5-LON'],
+                            'VXLAN_IP': '10.73.0.11'},
+         'NV-WC02-N4-MUM': {'AUTH_KEY': 'NV-WC02-N4-MUM',
+                            'AUTH_STRING': 'NV-WC02-N4-MUM@IPC00073.com',
+                            'DEVICE_NAME': 'NV-WC02-N4-MUM',
+                            'DEVICE_TYPE': 'WC',
+                            'ESP_IP': '10.73.64.6',
+                            'LCC': '44',
+                            'MANAGEMENT_NW_SUBNET': '10.91.140.0/22',
+                            'NODE': 'MUM',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'POD': 2,
+                            'RR_CLIENTS': ['NV-WC02-N2-BLR', 'NV-WC02-N5-LON'],
+                            'VNF_GWS': ['NV-GW01-N4-MUM', 'NV-GW02-N4-MUM'],
+                            'VXLAN_IP': '10.73.0.6'},
+         'NV-WC02-N5-LON': {'AUTH_KEY': 'NV-WC02-N5-LON',
+                            'AUTH_STRING': 'NV-WC02-N5-LON@IPC00073.com',
+                            'DEVICE_NAME': 'NV-WC02-N5-LON',
+                            'DEVICE_TYPE': 'WC',
+                            'ESP_IP': '10.73.64.12',
+                            'LCC': '44',
+                            'MANAGEMENT_NW_SUBNET': '10.91.140.0/22',
+                            'NODE': 'LON',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'POD': 2,
+                            'RR_SERVER': 'NV-WC02-N4-MUM',
+                            'VNF_GWS': ['NV-GW01-N5-LON', 'NV-GW02-N5-LON'],
+                            'VXLAN_IP': '10.73.0.12'}},
+ 'password': 'versa123',
+ 'ptvi_intf_wc1': 'ptvi146',
+ 'ptvi_intf_wc2': 'ptvi147',
+ 'staging_servers_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+                          'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+                          'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'start_vrf_id': 850,
+ 'topofile': 'Devices.yml',
+ 'username': 'admin',
+ 'vddata_dict': {'GUIpassword': 'Auto@12345',
+                 'GUIusername': 'Automated',
+                 'MIN_SW_VERSION': None,
+                 'device_type': 'versa_director',
+                 'mgmt_ip': '10.91.116.35',
+                 'password': 'Auto@12345',
+                 'username': 'Automated'},
+ 'vdhead': 'https://10.91.116.35:9182',
+ 'vlans': [],
+ 'vxlan_tvi_interface': 146}</msg>
+<msg timestamp="20201127 20:30:23.030" level="INFO">${CPE1} = {'ndb': {'NV-WC01-N2-BLR': {'DEVICE_NAME': 'NV-WC01-N2-BLR', 'POD': 2, 'NODE': 'BLR', 'MANAGEMENT_NW_SUBNET': '10.91.140.0/22', 'ESP_IP': '10.73.64.23', 'VXLAN_IP': '10.73.0.23', 'AUTH_STRING': 'NV-WC...</msg>
+<status status="PASS" starttime="20201127 20:30:23.030" endtime="20201127 20:30:23.030"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${CPE1}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:23.046" level="TRACE">Arguments: [ '${CPE1}' ]</msg>
+<msg timestamp="20201127 20:30:23.046" level="INFO">${CPE1} = {'ndb': {'NV-WC01-N2-BLR': {'DEVICE_NAME': 'NV-WC01-N2-BLR', 'POD': 2, 'NODE': 'BLR', 'MANAGEMENT_NW_SUBNET': '10.91.140.0/22', 'ESP_IP': '10.73.64.23', 'VXLAN_IP': '10.73.0.23', 'AUTH_STRING': 'NV-WC...</msg>
+<msg timestamp="20201127 20:30:23.046" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:23.046" endtime="20201127 20:30:23.046"></status>
+</kw>
+<kw name="Get Data Dict" library="CPE2">
+<assign>
+<var>${CPE2}</var>
+</assign>
+<msg timestamp="20201127 20:30:23.046" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:23.046" level="TRACE">Return: {'AUTH_KEY': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073',
+ 'AUTH_STRING': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073@colt.net',
+ 'DEV_ONBAORD': True,
+ 'DEV_TEMPALTE_CREATION': True,
+ 'DEV_VRRP_LIB_CONFIG': False,
+ 'DG_CREATION': True,
+ 'DG_TEMPLATE_NAME': 'IPC00073-MUM01-NEW-PS-HYBRID1234-DG',
+ 'Device_name': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073',
+ 'ESP_IP': '20.20.73.26',
+ 'FW_PROFILE': 'COMMON-SFW-TEMPLATE',
+ 'GW1_ESP_IP': '40.73.4.1',
+ 'GW1_NAME': 'NV-GW01-N4-MUM',
+ 'GW2_ESP_IP': '40.73.4.2',
+ 'GW2_NAME': 'NV-GW02-N4-MUM',
+ 'INTF_LAN_SET': 'Intf-LAN1-Zone ',
+ 'LAN_INTF': 'vni-0/4',
+ 'LAN_IPV6_STATIC': True,
+ 'LAN_ST_LAN_SET': 'L-ST-LAN1-VRF-INT-WAN ',
+ 'LCC': '1091',
+ 'LCC_dict': {'BLR': '91', 'LON': '44', 'MUM': '1091'},
+ 'LIB1': True,
+ 'MGMT_NW_SBNT': '10.91.140.0/22',
+ 'MIN_SW_VERSION': '16.1R2-S9',
+ 'NODE': 'MUM',
+ 'NO_OF_VRFS': 1,
+ 'ORG_ID': 73,
+ 'ORG_NAME': 'IPC00073',
+ 'POD': 2,
+ 'PST_CREATION': True,
+ 'PS_TEMPLATE_NAME': 'IPC00073-MUM01-NEW-PS-HYBRID1234',
+ 'RR_Clients': {'NV-WC01-N2-BLR': ['NV-WC01-N4-MUM', 'NV-WC01-N5-LON'],
+                'NV-WC02-N4-MUM': ['NV-WC02-N2-BLR', 'NV-WC02-N5-LON']},
+ 'RR_SERVER': ['NV-WC01-N2-BLR', 'NV-WC02-N4-MUM'],
+ 'SOLUTIONS_list': ['SINGLE-CPE-HYBRID',
+                    'SINGLE-CPE-INTERNET-ONLY',
+                    'SINGLE-CPE-MPLS-ONLY',
+                    'SINGLE-CPE-DUAL-INTERNET',
+                    'DUAL-CPE-DUAL-MPLS',
+                    'DUAL-CPE-HYBRID',
+                    'DUAL-CPE-DUAL-INTERNET'],
+ 'STAGING_INTF': 'WAN1',
+ 'STAGING_SERVER': 'NV-WC01-N4-MUM',
+ 'STAGING_WAN': 'MPLS',
+ 'STAGING_WAN_DHCP': False,
+ 'START_LAN_IP_SUBNET': '192.170.1.0/24',
+ 'START_VLAN': 750,
+ 'Serial_Number': 'CPE26Nov27',
+ 'Site_id': 4300,
+ 'Solution_type': 'SINGLE-CPE-HYBRID',
+ 'TRACK_MANAGEMENT_SUBNET': '10.91.113.58/32',
+ 'VNF_IPADDRESS': ['10.91.116.67/32', '10.91.116.68/32'],
+ 'VNF_IPADDRESS1': '10.91.116.67/32',
+ 'VNF_IPADDRESS2': '10.91.116.68/32',
+ 'VXLAN_IP': '10.10.73.26',
+ 'WAN1_INTF': 'vni-0/1',
+ 'WAN1_INTF_IP': '172.16.7.102/30',
+ 'WAN1_INTF_NEXTHOP': '172.16.7.101',
+ 'WAN1_IP_ALLOC': 'STATIC',
+ 'WAN1_NAME': 'MPLS-WAN',
+ 'WAN2_INTF': 'vni-0/2',
+ 'WAN2_INTF_IP': '172.16.6.102/30',
+ 'WAN2_INTF_NEXTHOP': '172.16.6.101',
+ 'WAN2_IP_ALLOC': 'STATIC',
+ 'WAN2_NAME': 'INT-WAN',
+ 'WAN_ST_LAN_SET': 'W-ST-LAN1-VRF-INT-WAN ',
+ 'WC1_ESP_IP': '10.73.64.5',
+ 'WC1_NAME': 'NV-WC01-N4-MUM',
+ 'WC1_local_ike_id': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073@colt.net',
+ 'WC1_local_ike_key': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073',
+ 'WC2_ESP_IP': '10.73.64.6',
+ 'WC2_NAME': 'NV-WC02-N4-MUM',
+ 'WC2_local_ike_id': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073@colt.net',
+ 'WC2_local_ike_key': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073',
+ 'cnc': &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C540B22E0&gt;,
+ 'ctlr_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+               'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+               'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'ctlr_list': ['NV-WC01-N2-BLR',
+               'NV-WC02-N4-MUM',
+               'NV-WC01-N5-LON',
+               'NV-WC02-N5-LON',
+               'NV-WC01-N4-MUM'],
+ 'curr_file_dir': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit',
+ 'device_type': 'branch',
+ 'esp_tvi_interface': 147,
+ 'gw_dict': {'BLR': ['NV-GW01-N2-BLR', 'NV-GW02-N2-BLR'],
+             'LON': ['NV-GW01-N5-LON', 'NV-GW02-N5-LON'],
+             'MUM': ['NV-GW01-N4-MUM', 'NV-GW02-N4-MUM']},
+ 'gw_list': ['NV-GW01-N5-LON',
+             'NV-GW02-N5-LON',
+             'NV-GW01-N4-MUM',
+             'NV-GW02-N4-MUM'],
+ 'lan': {1: {'bgp_instance_id': '3862',
+             'eighth_host': '192.170.1.8',
+             'eighth_host_ipv6': '2001:192:170:1::8',
+             'fifth_host': '192.170.1.5',
+             'fifth_host_ipv6': '2001:192:170:1::5',
+             'first_host': '192.170.1.1',
+             'first_host_ipv6': '2001:192:170:1::1',
+             'fourth_host': '192.170.1.4',
+             'fourth_host_ipv6': '2001:192:170:1::4',
+             'ipv6_nw': '2001:192:170:1::',
+             'ipv6_nw_with_prefixlen': '2001:192:170:1::/64',
+             'ipv6_prefixlen': '64',
+             'netmask': '255.255.255.0',
+             'ninth_host': '192.170.1.9',
+             'ninth_host_ipv6': '2001:192:170:1::9',
+             'nw': CalcIPv4Network('192.170.1.0/24'),
+             'nw_with_prefixlen': '192.170.1.0/24',
+             'prefixlen': '24',
+             'second_host': '192.170.1.2',
+             'second_host_ipv6': '2001:192:170:1::2',
+             'seventh_host': '192.170.1.7',
+             'seventh_host_ipv6': '2001:192:170:1::7',
+             'sixth_host': '192.170.1.6',
+             'sixth_host_ipv6': '2001:192:170:1::6',
+             'tenth_host': '192.170.1.10',
+             'tenth_host_ipv6': '2001:192:170:1::10',
+             'third_host': '192.170.1.3',
+             'third_host_ipv6': '2001:192:170:1::3',
+             'vlan': 750}},
+ 'lan_vlan': [750],
+ 'log_collector': 'LogCollectors',
+ 'logfile': 'C:\\Softwares_mine\\Code_base\\NOVITAS_SDWAN_AUTOMATION_py3\\csit/LOGS/2020_11_27_20_28_31_715421/MAIN.log',
+ 'main_logger': &lt;Logger CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073 (DEBUG)&gt;,
+ 'mgmt_ip': '10.91.240.26',
+ 'nc': &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C540B22E0&gt;,
+ 'ndb': {'NV-GW01-N4-MUM': {'AUTH_KEY': 'NV-GW01-N4-MUM',
+                            'AUTH_STRING': 'NV-GW01-N4-MUM@IPC00073.com',
+                            'DEVICE_NAME': 'NV-GW01-N4-MUM',
+                            'DEVICE_TYPE': 'GW',
+                            'ESP_IP': '40.73.4.1',
+                            'GW_NUMBER': 1,
+                            'INTERNET_INTERFACE': 'vni-0/1.411',
+                            'LCC': '1091',
+                            'LOG_COLLECTOR1_ADDRESS': '10.91.116.71',
+                            'LOG_COLLECTOR2_ADDRESS': '10.91.116.72',
+                            'MPLS_INTERFACE': 'vni-0/1.412',
+                            'NNI1_GATEWAY_ADDRESS': '193.73.9.1',
+                            'NNI1_INTERFACE_ADDRESS': '193.73.9.2',
+                            'NNI1_SUBNET': '193.73.9.0/30',
+                            'NODE': 'MUM',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'PAIRED_TVI_SUBNET': '10.73.47.64/30',
+                            'POD': 2,
+                            'VXLAN_IP': '30.73.4.1',
+                            'WC_list': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+         'NV-GW01-N5-LON': {'AUTH_KEY': 'NV-GW01-N5-LON',
+                            'AUTH_STRING': 'NV-GW01-N5-LON@IPC00073.com',
+                            'DEVICE_NAME': 'NV-GW01-N5-LON',
+                            'DEVICE_TYPE': 'GW',
+                            'ESP_IP': '60.73.4.11',
+                            'GW_NUMBER': 1,
+                            'INTERNET_INTERFACE': 'vni-0/1.396',
+                            'LCC': '1091',
+                            'LOG_COLLECTOR1_ADDRESS': '10.91.116.71',
+                            'LOG_COLLECTOR2_ADDRESS': '10.91.116.72',
+                            'MPLS_INTERFACE': 'vni-0/1.397',
+                            'NNI1_GATEWAY_ADDRESS': '193.73.11.1',
+                            'NNI1_INTERFACE_ADDRESS': '193.73.11.2',
+                            'NNI1_SUBNET': '193.73.11.0/30',
+                            'NODE': 'LON',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'PAIRED_TVI_SUBNET': '10.73.47.64/30',
+                            'POD': 2,
+                            'VXLAN_IP': '50.73.4.11',
+                            'WC_list': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON']},
+         'NV-GW02-N4-MUM': {'AUTH_KEY': 'NV-GW02-N4-MUM',
+                            'AUTH_STRING': 'NV-GW02-N4-MUM@IPC00073.com',
+                            'DEVICE_NAME': 'NV-GW02-N4-MUM',
+                            'DEVICE_TYPE': 'GW',
+                            'ESP_IP': '40.73.4.2',
+                            'GW_NUMBER': 2,
+                            'INTERNET_INTERFACE': 'vni-0/1.409',
+                            'LCC': '1091',
+                            'LOG_COLLECTOR1_ADDRESS': '10.91.116.71',
+                            'LOG_COLLECTOR2_ADDRESS': '10.91.116.72',
+                            'MPLS_INTERFACE': 'vni-0/1.410',
+                            'NNI1_GATEWAY_ADDRESS': '193.73.10.1',
+                            'NNI1_INTERFACE_ADDRESS': '193.73.10.2',
+                            'NNI1_SUBNET': '193.73.10.0/30',
+                            'NODE': 'MUM',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'PAIRED_TVI_SUBNET': '10.73.47.64/30',
+                            'POD': 2,
+                            'VXLAN_IP': '30.73.4.2',
+                            'WC_list': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+         'NV-GW02-N5-LON': {'AUTH_KEY': 'NV-GW02-N5-LON',
+                            'AUTH_STRING': 'NV-GW02-N5-LON@IPC00073.com',
+                            'DEVICE_NAME': 'NV-GW02-N5-LON',
+                            'DEVICE_TYPE': 'GW',
+                            'ESP_IP': '60.73.4.12',
+                            'GW_NUMBER': 2,
+                            'INTERNET_INTERFACE': 'vni-0/1.398',
+                            'LCC': '1091',
+                            'LOG_COLLECTOR1_ADDRESS': '10.91.116.71',
+                            'LOG_COLLECTOR2_ADDRESS': '10.91.116.72',
+                            'MPLS_INTERFACE': 'vni-0/1.399',
+                            'NNI1_GATEWAY_ADDRESS': '193.73.12.1',
+                            'NNI1_INTERFACE_ADDRESS': '193.73.12.2',
+                            'NNI1_SUBNET': '193.73.12.0/30',
+                            'NODE': 'LON',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'PAIRED_TVI_SUBNET': '10.73.47.64/30',
+                            'POD': 2,
+                            'VXLAN_IP': '50.73.4.12',
+                            'WC_list': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON']},
+         'NV-WC01-N2-BLR': {'AUTH_KEY': 'NV-WC01-N2-BLR',
+                            'AUTH_STRING': 'NV-WC01-N2-BLR@IPC00073.com',
+                            'DEVICE_NAME': 'NV-WC01-N2-BLR',
+                            'DEVICE_TYPE': 'WC',
+                            'ESP_IP': '10.73.64.23',
+                            'LCC': '1091',
+                            'MANAGEMENT_NW_SUBNET': '10.91.140.0/22',
+                            'NODE': 'BLR',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'POD': 2,
+                            'RR_CLIENTS': ['NV-WC01-N4-MUM', 'NV-WC01-N5-LON'],
+                            'VNF_GWS': ['NV-GW01-N2-BLR', 'NV-GW02-N2-BLR'],
+                            'VXLAN_IP': '10.73.0.23'},
+         'NV-WC01-N4-MUM': {'AUTH_KEY': 'NV-WC01-N4-MUM',
+                            'AUTH_STRING': 'NV-WC01-N4-MUM@IPC00073.com',
+                            'DEVICE_NAME': 'NV-WC01-N4-MUM',
+                            'DEVICE_TYPE': 'WC',
+                            'ESP_IP': '10.73.64.5',
+                            'LCC': '1091',
+                            'MANAGEMENT_NW_SUBNET': '10.91.140.0/22',
+                            'NODE': 'MUM',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'POD': 2,
+                            'RR_SERVER': 'NV-WC01-N2-BLR',
+                            'VNF_GWS': ['NV-GW01-N4-MUM', 'NV-GW02-N4-MUM'],
+                            'VXLAN_IP': '10.73.0.5'},
+         'NV-WC01-N5-LON': {'AUTH_KEY': 'NV-WC01-N5-LON',
+                            'AUTH_STRING': 'NV-WC01-N5-LON@IPC00073.com',
+                            'DEVICE_NAME': 'NV-WC01-N5-LON',
+                            'DEVICE_TYPE': 'WC',
+                            'ESP_IP': '10.73.64.11',
+                            'LCC': '1091',
+                            'MANAGEMENT_NW_SUBNET': '10.91.140.0/22',
+                            'NODE': 'LON',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'POD': 2,
+                            'RR_SERVER': 'NV-WC01-N2-BLR',
+                            'VNF_GWS': ['NV-GW01-N5-LON', 'NV-GW02-N5-LON'],
+                            'VXLAN_IP': '10.73.0.11'},
+         'NV-WC02-N4-MUM': {'AUTH_KEY': 'NV-WC02-N4-MUM',
+                            'AUTH_STRING': 'NV-WC02-N4-MUM@IPC00073.com',
+                            'DEVICE_NAME': 'NV-WC02-N4-MUM',
+                            'DEVICE_TYPE': 'WC',
+                            'ESP_IP': '10.73.64.6',
+                            'LCC': '1091',
+                            'MANAGEMENT_NW_SUBNET': '10.91.140.0/22',
+                            'NODE': 'MUM',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'POD': 2,
+                            'RR_CLIENTS': ['NV-WC02-N2-BLR', 'NV-WC02-N5-LON'],
+                            'VNF_GWS': ['NV-GW01-N4-MUM', 'NV-GW02-N4-MUM'],
+                            'VXLAN_IP': '10.73.0.6'},
+         'NV-WC02-N5-LON': {'AUTH_KEY': 'NV-WC02-N5-LON',
+                            'AUTH_STRING': 'NV-WC02-N5-LON@IPC00073.com',
+                            'DEVICE_NAME': 'NV-WC02-N5-LON',
+                            'DEVICE_TYPE': 'WC',
+                            'ESP_IP': '10.73.64.12',
+                            'LCC': '1091',
+                            'MANAGEMENT_NW_SUBNET': '10.91.140.0/22',
+                            'NODE': 'LON',
+                            'ORG_ID': '73',
+                            'ORG_NAME': 'IPC00073',
+                            'POD': 2,
+                            'RR_SERVER': 'NV-WC02-N4-MUM',
+                            'VNF_GWS': ['NV-GW01-N5-LON', 'NV-GW02-N5-LON'],
+                            'VXLAN_IP': '10.73.0.12'}},
+ 'password': 'versa123',
+ 'ptvi_intf_wc1': 'ptvi146',
+ 'ptvi_intf_wc2': 'ptvi147',
+ 'staging_servers_dict': {'BLR': ['NV-WC01-N2-BLR', 'NV-WC02-N2-BLR'],
+                          'LON': ['NV-WC01-N5-LON', 'NV-WC02-N5-LON'],
+                          'MUM': ['NV-WC01-N4-MUM', 'NV-WC02-N4-MUM']},
+ 'start_vrf_id': 850,
+ 'topofile': 'Devices.yml',
+ 'username': 'admin',
+ 'vddata_dict': {'GUIpassword': 'Auto@12345',
+                 'GUIusername': 'Automated',
+                 'MIN_SW_VERSION': None,
+                 'device_type': 'versa_director',
+                 'mgmt_ip': '10.91.116.35',
+                 'password': 'Auto@12345',
+                 'username': 'Automated'},
+ 'vdhead': 'https://10.91.116.35:9182',
+ 'vlans': [],
+ 'vxlan_tvi_interface': 146}</msg>
+<msg timestamp="20201127 20:30:23.046" level="INFO">${CPE2} = {'ndb': {'NV-WC01-N2-BLR': {'DEVICE_NAME': 'NV-WC01-N2-BLR', 'POD': 2, 'NODE': 'BLR', 'MANAGEMENT_NW_SUBNET': '10.91.140.0/22', 'ESP_IP': '10.73.64.23', 'VXLAN_IP': '10.73.0.23', 'AUTH_STRING': 'NV-WC...</msg>
+<status status="PASS" starttime="20201127 20:30:23.046" endtime="20201127 20:30:23.046"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${CPE2}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:23.053" level="TRACE">Arguments: [ '${CPE2}' ]</msg>
+<msg timestamp="20201127 20:30:23.053" level="INFO">${CPE2} = {'ndb': {'NV-WC01-N2-BLR': {'DEVICE_NAME': 'NV-WC01-N2-BLR', 'POD': 2, 'NODE': 'BLR', 'MANAGEMENT_NW_SUBNET': '10.91.140.0/22', 'ESP_IP': '10.73.64.23', 'VXLAN_IP': '10.73.0.23', 'AUTH_STRING': 'NV-WC...</msg>
+<msg timestamp="20201127 20:30:23.053" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:23.046" endtime="20201127 20:30:23.053"></status>
+</kw>
+<kw name="VM Pre Op" library="VM1">
+<msg timestamp="20201127 20:30:23.053" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:23.131" level="DEBUG">Adding ssh-ed25519 host key for 10.91.125.181: b'5069f436e0563c6eefeef785ce2cb013'</msg>
+<msg timestamp="20201127 20:30:23.215" level="DEBUG">[chan 0] Max packet in: 32768 bytes</msg>
+<msg timestamp="20201127 20:30:24.802" level="DEBUG">read_channel: Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-178-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+141 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.5 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Fri Nov 27 17:39:07 2020 from 10.91.194.9
+sathish@VM1:~$ </msg>
+<msg timestamp="20201127 20:30:24.903" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:26.908" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:27.008" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:27.008" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:27.108" level="DEBUG">read_channel: 
+sathish@VM1:~$ </msg>
+<msg timestamp="20201127 20:30:27.309" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:27.309" level="DEBUG">[find_prompt()]: prompt is sathish@VM1:~$</msg>
+<msg timestamp="20201127 20:30:27.725" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:27.841" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:27.841" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:27.941" level="DEBUG">read_channel: 
+sathish@VM1:~$ </msg>
+<msg timestamp="20201127 20:30:28.141" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:28.141" level="DEBUG">[find_prompt()]: prompt is sathish@VM1:~$</msg>
+<msg timestamp="20201127 20:30:28.141" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:28.141" level="DEBUG">Pattern is: sathish@VM1:\~</msg>
+<msg timestamp="20201127 20:30:28.141" level="DEBUG">_read_channel_expect read_data: 
+</msg>
+<msg timestamp="20201127 20:30:28.241" level="DEBUG">_read_channel_expect read_data: sathish@VM1:~$ </msg>
+<msg timestamp="20201127 20:30:28.241" level="DEBUG">Pattern found: sathish@VM1:\~ 
+sathish@VM1:~$ </msg>
+<msg timestamp="20201127 20:30:28.241" level="DEBUG">write_channel: b'sudo -s\n'</msg>
+<msg timestamp="20201127 20:30:28.542" level="DEBUG">read_channel: sudo -s
+[sudo] password for sathish: </msg>
+<msg timestamp="20201127 20:30:28.542" level="DEBUG">write_channel: b'sathish\n'</msg>
+<msg timestamp="20201127 20:30:28.642" level="DEBUG">read_channel: 
+</msg>
+<msg timestamp="20201127 20:30:28.642" level="DEBUG">Clear buffer detects data in the channel</msg>
+<msg timestamp="20201127 20:30:28.842" level="DEBUG">read_channel: root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:28.842" level="DEBUG">Clear buffer detects data in the channel</msg>
+<msg timestamp="20201127 20:30:29.243" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:29.243" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:29.343" level="DEBUG">read_channel: 
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:29.559" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:29.559" level="DEBUG">[find_prompt()]: prompt is root@VM1:~#</msg>
+<msg timestamp="20201127 20:30:29.559" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:29.559" level="DEBUG">Pattern is: root@VM1:\~</msg>
+<msg timestamp="20201127 20:30:29.565" level="DEBUG">_read_channel_expect read_data: 
+</msg>
+<msg timestamp="20201127 20:30:29.681" level="DEBUG">_read_channel_expect read_data: root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:29.681" level="DEBUG">Pattern found: root@VM1:\~ 
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:29.781" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:29.781" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:29.881" level="DEBUG">read_channel: 
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:30.082" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:30.082" level="DEBUG">[find_prompt()]: prompt is root@VM1:~#</msg>
+<msg timestamp="20201127 20:30:30.382" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:30.382" level="DEBUG">write_channel: b'sudo ifconfig ens33 up\n'</msg>
+<msg timestamp="20201127 20:30:30.382" level="DEBUG">Pattern is: sudo\ ifconfig\ ens33\ up</msg>
+<msg timestamp="20201127 20:30:30.382" level="DEBUG">_read_channel_expect read_data: su</msg>
+<msg timestamp="20201127 20:30:30.498" level="DEBUG">_read_channel_expect read_data: do ifconfig ens33 up
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:30.498" level="DEBUG">Pattern found: sudo\ ifconfig\ ens33\ up sudo ifconfig ens33 up
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:30.798" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:30.798" level="DEBUG">write_channel: b'sudo vconfig add ens33 600\n'</msg>
+<msg timestamp="20201127 20:30:30.798" level="DEBUG">Pattern is: sudo\ vconfig\ add\ ens33\ 600</msg>
+<msg timestamp="20201127 20:30:30.813" level="DEBUG">_read_channel_expect read_data: su</msg>
+<msg timestamp="20201127 20:30:30.914" level="DEBUG">_read_channel_expect read_data: do vconfig add ens33 600
+ERROR: trying to add VLAN #600 to IF -:ens33:-  error: File exists
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:30.914" level="DEBUG">Pattern found: sudo\ vconfig\ add\ ens33\ 600 sudo vconfig add ens33 600
+ERROR: trying to add VLAN #600 to IF -:ens33:-  error: File exists
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:31.230" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:31.230" level="DEBUG">write_channel: b'sudo ifconfig ens33.600 up\n'</msg>
+<msg timestamp="20201127 20:30:31.230" level="DEBUG">Pattern is: sudo\ ifconfig\ ens33\.600\ up</msg>
+<msg timestamp="20201127 20:30:31.230" level="DEBUG">_read_channel_expect read_data: sudo ifconfig ens33.600 up
+</msg>
+<msg timestamp="20201127 20:30:31.230" level="DEBUG">Pattern found: sudo\ ifconfig\ ens33\.600\ up sudo ifconfig ens33.600 up
+</msg>
+<msg timestamp="20201127 20:30:31.430" level="DEBUG">read_channel: root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:31.746" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:31.746" level="DEBUG">write_channel: b'sudo ifconfig ens33.600 192.169.101.2 netmask 255.255.255.0\n'</msg>
+<msg timestamp="20201127 20:30:31.746" level="DEBUG">Pattern is: sudo\ ifconfig\ ens33\.600\ 192\.169\.101\.2\ netmask\ 255\.255\.255\.0</msg>
+<msg timestamp="20201127 20:30:31.746" level="DEBUG">_read_channel_expect read_data: sudo ifconfig ens33.600 192.169.101.2 netmask 255.255.255.0
+</msg>
+<msg timestamp="20201127 20:30:31.746" level="DEBUG">Pattern found: sudo\ ifconfig\ ens33\.600\ 192\.169\.101\.2\ netmask\ 255\.255\.255\.0 sudo ifconfig ens33.600 192.169.101.2 netmask 255.255.255.0
+</msg>
+<msg timestamp="20201127 20:30:31.947" level="DEBUG">read_channel: root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:32.263" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:32.263" level="DEBUG">write_channel: b'sudo ifconfig ens33.600 inet6 add 2001:192:169:101::2/64\n'</msg>
+<msg timestamp="20201127 20:30:32.263" level="DEBUG">Pattern is: sudo\ ifconfig\ ens33\.600\ inet6\ add\ 2001:192:169:101::2/64</msg>
+<msg timestamp="20201127 20:30:32.269" level="DEBUG">_read_channel_expect read_data: su</msg>
+<msg timestamp="20201127 20:30:32.385" level="DEBUG">_read_channel_expect read_data: do ifconfig ens33.600 inet6 add 2001:192:169:101::2/64
+SIOCSIFADDR: File exists
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:32.385" level="DEBUG">Pattern found: sudo\ ifconfig\ ens33\.600\ inet6\ add\ 2001:192:169:101::2/64 sudo ifconfig ens33.600 inet6 add 2001:192:169:101::2/64
+SIOCSIFADDR: File exists
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:32.385" level="INFO">sathish@VM1:~$
+linux: root@VM1:~#
+None</msg>
+<msg timestamp="20201127 20:30:32.385" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:23.053" endtime="20201127 20:30:32.385"></status>
+</kw>
+<kw name="VM Pre Op" library="VM2">
+<msg timestamp="20201127 20:30:32.385" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:32.469" level="DEBUG">Adding ssh-ed25519 host key for 10.91.125.184: b'aed820eb3e88e17b6683ce014419f0c7'</msg>
+<msg timestamp="20201127 20:30:32.569" level="DEBUG">[chan 0] Max packet in: 32768 bytes</msg>
+<msg timestamp="20201127 20:30:33.987" level="DEBUG">read_channel: Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-187-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+127 packages can be updated.
+1 update is a security update.
+
+New release '18.04.5 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Fri Nov 27 07:09:17 2020 from 10.91.194.9
+colt123@ubuntu:~$ </msg>
+<msg timestamp="20201127 20:30:34.088" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:36.091" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:36.191" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:36.191" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:36.291" level="DEBUG">read_channel: 
+colt123@ubuntu:~$ </msg>
+<msg timestamp="20201127 20:30:36.491" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:36.491" level="DEBUG">[find_prompt()]: prompt is colt123@ubuntu:~$</msg>
+<msg timestamp="20201127 20:30:36.891" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:36.992" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:36.992" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:37.093" level="DEBUG">read_channel: 
+colt123@ubuntu:~$ </msg>
+<msg timestamp="20201127 20:30:37.293" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:37.293" level="DEBUG">[find_prompt()]: prompt is colt123@ubuntu:~$</msg>
+<msg timestamp="20201127 20:30:37.293" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:37.293" level="DEBUG">Pattern is: colt123@ubuntu:\~</msg>
+<msg timestamp="20201127 20:30:37.293" level="DEBUG">_read_channel_expect read_data: 
+colt123@ubuntu:~$ </msg>
+<msg timestamp="20201127 20:30:37.293" level="DEBUG">Pattern found: colt123@ubuntu:\~ 
+colt123@ubuntu:~$ </msg>
+<msg timestamp="20201127 20:30:37.293" level="DEBUG">write_channel: b'sudo -s\n'</msg>
+<msg timestamp="20201127 20:30:37.593" level="DEBUG">read_channel: sudo -s
+[sudo] password for colt123: </msg>
+<msg timestamp="20201127 20:30:37.593" level="DEBUG">write_channel: b'colt123\n'</msg>
+<msg timestamp="20201127 20:30:37.693" level="DEBUG">read_channel: 
+</msg>
+<msg timestamp="20201127 20:30:37.693" level="DEBUG">Clear buffer detects data in the channel</msg>
+<msg timestamp="20201127 20:30:37.894" level="DEBUG">read_channel: root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:37.894" level="DEBUG">Clear buffer detects data in the channel</msg>
+<msg timestamp="20201127 20:30:38.295" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:38.295" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:38.395" level="DEBUG">read_channel: 
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:38.611" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:38.611" level="DEBUG">[find_prompt()]: prompt is root@ubuntu:~#</msg>
+<msg timestamp="20201127 20:30:38.611" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:38.611" level="DEBUG">Pattern is: root@ubuntu:\~</msg>
+<msg timestamp="20201127 20:30:38.626" level="DEBUG">_read_channel_expect read_data: 
+</msg>
+<msg timestamp="20201127 20:30:38.726" level="DEBUG">_read_channel_expect read_data: root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:38.726" level="DEBUG">Pattern found: root@ubuntu:\~ 
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:38.827" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:38.827" level="DEBUG">write_channel: b'\n'</msg>
+<msg timestamp="20201127 20:30:38.927" level="DEBUG">read_channel: 
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:39.127" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:39.127" level="DEBUG">[find_prompt()]: prompt is root@ubuntu:~#</msg>
+<msg timestamp="20201127 20:30:39.428" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:39.428" level="DEBUG">write_channel: b'sudo ifconfig ens34 up\n'</msg>
+<msg timestamp="20201127 20:30:39.428" level="DEBUG">Pattern is: sudo\ ifconfig\ ens34\ up</msg>
+<msg timestamp="20201127 20:30:39.428" level="DEBUG">_read_channel_expect read_data: s</msg>
+<msg timestamp="20201127 20:30:39.543" level="DEBUG">_read_channel_expect read_data: udo ifconfig ens34 up
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:39.543" level="DEBUG">Pattern found: sudo\ ifconfig\ ens34\ up sudo ifconfig ens34 up
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:39.844" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:39.844" level="DEBUG">write_channel: b'sudo vconfig add ens34 750\n'</msg>
+<msg timestamp="20201127 20:30:39.844" level="DEBUG">Pattern is: sudo\ vconfig\ add\ ens34\ 750</msg>
+<msg timestamp="20201127 20:30:39.844" level="DEBUG">_read_channel_expect read_data: s</msg>
+<msg timestamp="20201127 20:30:39.944" level="DEBUG">_read_channel_expect read_data: udo vconfig add ens34 750
+ERROR: trying to add VLAN #750 to IF -:ens34:-  error: File exists
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:39.944" level="DEBUG">Pattern found: sudo\ vconfig\ add\ ens34\ 750 sudo vconfig add ens34 750
+ERROR: trying to add VLAN #750 to IF -:ens34:-  error: File exists
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:40.245" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:40.245" level="DEBUG">write_channel: b'sudo ifconfig ens34.750 up\n'</msg>
+<msg timestamp="20201127 20:30:40.245" level="DEBUG">Pattern is: sudo\ ifconfig\ ens34\.750\ up</msg>
+<msg timestamp="20201127 20:30:40.245" level="DEBUG">_read_channel_expect read_data: s</msg>
+<msg timestamp="20201127 20:30:40.345" level="DEBUG">_read_channel_expect read_data: udo ifconfig ens34.750 up
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:40.345" level="DEBUG">Pattern found: sudo\ ifconfig\ ens34\.750\ up sudo ifconfig ens34.750 up
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:40.646" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:40.646" level="DEBUG">write_channel: b'sudo ifconfig ens34.750 192.170.1.2 netmask 255.255.255.0\n'</msg>
+<msg timestamp="20201127 20:30:40.646" level="DEBUG">Pattern is: sudo\ ifconfig\ ens34\.750\ 192\.170\.1\.2\ netmask\ 255\.255\.255\.0</msg>
+<msg timestamp="20201127 20:30:40.646" level="DEBUG">_read_channel_expect read_data: s</msg>
+<msg timestamp="20201127 20:30:40.746" level="DEBUG">_read_channel_expect read_data: udo ifconfig ens34.750 192.170.1.2 netmask 255.255.255.0
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:40.746" level="DEBUG">Pattern found: sudo\ ifconfig\ ens34\.750\ 192\.170\.1\.2\ netmask\ 255\.255\.255\.0 sudo ifconfig ens34.750 192.170.1.2 netmask 255.255.255.0
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:41.077" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:41.077" level="DEBUG">write_channel: b'sudo ifconfig ens34.750 inet6 add 2001:192:170:1::2/64\n'</msg>
+<msg timestamp="20201127 20:30:41.077" level="DEBUG">Pattern is: sudo\ ifconfig\ ens34\.750\ inet6\ add\ 2001:192:170:1::2/64</msg>
+<msg timestamp="20201127 20:30:41.083" level="DEBUG">_read_channel_expect read_data: s</msg>
+<msg timestamp="20201127 20:30:41.199" level="DEBUG">_read_channel_expect read_data: udo ifconfig ens34.750 inet6 add 2001:192:170:1::2/64
+SIOCSIFADDR: File exists
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:41.199" level="DEBUG">Pattern found: sudo\ ifconfig\ ens34\.750\ inet6\ add\ 2001:192:170:1::2/64 sudo ifconfig ens34.750 inet6 add 2001:192:170:1::2/64
+SIOCSIFADDR: File exists
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:41.199" level="INFO">colt123@ubuntu:~$
+linux: root@ubuntu:~#
+None</msg>
+<msg timestamp="20201127 20:30:41.199" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:32.385" endtime="20201127 20:30:41.199"></status>
+</kw>
+<kw name="Get Data Dict" library="VM1">
+<assign>
+<var>${VM1}</var>
+</assign>
+<msg timestamp="20201127 20:30:41.199" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:41.199" level="TRACE">Return: {'LAN_INTF': 'ens33',
+ 'NO_OF_VRFS': 1,
+ 'START_LAN_IP_SUBNET': '192.169.101.0/24',
+ 'START_VLAN': 600,
+ 'VM_nc': &lt;netmiko.linux.linux_ssh.LinuxSSH object at 0x0000027C540E3FD0&gt;,
+ 'csv_dict': {'CPE11_LAN_HOST1': {'LAN_INTF': 'ens33',
+                                  'NO_OF_VRFS': '1',
+                                  'START_LAN_IP_SUBNET': '192.169.101.0/24',
+                                  'START_VLAN': '600',
+                                  'device_type': 'linux',
+                                  'mgmt_ip': '10.91.125.181',
+                                  'password': 'sathish',
+                                  'username': 'sathish'}},
+ 'data':               DUTs        mgmt_ip username password device_type LAN_INTF START_VLAN START_LAN_IP_SUBNET NO_OF_VRFS
+0  CPE11_LAN_HOST1  10.91.125.181  sathish  sathish       linux    ens33        600    192.169.101.0/24          1,
+ 'data_dict': {'LAN_INTF': 'ens33',
+               'NO_OF_VRFS': '1',
+               'START_LAN_IP_SUBNET': '192.169.101.0/24',
+               'START_VLAN': 600,
+               'device_type': 'linux',
+               'lan_first_host': {600: '192.169.101.1',
+                                  601: '192.169.102.1',
+                                  602: '192.169.103.1',
+                                  603: '192.169.104.1',
+                                  604: '192.169.105.1',
+                                  605: '192.169.106.1',
+                                  606: '192.169.107.1',
+                                  607: '192.169.108.1',
+                                  608: '192.169.109.1',
+                                  609: '192.169.110.1'},
+               'lan_netmask': {600: '255.255.255.0',
+                               601: '255.255.255.0',
+                               602: '255.255.255.0',
+                               603: '255.255.255.0',
+                               604: '255.255.255.0',
+                               605: '255.255.255.0',
+                               606: '255.255.255.0',
+                               607: '255.255.255.0',
+                               608: '255.255.255.0',
+                               609: '255.255.255.0'},
+               'lan_network': {600: CalcIPv4Network('192.169.101.0/24'),
+                               601: CalcIPv4Network('192.169.102.0/24'),
+                               602: CalcIPv4Network('192.169.103.0/24'),
+                               603: CalcIPv4Network('192.169.104.0/24'),
+                               604: CalcIPv4Network('192.169.105.0/24'),
+                               605: CalcIPv4Network('192.169.106.0/24'),
+                               606: CalcIPv4Network('192.169.107.0/24'),
+                               607: CalcIPv4Network('192.169.108.0/24'),
+                               608: CalcIPv4Network('192.169.109.0/24'),
+                               609: CalcIPv4Network('192.169.110.0/24')},
+               'lan_second_host': {600: '192.169.101.2',
+                                   601: '192.169.102.2',
+                                   602: '192.169.103.2',
+                                   603: '192.169.104.2',
+                                   604: '192.169.105.2',
+                                   605: '192.169.106.2',
+                                   606: '192.169.107.2',
+                                   607: '192.169.108.2',
+                                   608: '192.169.109.2',
+                                   609: '192.169.110.2'},
+               'lan_vlan': [600, 601, 602, 603, 604, 605, 606, 607, 608, 609],
+               'mgmt_ip': '10.91.125.181',
+               'password': 'sathish',
+               'username': 'sathish',
+               'vlans': []},
+ 'device_name': 'CPE11_LAN_HOST1',
+ 'device_type': 'linux',
+ 'lan': {1: {'eighth_host': '192.169.101.8',
+             'eighth_host_ipv6': '2001:192:169:101::8',
+             'fifth_host': '192.169.101.5',
+             'fifth_host_ipv6': '2001:192:169:101::5',
+             'first_host': '192.169.101.1',
+             'first_host_ipv6': '2001:192:169:101::1',
+             'fourth_host': '192.169.101.4',
+             'fourth_host_ipv6': '2001:192:169:101::4',
+             'ipv6_nw': '2001:192:169:101::',
+             'ipv6_nw_with_prefixlen': '2001:192:169:101::/64',
+             'ipv6_prefixlen': '64',
+             'netmask': '255.255.255.0',
+             'ninth_host': '192.169.101.9',
+             'ninth_host_ipv6': '2001:192:169:101::9',
+             'nw': CalcIPv4Network('192.169.101.0/24'),
+             'nw_with_prefixlen': '192.169.101.0/24',
+             'prefixlen': '24',
+             'second_host': '192.169.101.2',
+             'second_host_ipv6': '2001:192:169:101::2',
+             'seventh_host': '192.169.101.7',
+             'seventh_host_ipv6': '2001:192:169:101::7',
+             'sixth_host': '192.169.101.6',
+             'sixth_host_ipv6': '2001:192:169:101::6',
+             'tenth_host': '192.169.101.10',
+             'tenth_host_ipv6': '2001:192:169:101::10',
+             'third_host': '192.169.101.3',
+             'third_host_ipv6': '2001:192:169:101::3',
+             'vlan': 600},
+         2: {'vlan': 601},
+         3: {'vlan': 602},
+         4: {'vlan': 603},
+         5: {'vlan': 604},
+         6: {'vlan': 605},
+         7: {'vlan': 606},
+         8: {'vlan': 607},
+         9: {'vlan': 608},
+         10: {'vlan': 609}},
+ 'lan_vlan': [600, 601, 602, 603, 604, 605, 606, 607, 608, 609],
+ 'mgmt_ip': '10.91.125.181',
+ 'password': 'sathish',
+ 'shell_nc': &lt;netmiko.linux.linux_ssh.LinuxSSH object at 0x0000027C540E3FD0&gt;,
+ 'username': 'sathish',
+ 'vlans': []}</msg>
+<msg timestamp="20201127 20:30:41.283" level="INFO">${VM1} = {'data_dict': {'mgmt_ip': '10.91.125.181', 'username': 'sathish', 'password': 'sathish', 'device_type': 'linux', 'LAN_INTF': 'ens33', 'START_VLAN': 600, 'START_LAN_IP_SUBNET': '192.169.101.0/24', 'NO_...</msg>
+<status status="PASS" starttime="20201127 20:30:41.199" endtime="20201127 20:30:41.283"></status>
+</kw>
+<kw name="Get Data Dict" library="VM2">
+<assign>
+<var>${VM2}</var>
+</assign>
+<msg timestamp="20201127 20:30:41.283" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:30:41.283" level="TRACE">Return: {'LAN_INTF': 'ens34',
+ 'NO_OF_VRFS': 1,
+ 'START_LAN_IP_SUBNET': '192.170.1.0/24',
+ 'START_VLAN': 750,
+ 'VM_nc': &lt;netmiko.linux.linux_ssh.LinuxSSH object at 0x0000027C540680D0&gt;,
+ 'csv_dict': {'CPE26_LAN_HOST1': {'LAN_INTF': 'ens34',
+                                  'NO_OF_VRFS': '1',
+                                  'START_LAN_IP_SUBNET': '192.170.1.0/24',
+                                  'START_VLAN': '750',
+                                  'device_type': 'linux',
+                                  'mgmt_ip': '10.91.125.184',
+                                  'password': 'colt123',
+                                  'username': 'colt123'}},
+ 'data':               DUTs        mgmt_ip username password device_type LAN_INTF START_VLAN START_LAN_IP_SUBNET NO_OF_VRFS
+2  CPE26_LAN_HOST1  10.91.125.184  colt123  colt123       linux    ens34        750      192.170.1.0/24          1,
+ 'data_dict': {'LAN_INTF': 'ens34',
+               'NO_OF_VRFS': '1',
+               'START_LAN_IP_SUBNET': '192.170.1.0/24',
+               'START_VLAN': 750,
+               'device_type': 'linux',
+               'lan_first_host': {750: '192.170.1.1',
+                                  751: '192.170.2.1',
+                                  752: '192.170.3.1',
+                                  753: '192.170.4.1',
+                                  754: '192.170.5.1',
+                                  755: '192.170.6.1',
+                                  756: '192.170.7.1',
+                                  757: '192.170.8.1',
+                                  758: '192.170.9.1',
+                                  759: '192.170.10.1'},
+               'lan_netmask': {750: '255.255.255.0',
+                               751: '255.255.255.0',
+                               752: '255.255.255.0',
+                               753: '255.255.255.0',
+                               754: '255.255.255.0',
+                               755: '255.255.255.0',
+                               756: '255.255.255.0',
+                               757: '255.255.255.0',
+                               758: '255.255.255.0',
+                               759: '255.255.255.0'},
+               'lan_network': {750: CalcIPv4Network('192.170.1.0/24'),
+                               751: CalcIPv4Network('192.170.2.0/24'),
+                               752: CalcIPv4Network('192.170.3.0/24'),
+                               753: CalcIPv4Network('192.170.4.0/24'),
+                               754: CalcIPv4Network('192.170.5.0/24'),
+                               755: CalcIPv4Network('192.170.6.0/24'),
+                               756: CalcIPv4Network('192.170.7.0/24'),
+                               757: CalcIPv4Network('192.170.8.0/24'),
+                               758: CalcIPv4Network('192.170.9.0/24'),
+                               759: CalcIPv4Network('192.170.10.0/24')},
+               'lan_second_host': {750: '192.170.1.2',
+                                   751: '192.170.2.2',
+                                   752: '192.170.3.2',
+                                   753: '192.170.4.2',
+                                   754: '192.170.5.2',
+                                   755: '192.170.6.2',
+                                   756: '192.170.7.2',
+                                   757: '192.170.8.2',
+                                   758: '192.170.9.2',
+                                   759: '192.170.10.2'},
+               'lan_vlan': [750, 751, 752, 753, 754, 755, 756, 757, 758, 759],
+               'mgmt_ip': '10.91.125.184',
+               'password': 'colt123',
+               'username': 'colt123',
+               'vlans': []},
+ 'device_name': 'CPE26_LAN_HOST1',
+ 'device_type': 'linux',
+ 'lan': {1: {'eighth_host': '192.170.1.8',
+             'eighth_host_ipv6': '2001:192:170:1::8',
+             'fifth_host': '192.170.1.5',
+             'fifth_host_ipv6': '2001:192:170:1::5',
+             'first_host': '192.170.1.1',
+             'first_host_ipv6': '2001:192:170:1::1',
+             'fourth_host': '192.170.1.4',
+             'fourth_host_ipv6': '2001:192:170:1::4',
+             'ipv6_nw': '2001:192:170:1::',
+             'ipv6_nw_with_prefixlen': '2001:192:170:1::/64',
+             'ipv6_prefixlen': '64',
+             'netmask': '255.255.255.0',
+             'ninth_host': '192.170.1.9',
+             'ninth_host_ipv6': '2001:192:170:1::9',
+             'nw': CalcIPv4Network('192.170.1.0/24'),
+             'nw_with_prefixlen': '192.170.1.0/24',
+             'prefixlen': '24',
+             'second_host': '192.170.1.2',
+             'second_host_ipv6': '2001:192:170:1::2',
+             'seventh_host': '192.170.1.7',
+             'seventh_host_ipv6': '2001:192:170:1::7',
+             'sixth_host': '192.170.1.6',
+             'sixth_host_ipv6': '2001:192:170:1::6',
+             'tenth_host': '192.170.1.10',
+             'tenth_host_ipv6': '2001:192:170:1::10',
+             'third_host': '192.170.1.3',
+             'third_host_ipv6': '2001:192:170:1::3',
+             'vlan': 750},
+         2: {'vlan': 751},
+         3: {'vlan': 752},
+         4: {'vlan': 753},
+         5: {'vlan': 754},
+         6: {'vlan': 755},
+         7: {'vlan': 756},
+         8: {'vlan': 757},
+         9: {'vlan': 758},
+         10: {'vlan': 759}},
+ 'lan_vlan': [750, 751, 752, 753, 754, 755, 756, 757, 758, 759],
+ 'mgmt_ip': '10.91.125.184',
+ 'password': 'colt123',
+ 'shell_nc': &lt;netmiko.linux.linux_ssh.LinuxSSH object at 0x0000027C540680D0&gt;,
+ 'username': 'colt123',
+ 'vlans': []}</msg>
+<msg timestamp="20201127 20:30:41.314" level="INFO">${VM2} = {'data_dict': {'mgmt_ip': '10.91.125.184', 'username': 'colt123', 'password': 'colt123', 'device_type': 'linux', 'LAN_INTF': 'ens34', 'START_VLAN': 750, 'START_LAN_IP_SUBNET': '192.170.1.0/24', 'NO_OF...</msg>
+<status status="PASS" starttime="20201127 20:30:41.283" endtime="20201127 20:30:41.314"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${VM1}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:41.314" level="TRACE">Arguments: [ '${VM1}' ]</msg>
+<msg timestamp="20201127 20:30:41.330" level="INFO">${VM1} = {'data_dict': {'mgmt_ip': '10.91.125.181', 'username': 'sathish', 'password': 'sathish', 'device_type': 'linux', 'LAN_INTF': 'ens33', 'START_VLAN': 600, 'START_LAN_IP_SUBNET': '192.169.101.0/24', 'NO_...</msg>
+<msg timestamp="20201127 20:30:41.330" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:41.314" endtime="20201127 20:30:41.330"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${VM2}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:41.330" level="TRACE">Arguments: [ '${VM2}' ]</msg>
+<msg timestamp="20201127 20:30:41.361" level="INFO">${VM2} = {'data_dict': {'mgmt_ip': '10.91.125.184', 'username': 'colt123', 'password': 'colt123', 'device_type': 'linux', 'LAN_INTF': 'ens34', 'START_VLAN': 750, 'START_LAN_IP_SUBNET': '192.170.1.0/24', 'NO_OF...</msg>
+<msg timestamp="20201127 20:30:41.361" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:41.330" endtime="20201127 20:30:41.361"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | ${VM1['NO_OF_VRFS']} + 1 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM1['lan'][${i}]['first_host']}</arg>
+</arguments>
+<assign>
+<var>${gw}</var>
+</assign>
+<msg timestamp="20201127 20:30:41.361" level="TRACE">Arguments: [ '192.169.101.1' ]</msg>
+<msg timestamp="20201127 20:30:41.361" level="TRACE">Return: '192.169.101.1'</msg>
+<msg timestamp="20201127 20:30:41.361" level="INFO">${gw} = 192.169.101.1</msg>
+<status status="PASS" starttime="20201127 20:30:41.361" endtime="20201127 20:30:41.361"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM1['lan'][${i}]['vlan']}</arg>
+</arguments>
+<assign>
+<var>${vlan}</var>
+</assign>
+<msg timestamp="20201127 20:30:41.361" level="TRACE">Arguments: [ 600 ]</msg>
+<msg timestamp="20201127 20:30:41.361" level="TRACE">Return: 600</msg>
+<msg timestamp="20201127 20:30:41.361" level="INFO">${vlan} = 600</msg>
+<status status="PASS" starttime="20201127 20:30:41.361" endtime="20201127 20:30:41.361"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM2['lan'][${i}]['nw']}</arg>
+</arguments>
+<assign>
+<var>${destination_nw}</var>
+</assign>
+<msg timestamp="20201127 20:30:41.361" level="TRACE">Arguments: [ CalcIPv4Network('192.170.1.0/24') ]</msg>
+<msg timestamp="20201127 20:30:41.361" level="TRACE">Return: CalcIPv4Network('192.170.1.0/24')</msg>
+<msg timestamp="20201127 20:30:41.361" level="INFO">${destination_nw} = 192.170.1.0/24</msg>
+<status status="PASS" starttime="20201127 20:30:41.361" endtime="20201127 20:30:41.361"></status>
+</kw>
+<kw name="Send Commands And Expect" library="VM1">
+<arguments>
+<arg>sudo ip route add ${destination_nw} via ${gw} dev ${VM1['LAN_INTF']}.${vlan}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:41.361" level="TRACE">Arguments: [ 'sudo ip route add 192.170.1.0/24 via 192.169.101.1 dev ens33.600' ]</msg>
+<msg timestamp="20201127 20:30:41.661" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:41.661" level="DEBUG">write_channel: b'sudo ip route add 192.170.1.0/24 via 192.169.101.1 dev ens33.600\n'</msg>
+<msg timestamp="20201127 20:30:41.661" level="DEBUG">Pattern is: sudo\ ip\ route\ add\ 192\.170\.1\.0/24\ via\ 192\.169\.101\.1\ dev\ ens33\.600</msg>
+<msg timestamp="20201127 20:30:41.661" level="DEBUG">_read_channel_expect read_data: s</msg>
+<msg timestamp="20201127 20:30:41.762" level="DEBUG">_read_channel_expect read_data: udo ip route add 192.170.1.0/24 via 192.169.101.1 dev ens33.600
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:41.762" level="DEBUG">Pattern found: sudo\ ip\ route\ add\ 192\.170\.1\.0/24\ via\ 192\.169\.101\.1\ dev\ ens33\.600 sudo ip route add 192.170.1.0/24 via 192.169.101.1 dev ens33.600
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:30:41.762" level="TRACE">Return: 'sudo ip route add 192.170.1.0/24 via 192.169.101.1 dev ens33.600\nroot@VM1:~# '</msg>
+<status status="PASS" starttime="20201127 20:30:41.361" endtime="20201127 20:30:41.762"></status>
+</kw>
+<status status="PASS" starttime="20201127 20:30:41.361" endtime="20201127 20:30:41.762"></status>
+</kw>
+<status status="PASS" starttime="20201127 20:30:41.361" endtime="20201127 20:30:41.762"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | ${VM2['NO_OF_VRFS']} + 1 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM2['lan'][${i}]['first_host']}</arg>
+</arguments>
+<assign>
+<var>${gw}</var>
+</assign>
+<msg timestamp="20201127 20:30:41.762" level="TRACE">Arguments: [ '192.170.1.1' ]</msg>
+<msg timestamp="20201127 20:30:41.762" level="TRACE">Return: '192.170.1.1'</msg>
+<msg timestamp="20201127 20:30:41.762" level="INFO">${gw} = 192.170.1.1</msg>
+<status status="PASS" starttime="20201127 20:30:41.762" endtime="20201127 20:30:41.762"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM2['lan'][${i}]['vlan']}</arg>
+</arguments>
+<assign>
+<var>${vlan}</var>
+</assign>
+<msg timestamp="20201127 20:30:41.762" level="TRACE">Arguments: [ 750 ]</msg>
+<msg timestamp="20201127 20:30:41.762" level="TRACE">Return: 750</msg>
+<msg timestamp="20201127 20:30:41.762" level="INFO">${vlan} = 750</msg>
+<status status="PASS" starttime="20201127 20:30:41.762" endtime="20201127 20:30:41.762"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM1['lan'][${i}]['nw']}</arg>
+</arguments>
+<assign>
+<var>${destination_nw}</var>
+</assign>
+<msg timestamp="20201127 20:30:41.762" level="TRACE">Arguments: [ CalcIPv4Network('192.169.101.0/24') ]</msg>
+<msg timestamp="20201127 20:30:41.762" level="TRACE">Return: CalcIPv4Network('192.169.101.0/24')</msg>
+<msg timestamp="20201127 20:30:41.762" level="INFO">${destination_nw} = 192.169.101.0/24</msg>
+<status status="PASS" starttime="20201127 20:30:41.762" endtime="20201127 20:30:41.762"></status>
+</kw>
+<kw name="Send Commands And Expect" library="VM2">
+<arguments>
+<arg>sudo ip route add ${destination_nw} via ${gw} dev ${VM2['LAN_INTF']}.${vlan}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:41.762" level="TRACE">Arguments: [ 'sudo ip route add 192.169.101.0/24 via 192.170.1.1 dev ens34.750' ]</msg>
+<msg timestamp="20201127 20:30:42.062" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:30:42.062" level="DEBUG">write_channel: b'sudo ip route add 192.169.101.0/24 via 192.170.1.1 dev ens34.750\n'</msg>
+<msg timestamp="20201127 20:30:42.062" level="DEBUG">Pattern is: sudo\ ip\ route\ add\ 192\.169\.101\.0/24\ via\ 192\.170\.1\.1\ dev\ ens34\.750</msg>
+<msg timestamp="20201127 20:30:42.062" level="DEBUG">_read_channel_expect read_data: s</msg>
+<msg timestamp="20201127 20:30:42.162" level="DEBUG">_read_channel_expect read_data: udo ip route add 192.169.101.0/24 via 192.170.1.1 dev ens34.750
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:42.162" level="DEBUG">Pattern found: sudo\ ip\ route\ add\ 192\.169\.101\.0/24\ via\ 192\.170\.1\.1\ dev\ ens34\.750 sudo ip route add 192.169.101.0/24 via 192.170.1.1 dev ens34.750
+root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:30:42.162" level="TRACE">Return: 'sudo ip route add 192.169.101.0/24 via 192.170.1.1 dev ens34.750\nroot@ubuntu:~# '</msg>
+<status status="PASS" starttime="20201127 20:30:41.762" endtime="20201127 20:30:42.162"></status>
+</kw>
+<status status="PASS" starttime="20201127 20:30:41.762" endtime="20201127 20:30:42.162"></status>
+</kw>
+<status status="PASS" starttime="20201127 20:30:41.762" endtime="20201127 20:30:42.162"></status>
+</kw>
+<kw name="SPIRENT_STARTUP">
+<msg timestamp="20201127 20:30:42.162" level="TRACE">Arguments: [  ]</msg>
+<kw name="Create Device" library="spirent1">
+<arguments>
+<arg>port=0</arg>
+<arg>vlanid=${CPE1['lan'][1]['vlan']}</arg>
+<arg>intf_ip_addr=${CPE1['lan'][1]['third_host']}</arg>
+<arg>gateway_ip_addr=${CPE1['lan'][1]['first_host']}</arg>
+</arguments>
+<assign>
+<var>${device1}</var>
+</assign>
+<msg timestamp="20201127 20:30:42.162" level="TRACE">Arguments: [ port='0' | vlanid=600 | intf_ip_addr='192.169.101.3' | gateway_ip_addr='192.169.101.1' ]</msg>
+<msg timestamp="20201127 20:30:43.381" level="INFO">***** run sth.emulation_device_config successfully</msg>
+<msg timestamp="20201127 20:30:43.381" level="TRACE">Return: {'gateway_ip_addr': '192.169.101.1',
+ 'handle': 'host1',
+ 'intf_ip_addr': '192.169.101.3',
+ 'port': 'port1',
+ 'status': '1',
+ 'vlanid': 600}</msg>
+<msg timestamp="20201127 20:30:43.381" level="INFO">${device1} = {'handle': 'host1', 'status': '1', 'port': 'port1', 'gateway_ip_addr': '192.169.101.1', 'vlanid': 600, 'intf_ip_addr': '192.169.101.3'}</msg>
+<status status="PASS" starttime="20201127 20:30:42.162" endtime="20201127 20:30:43.381"></status>
+</kw>
+<kw name="Create Device" library="spirent1">
+<arguments>
+<arg>port=1</arg>
+<arg>vlanid=${CPE2['lan'][1]['vlan']}</arg>
+<arg>intf_ip_addr=${CPE2['lan'][1]['third_host']}</arg>
+<arg>gateway_ip_addr=${CPE2['lan'][1]['first_host']}</arg>
+</arguments>
+<assign>
+<var>${device2}</var>
+</assign>
+<msg timestamp="20201127 20:30:43.381" level="TRACE">Arguments: [ port='1' | vlanid=750 | intf_ip_addr='192.170.1.3' | gateway_ip_addr='192.170.1.1' ]</msg>
+<msg timestamp="20201127 20:30:43.866" level="INFO">***** run sth.emulation_device_config successfully</msg>
+<msg timestamp="20201127 20:30:43.866" level="TRACE">Return: {'gateway_ip_addr': '192.170.1.1',
+ 'handle': 'host2',
+ 'intf_ip_addr': '192.170.1.3',
+ 'port': 'port2',
+ 'status': '1',
+ 'vlanid': 750}</msg>
+<msg timestamp="20201127 20:30:43.866" level="INFO">${device2} = {'handle': 'host2', 'status': '1', 'port': 'port2', 'gateway_ip_addr': '192.170.1.1', 'vlanid': 750, 'intf_ip_addr': '192.170.1.3'}</msg>
+<status status="PASS" starttime="20201127 20:30:43.381" endtime="20201127 20:30:43.866"></status>
+</kw>
+<kw name="Create Tcp Stream Block" library="spirent1">
+<arguments>
+<arg>${device1}</arg>
+<arg>${device2}</arg>
+<arg>src_port=2000</arg>
+<arg>rate_mbps=2</arg>
+</arguments>
+<assign>
+<var>${stream1}</var>
+</assign>
+<msg timestamp="20201127 20:30:43.866" level="TRACE">Arguments: [ {'gateway_ip_addr': '192.169.101.1',
+ 'handle': 'host1',
+ 'intf_ip_addr': '192.169.101.3',
+ 'port': 'port1',
+ 'status': '1',
+ 'vlanid': 600} | {'gateway_ip_addr': '192.170.1.1',
+ 'handle': 'host2',
+ 'intf_ip_addr': '192.170.1.3',
+ 'port': 'port2',
+ 'status': '1',
+ 'vlanid': 750} | src_port='2000' | rate_mbps='2' ]</msg>
+<msg timestamp="20201127 20:30:47.991" level="INFO">***** run sth.traffic_config successfully</msg>
+<msg timestamp="20201127 20:30:47.991" level="TRACE">Return: {'status': '1', 'stream_id': 'streamblock1'}</msg>
+<msg timestamp="20201127 20:30:47.991" level="INFO">${stream1} = {'stream_id': 'streamblock1', 'status': '1'}</msg>
+<status status="PASS" starttime="20201127 20:30:43.866" endtime="20201127 20:30:47.991"></status>
+</kw>
+<kw name="Create Tcp Stream Block" library="spirent1">
+<arguments>
+<arg>${device1}</arg>
+<arg>${device2}</arg>
+<arg>src_port=2001</arg>
+<arg>rate_mbps=2</arg>
+</arguments>
+<assign>
+<var>${stream2}</var>
+</assign>
+<msg timestamp="20201127 20:30:47.991" level="TRACE">Arguments: [ {'gateway_ip_addr': '192.169.101.1',
+ 'handle': 'host1',
+ 'intf_ip_addr': '192.169.101.3',
+ 'port': 'port1',
+ 'status': '1',
+ 'vlanid': 600} | {'gateway_ip_addr': '192.170.1.1',
+ 'handle': 'host2',
+ 'intf_ip_addr': '192.170.1.3',
+ 'port': 'port2',
+ 'status': '1',
+ 'vlanid': 750} | src_port='2001' | rate_mbps='2' ]</msg>
+<status status="FAIL" starttime="20201127 20:30:47.991" endtime="20201127 20:30:51.465"></status>
+</kw>
+<status status="FAIL" starttime="20201127 20:30:42.162" endtime="20201127 20:30:51.465"></status>
+</kw>
+<status status="FAIL" starttime="20201127 20:28:54.111" endtime="20201127 20:30:51.465"></status>
+</kw>
+<test id="s1-t1" name="NV_SINGLE_CPE_HYBRID_SANITY_01">
+<doc>SANITY CHECKS on vCPE</doc>
+<tags>
+<tag>robot:exit</tag>
+<tag>SANITY01</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.465" endtime="20201127 20:30:51.465" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t2" name="NV_SINGLE_CPE_HYBRID_SANITY_02">
+<doc>Ping test CPE1 LAN1 VM to CPE2 LAN1 VM</doc>
+<tags>
+<tag>PING</tag>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.465" endtime="20201127 20:30:51.465" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t3" name="NV_SINGLE_CPE_HYBRID_SANITY_03">
+<doc>Ping test CPE1 ALL LAN VM to CPE2 ALL LAN VM</doc>
+<tags>
+<tag>PING</tag>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.465" endtime="20201127 20:30:51.465" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t4" name="NV_SINGLE_CPE_HYBRID_SANITY_04">
+<doc>Iperf test VM1 to VM2</doc>
+<tags>
+<tag>IPERF</tag>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.465" endtime="20201127 20:30:51.465" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_01">
+<doc>Traffic steering based on Destination IP</doc>
+<tags>
+<tag>P1</tag>
+<tag>robot:exit</tag>
+<tag>TS1</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.465" endtime="20201127 20:30:51.465" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_02">
+<doc>Traffic steering based on Source IP</doc>
+<tags>
+<tag>P1</tag>
+<tag>robot:exit</tag>
+<tag>TS2</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.465" endtime="20201127 20:30:51.465" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_03">
+<doc>Traffic steering based on Source PORT</doc>
+<tags>
+<tag>P1</tag>
+<tag>robot:exit</tag>
+<tag>TS3</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.480" endtime="20201127 20:30:51.480" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t8" name="NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_04">
+<doc>Traffic steering based on Application (IPERF)</doc>
+<tags>
+<tag>P1</tag>
+<tag>robot:exit</tag>
+<tag>TS4</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.480" endtime="20201127 20:30:51.480" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t9" name="NV_SINGLE_CPE_HYBRID_QOS_01">
+<doc>DSCP Values based QOS</doc>
+<tags>
+<tag>QOS</tag>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.480" endtime="20201127 20:30:51.480" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t10" name="NV_SINGLE_CPE_HYBRID_QOS_02">
+<doc>Source IP address Based QOS</doc>
+<tags>
+<tag>QOS</tag>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.480" endtime="20201127 20:30:51.480" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t11" name="NV_SINGLE_CPE_HYBRID_QOS_03">
+<doc>Destination IP address Based QOS</doc>
+<tags>
+<tag>QOS</tag>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201127 20:30:51.480" endtime="20201127 20:30:51.480" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<kw name="CLEANUP" type="teardown">
+<msg timestamp="20201127 20:30:51.496" level="TRACE">Arguments: [  ]</msg>
+<kw name="DELETE FWD PROFILE">
+<msg timestamp="20201127 20:30:51.496" level="TRACE">Arguments: [  ]</msg>
+<kw name="Delete Service Object" library="CPE1">
+<arguments>
+<arg>${serviceobj_1}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:51.496" level="TRACE">Arguments: [ 'src_port_2000' ]</msg>
+<msg timestamp="20201127 20:30:51.496" level="INFO">
+DELETE Service Object
+</msg>
+<msg timestamp="20201127 20:30:51.496" level="DEBUG">Starting new HTTPS connection (1): 10.91.116.35:9182</msg>
+<msg timestamp="20201127 20:30:54.824" level="DEBUG">https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/objects/services/service/src_port_2000 HTTP/1.1" 404 0</msg>
+<msg timestamp="20201127 20:30:54.824" level="ERROR">b''</msg>
+<msg timestamp="20201127 20:30:54.824" level="INFO">
+FAIL : b''</msg>
+<msg timestamp="20201127 20:30:54.824" level="INFO">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; ADDRESS OBJECT DELETION FAILED. &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</msg>
+<msg timestamp="20201127 20:30:54.824" level="INFO">&lt;Response [404]&gt;</msg>
+<msg timestamp="20201127 20:30:54.824" level="TRACE">Return: 'FAIL'</msg>
+<status status="PASS" starttime="20201127 20:30:51.496" endtime="20201127 20:30:54.824"></status>
+</kw>
+<kw name="Delete Address Object" library="CPE1">
+<arguments>
+<arg>${ipaddobj_1}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:54.824" level="TRACE">Arguments: [ 'src_ip_add_obj11' ]</msg>
+<msg timestamp="20201127 20:30:54.824" level="INFO">
+DELETE IPaddress Object
+</msg>
+<msg timestamp="20201127 20:30:54.824" level="DEBUG">Starting new HTTPS connection (1): 10.91.116.35:9182</msg>
+<msg timestamp="20201127 20:30:57.429" level="DEBUG">https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/objects/addresses/address/src_ip_add_obj11 HTTP/1.1" 404 0</msg>
+<msg timestamp="20201127 20:30:57.429" level="ERROR">b''</msg>
+<msg timestamp="20201127 20:30:57.429" level="INFO">
+FAIL : b''</msg>
+<msg timestamp="20201127 20:30:57.429" level="INFO">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; ADDRESS OBJECT DELETION FAILED. &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</msg>
+<msg timestamp="20201127 20:30:57.444" level="INFO">&lt;Response [404]&gt;</msg>
+<msg timestamp="20201127 20:30:57.444" level="TRACE">Return: 'FAIL'</msg>
+<status status="PASS" starttime="20201127 20:30:54.824" endtime="20201127 20:30:57.444"></status>
+</kw>
+<kw name="Delete Address Object" library="CPE1">
+<arguments>
+<arg>${ipaddobj_2}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:57.444" level="TRACE">Arguments: [ 'dst_ip_add_obj11' ]</msg>
+<msg timestamp="20201127 20:30:57.444" level="INFO">
+DELETE IPaddress Object
+</msg>
+<msg timestamp="20201127 20:30:57.444" level="DEBUG">Starting new HTTPS connection (1): 10.91.116.35:9182</msg>
+<msg timestamp="20201127 20:30:59.577" level="DEBUG">https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/objects/addresses/address/dst_ip_add_obj11 HTTP/1.1" 404 0</msg>
+<msg timestamp="20201127 20:30:59.577" level="ERROR">b''</msg>
+<msg timestamp="20201127 20:30:59.577" level="INFO">
+FAIL : b''</msg>
+<msg timestamp="20201127 20:30:59.577" level="INFO">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; ADDRESS OBJECT DELETION FAILED. &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</msg>
+<msg timestamp="20201127 20:30:59.577" level="INFO">&lt;Response [404]&gt;</msg>
+<msg timestamp="20201127 20:30:59.577" level="TRACE">Return: 'FAIL'</msg>
+<status status="PASS" starttime="20201127 20:30:57.444" endtime="20201127 20:30:59.577"></status>
+</kw>
+<kw name="Delete Fowarding Profile" library="CPE1">
+<arguments>
+<arg>${fwp_1}</arg>
+</arguments>
+<msg timestamp="20201127 20:30:59.577" level="TRACE">Arguments: [ 'FWP112' ]</msg>
+<msg timestamp="20201127 20:30:59.577" level="INFO">
+DELETE FWD PROFILE
+</msg>
+<msg timestamp="20201127 20:30:59.577" level="DEBUG">Starting new HTTPS connection (1): 10.91.116.35:9182</msg>
+<msg timestamp="20201127 20:31:02.049" level="DEBUG">https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/sd-wan/forwarding-profiles/forwarding-profile/FWP112 HTTP/1.1" 404 0</msg>
+<msg timestamp="20201127 20:31:02.064" level="ERROR">b''</msg>
+<msg timestamp="20201127 20:31:02.064" level="INFO">
+FAIL : b''</msg>
+<msg timestamp="20201127 20:31:02.064" level="INFO">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; FORWARDING PROFILE DELETION FAILED. &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</msg>
+<msg timestamp="20201127 20:31:02.064" level="INFO">&lt;Response [404]&gt;</msg>
+<msg timestamp="20201127 20:31:02.064" level="TRACE">Return: 'FAIL'</msg>
+<status status="PASS" starttime="20201127 20:30:59.577" endtime="20201127 20:31:02.064"></status>
+</kw>
+<kw name="Delete Sla Profile" library="CPE1">
+<arguments>
+<arg>${sla_prf_1}</arg>
+</arguments>
+<msg timestamp="20201127 20:31:02.064" level="TRACE">Arguments: [ 'SLA112' ]</msg>
+<msg timestamp="20201127 20:31:02.064" level="INFO">
+DELETE SLA profile
+</msg>
+<msg timestamp="20201127 20:31:02.064" level="DEBUG">Starting new HTTPS connection (1): 10.91.116.35:9182</msg>
+<msg timestamp="20201127 20:31:04.984" level="DEBUG">https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/sd-wan/sla-profiles/sla-profile/SLA112 HTTP/1.1" 404 0</msg>
+<msg timestamp="20201127 20:31:04.984" level="ERROR">b''</msg>
+<msg timestamp="20201127 20:31:04.984" level="INFO">
+FAIL : b''</msg>
+<msg timestamp="20201127 20:31:04.984" level="INFO">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; DELETE SLA Profile FAILED. &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</msg>
+<msg timestamp="20201127 20:31:04.984" level="INFO">&lt;Response [404]&gt;</msg>
+<msg timestamp="20201127 20:31:04.984" level="TRACE">Return: 'FAIL'</msg>
+<status status="PASS" starttime="20201127 20:31:02.064" endtime="20201127 20:31:05.000"></status>
+</kw>
+<kw name="Get Vni Interface Bw" library="CPE1">
+<arguments>
+<arg>${CPE1['WAN1_INTF']}</arg>
+</arguments>
+<msg timestamp="20201127 20:31:05.000" level="TRACE">Arguments: [ 'vni-0/1' ]</msg>
+<msg timestamp="20201127 20:31:05.000" level="DEBUG">Starting new HTTPS connection (1): 10.91.116.35:9182</msg>
+<msg timestamp="20201127 20:31:07.141" level="DEBUG">https://10.91.116.35:9182 "GET /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/interfaces/vni/%22vni-0/1%22/bandwidth HTTP/1.1" 200 None</msg>
+<msg timestamp="20201127 20:31:07.157" level="TRACE">Return: {'bandwidth': {'downlink': 30000, 'uplink': 30000}}</msg>
+<status status="PASS" starttime="20201127 20:31:05.000" endtime="20201127 20:31:07.157"></status>
+</kw>
+<msg timestamp="20201127 20:31:07.157" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:30:51.496" endtime="20201127 20:31:07.157"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>"cleanup done"</arg>
+</arguments>
+<msg timestamp="20201127 20:31:07.157" level="TRACE">Arguments: [ '"cleanup done"' ]</msg>
+<msg timestamp="20201127 20:31:07.157" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20201127 20:31:07.157" endtime="20201127 20:31:07.157"></status>
+</kw>
+<kw name="Release Ports" library="spirent1">
+<msg timestamp="20201127 20:31:07.157" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20201127 20:31:07.157" level="INFO">Release resources</msg>
+<msg timestamp="20201127 20:31:07.203" level="TRACE">Return: None</msg>
+<msg timestamp="20201127 20:31:07.203" level="FAIL">ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host</msg>
+<msg timestamp="20201127 20:31:07.203" level="DEBUG">Traceback (most recent call last):
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\HltapiLib.py", line 299, in release_ports
+    self.interface_config_delete(0)
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\HltapiLib.py", line 81, in interface_config_delete
+    int_ret0 = sth.interface_config(
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\sth.py", line 1651, in interface_config
+    return _process_cmd("interface_config",**arg)
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\sth.py", line 1072, in _process_cmd
+    retVal=_private_invoke("set ret [sth::"+cmd_name+cmdline+"]")
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\sth.py", line 421, in _private_invoke
+    tclserversocket.send(bytes(cmd+'\n','UTF-8'))</msg>
+<status status="FAIL" starttime="20201127 20:31:07.157" endtime="20201127 20:31:07.203"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | ${VM1['NO_OF_VRFS']} + 1 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM1['lan'][${i}]['first_host']}</arg>
+</arguments>
+<assign>
+<var>${gw}</var>
+</assign>
+<msg timestamp="20201127 20:31:07.203" level="TRACE">Arguments: [ '192.169.101.1' ]</msg>
+<msg timestamp="20201127 20:31:07.203" level="TRACE">Return: '192.169.101.1'</msg>
+<msg timestamp="20201127 20:31:07.203" level="INFO">${gw} = 192.169.101.1</msg>
+<status status="PASS" starttime="20201127 20:31:07.203" endtime="20201127 20:31:07.203"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM1['lan'][${i}]['vlan']}</arg>
+</arguments>
+<assign>
+<var>${vlan}</var>
+</assign>
+<msg timestamp="20201127 20:31:07.203" level="TRACE">Arguments: [ 600 ]</msg>
+<msg timestamp="20201127 20:31:07.203" level="TRACE">Return: 600</msg>
+<msg timestamp="20201127 20:31:07.203" level="INFO">${vlan} = 600</msg>
+<status status="PASS" starttime="20201127 20:31:07.203" endtime="20201127 20:31:07.203"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM2['lan'][${i}]['nw']}</arg>
+</arguments>
+<assign>
+<var>${destination_nw}</var>
+</assign>
+<msg timestamp="20201127 20:31:07.219" level="TRACE">Arguments: [ CalcIPv4Network('192.170.1.0/24') ]</msg>
+<msg timestamp="20201127 20:31:07.219" level="TRACE">Return: CalcIPv4Network('192.170.1.0/24')</msg>
+<msg timestamp="20201127 20:31:07.219" level="INFO">${destination_nw} = 192.170.1.0/24</msg>
+<status status="PASS" starttime="20201127 20:31:07.203" endtime="20201127 20:31:07.219"></status>
+</kw>
+<kw name="Send Commands And Expect" library="VM1">
+<arguments>
+<arg>sudo ip route del ${destination_nw} via ${gw} dev ${VM1['LAN_INTF']}.${vlan}</arg>
+</arguments>
+<msg timestamp="20201127 20:31:07.219" level="TRACE">Arguments: [ 'sudo ip route del 192.170.1.0/24 via 192.169.101.1 dev ens33.600' ]</msg>
+<msg timestamp="20201127 20:31:07.542" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:31:07.542" level="DEBUG">write_channel: b'sudo ip route del 192.170.1.0/24 via 192.169.101.1 dev ens33.600\n'</msg>
+<msg timestamp="20201127 20:31:07.542" level="DEBUG">Pattern is: sudo\ ip\ route\ del\ 192\.170\.1\.0/24\ via\ 192\.169\.101\.1\ dev\ ens33\.600</msg>
+<msg timestamp="20201127 20:31:07.542" level="DEBUG">_read_channel_expect read_data: s</msg>
+<msg timestamp="20201127 20:31:07.642" level="DEBUG">_read_channel_expect read_data: udo ip route del 192.170.1.0/24 via 192.169.101.1 dev ens33.600
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:31:07.642" level="DEBUG">Pattern found: sudo\ ip\ route\ del\ 192\.170\.1\.0/24\ via\ 192\.169\.101\.1\ dev\ ens33\.600 sudo ip route del 192.170.1.0/24 via 192.169.101.1 dev ens33.600
+root@VM1:~# </msg>
+<msg timestamp="20201127 20:31:07.642" level="TRACE">Return: 'sudo ip route del 192.170.1.0/24 via 192.169.101.1 dev ens33.600\nroot@VM1:~# '</msg>
+<status status="PASS" starttime="20201127 20:31:07.219" endtime="20201127 20:31:07.642"></status>
+</kw>
+<status status="PASS" starttime="20201127 20:31:07.203" endtime="20201127 20:31:07.642"></status>
+</kw>
+<status status="PASS" starttime="20201127 20:31:07.203" endtime="20201127 20:31:07.642"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | ${VM2['NO_OF_VRFS']} + 1 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM2['lan'][${i}]['first_host']}</arg>
+</arguments>
+<assign>
+<var>${gw}</var>
+</assign>
+<msg timestamp="20201127 20:31:07.642" level="TRACE">Arguments: [ '192.170.1.1' ]</msg>
+<msg timestamp="20201127 20:31:07.642" level="TRACE">Return: '192.170.1.1'</msg>
+<msg timestamp="20201127 20:31:07.642" level="INFO">${gw} = 192.170.1.1</msg>
+<status status="PASS" starttime="20201127 20:31:07.642" endtime="20201127 20:31:07.642"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM2['lan'][${i}]['vlan']}</arg>
+</arguments>
+<assign>
+<var>${vlan}</var>
+</assign>
+<msg timestamp="20201127 20:31:07.642" level="TRACE">Arguments: [ 750 ]</msg>
+<msg timestamp="20201127 20:31:07.642" level="TRACE">Return: 750</msg>
+<msg timestamp="20201127 20:31:07.642" level="INFO">${vlan} = 750</msg>
+<status status="PASS" starttime="20201127 20:31:07.642" endtime="20201127 20:31:07.642"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${VM1['lan'][${i}]['nw']}</arg>
+</arguments>
+<assign>
+<var>${destination_nw}</var>
+</assign>
+<msg timestamp="20201127 20:31:07.642" level="TRACE">Arguments: [ CalcIPv4Network('192.169.101.0/24') ]</msg>
+<msg timestamp="20201127 20:31:07.642" level="TRACE">Return: CalcIPv4Network('192.169.101.0/24')</msg>
+<msg timestamp="20201127 20:31:07.642" level="INFO">${destination_nw} = 192.169.101.0/24</msg>
+<status status="PASS" starttime="20201127 20:31:07.642" endtime="20201127 20:31:07.642"></status>
+</kw>
+<kw name="Send Commands And Expect" library="VM2">
+<arguments>
+<arg>sudo ip route del ${destination_nw} via ${gw} dev ${VM2['LAN_INTF']}.${vlan}</arg>
+</arguments>
+<msg timestamp="20201127 20:31:07.642" level="TRACE">Arguments: [ 'sudo ip route del 192.169.101.0/24 via 192.170.1.1 dev ens34.750' ]</msg>
+<msg timestamp="20201127 20:31:07.943" level="DEBUG">read_channel: </msg>
+<msg timestamp="20201127 20:31:07.943" level="DEBUG">write_channel: b'sudo ip route del 192.169.101.0/24 via 192.170.1.1 dev ens34.750\n'</msg>
+<msg timestamp="20201127 20:31:07.943" level="DEBUG">Pattern is: sudo\ ip\ route\ del\ 192\.169\.101\.0/24\ via\ 192\.170\.1\.1\ dev\ ens34\.750</msg>
+<msg timestamp="20201127 20:31:07.958" level="DEBUG">_read_channel_expect read_data: sudo ip route del 192.169.101.0/24 via 192.170.1.1 dev ens34.750
+</msg>
+<msg timestamp="20201127 20:31:07.958" level="DEBUG">Pattern found: sudo\ ip\ route\ del\ 192\.169\.101\.0/24\ via\ 192\.170\.1\.1\ dev\ ens34\.750 sudo ip route del 192.169.101.0/24 via 192.170.1.1 dev ens34.750
+</msg>
+<msg timestamp="20201127 20:31:08.160" level="DEBUG">read_channel: root@ubuntu:~# </msg>
+<msg timestamp="20201127 20:31:08.160" level="TRACE">Return: 'sudo ip route del 192.169.101.0/24 via 192.170.1.1 dev ens34.750\nroot@ubuntu:~# '</msg>
+<status status="PASS" starttime="20201127 20:31:07.642" endtime="20201127 20:31:08.160"></status>
+</kw>
+<status status="PASS" starttime="20201127 20:31:07.642" endtime="20201127 20:31:08.160"></status>
+</kw>
+<status status="PASS" starttime="20201127 20:31:07.642" endtime="20201127 20:31:08.160"></status>
+</kw>
+<msg timestamp="20201127 20:31:08.160" level="TRACE">Return: None</msg>
+<status status="FAIL" starttime="20201127 20:30:51.496" endtime="20201127 20:31:08.160">ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host</status>
+</kw>
+<doc>A test suite with tests for SDWAN SINGLE CPE Solution.
+Topology:-
+____________________________
+| VersaDirector |
+|___________________________|
+|
+|
+|
+_____________|_______________
+| WanCtrller1 |
+|____________________________|
+| |
+| |
+| |
+INTERNET/MPLS
+| |
+| |___
+______|__ ___|___
+| | | |
+LAN1--+ CPE1 | | CPE2 +--LAN1
+|________| |_______|
+
+
+Testplan Goals:-
+1. CHECK WAN INTERFACES STATUS.
+2. CHECK BGP NEIGHBOR STATUS.
+3. CHECK LAN ROUTE.
+4. Ping Test.
+5. IPERF Test.
+6. Traffic steering Test.
+7. QOS Test.</doc>
+<metadata>
+<item name="Version">1.0
+More Info For more information about Robot Framework see http://robotframework.org
+Author Sathishkumar murugesan
+Date 12 Dec 2017
+Executed At HOST
+Test Framework Robot Framework Python</item>
+</metadata>
+<status status="FAIL" starttime="20201127 20:28:25.946" endtime="20201127 20:31:08.160">Suite setup failed:
+Execution terminated by signal
+
+Also suite teardown failed:
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="11">Critical Tests</stat>
+<stat pass="0" fail="11">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="1">IPERF</stat>
+<stat pass="0" fail="4">P1</stat>
+<stat pass="0" fail="2">PING</stat>
+<stat pass="0" fail="3">QOS</stat>
+<stat pass="0" fail="11">robot:exit</stat>
+<stat pass="0" fail="1">SANITY01</stat>
+<stat pass="0" fail="1">TS1</stat>
+<stat pass="0" fail="1">TS2</stat>
+<stat pass="0" fail="1">TS3</stat>
+<stat pass="0" fail="1">TS4</stat>
+</tag>
+<suite>
+<stat pass="0" fail="11" id="s1" name="SINGLE CPE HYBRID SOLUTION TEST">SINGLE CPE HYBRID SOLUTION TEST</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20201127 20:30:54.824" level="ERROR">b''</msg>
+<msg timestamp="20201127 20:30:57.429" level="ERROR">b''</msg>
+<msg timestamp="20201127 20:30:59.577" level="ERROR">b''</msg>
+<msg timestamp="20201127 20:31:02.064" level="ERROR">b''</msg>
+<msg timestamp="20201127 20:31:04.984" level="ERROR">b''</msg>
+</errors>
+</robot>

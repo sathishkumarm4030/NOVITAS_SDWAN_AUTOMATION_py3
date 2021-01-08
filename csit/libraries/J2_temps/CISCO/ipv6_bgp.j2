@@ -1,0 +1,13 @@
+no router bgp {{ local_as }}
+router bgp {{ local_as }}
+ bgp log-neighbor-changes
+ no bgp default ipv4-unicast
+ neighbor {{ nbr_address }}  remote-as {{ remote_as }}
+ neighbor {{ nbr_address }} password {{ password }}
+ !
+ address-family ipv6
+  neighbor {{ nbr_address }} activate
+  network {{ loopback_ip6 }}/128
+ exit-address-family
+ !
+end

@@ -1,0 +1,13 @@
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols bgp {{ bgp_instance_id }} group LAN-EBGP type external
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols bgp {{ bgp_instance_id }} group LAN-EBGP family inet unicast
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols bgp {{ bgp_instance_id }} group LAN-EBGP local-address {{ local_address }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols bgp {{ bgp_instance_id }} group LAN-EBGP peer-as {{ peer_as }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols bgp {{ bgp_instance_id }} group LAN-EBGP neighbor {{ nbr_address }} password {{ password }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols bgp {{ bgp_instance_id }} group LAN-EBGP neighbor {{ nbr_address }} peer-as {{ peer_as }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols bgp {{ bgp_instance_id }} group LAN-EBGP neighbor {{ nbr_address }} as-override
+
+
+
+
+
+

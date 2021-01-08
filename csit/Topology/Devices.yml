@@ -1,0 +1,5609 @@
+################################################
+#versa Devices param
+#    Device_name:
+#    POD: 1
+#    Solution_type:
+#    Site_id:
+#    PAIRED_SITE_ID:
+#    Serial_Number:
+#    MIN_SW_VERSION:
+#    mgmt_ip:
+#    username:
+#    password:
+#    device_type:
+#    GUIusername:
+#    GUIpassword:
+#    PS_TEMPLATE_NAME:
+#    SECONDARY_PS_TEMPLATE_NAME:
+#    ESP_IP:
+#    VXLAN_IP:
+#    WAN1_INTF:
+#    WAN1_INTF_IP:
+#    WAN1_INTF_NEXTHOP:
+#    WAN2_INTF:
+#    WAN2_INTF_IP:
+#    WAN2_INTF_NEXTHOP:
+#    DUAL:
+#    REDU_DEV_WAN_INTF:
+#    CC_INTF:
+#    LAN_INTF:
+#    START_VLAN:
+#    START_LAN_IP_SUBNET:
+#    LAN_IPV6_STATIC:
+#    WAN1_IP_ALLOC:
+#    WAN2_IP_ALLOC:
+#    LIB1:
+#    LIB2:
+#    NODE:
+#    STAGING_SERVER:
+#    STAGING_INTF:
+#    STAGING_WAN:
+#    STAGING_WAN_DHCP:
+#    ORG_NAME:
+#    ORG_ID:
+#    NO_OF_VRFS:
+#    PST_CREATION:
+#    DG_CREATION:
+#    DEV_TEMPALTE_CREATION:
+#    DEV_ONBAORD:
+#    DEV_VRRP_LIB_CONFIG:
+###################################################################################################
+POD1_VD1:
+    POD: 1
+    device_type: versa_director
+    MIN_SW_VERSION: 16.1R2-S9
+    mgmt_ip: 10.91.127.194
+    username: Automated
+    password: Auto@12345
+    GUIusername: Automated
+    GUIpassword: Auto@12345
+
+POD1_VD2:
+    POD: 1
+    device_type: versa_director
+    MIN_SW_VERSION: 16.1R2-S9
+    mgmt_ip: 10.91.127.195
+    username: Automated
+    password: Auto@12345
+    GUIusername: Automated
+    GUIpassword: Auto@12345
+
+POD2_VD1:
+    POD: 2
+    device_type: versa_director
+    MIN_SW_VERSION: 16.1R2-S9
+    mgmt_ip: 10.91.116.35
+    username: Automated
+    password: Auto@12345
+    GUIusername: Automated
+    GUIpassword: Auto@12345
+
+POD2_VD2:
+    POD: 2
+    device_type: versa_director
+    MIN_SW_VERSION: 16.1R2-S9
+    mgmt_ip: 10.91.116.35
+    username: Automated
+    password: Auto@12345
+    GUIusername: Automated
+    GUIpassword: Auto@12345
+
+CPE11:
+    POD: 1
+    Solution_type:
+    Site_id: 1626
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11HYBKSA1811011
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    PS_TEMPLATE_NAME: JAPAN-BLR-PS-HS-LIB
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: JAPAN
+    ORG_ID: 125
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE-111-BLR-HYBRID-IPC00073:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4308
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4308
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.250
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.111
+    VXLAN_IP: 10.10.temporgid.111
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.17.54/30
+    WAN1_INTF_NEXTHOP: 172.16.17.53
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.16.54/30
+    WAN2_INTF_NEXTHOP: 172.16.16.53
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 1010
+    START_LAN_IP_SUBNET: 192.169.71.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-111-MUM-HYBRID-IPC00071:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4308
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4308
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.250
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.111
+    VXLAN_IP: 10.10.temporgid.111
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.17.54/30
+    WAN1_INTF_NEXTHOP: 172.16.17.53
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.16.54/30
+    WAN2_INTF_NEXTHOP: 172.16.16.53
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 1010
+    START_LAN_IP_SUBNET: 192.169.71.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00071
+    ORG_ID: 71
+    NO_OF_VRFS: 10
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE12:
+    POD: 1
+    Solution_type:
+    Site_id: 1627
+    PAIRED_SITE_ID:
+    Serial_Number: CPE12HYBKSA1812012
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.12
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.12
+    VXLAN_IP: 10.10.temporgid.12
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.46/30
+    WAN1_INTF_NEXTHOP: 172.16.7.45
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.46/30
+    WAN2_INTF_NEXTHOP: 172.16.6.45
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 610
+    START_LAN_IP_SUBNET: 192.169.111.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: JAPAN
+    ORG_ID: 125
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+VD1:
+    POD: 1
+    Solution_type:
+    Site_id:
+    PAIRED_SITE_ID:
+    Serial_Number:
+    MIN_SW_VERSION:
+    mgmt_ip: 10.91.127.194
+    username: Automated
+    password: Auto@12345
+    device_type: versa_director
+    GUIusername: Automated
+    GUIpassword: Auto@12345
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP:
+    VXLAN_IP:
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF:
+    START_VLAN:
+    START_LAN_IP_SUBNET:
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC:
+    WAN2_IP_ALLOC:
+    LIB1:
+    LIB2:
+    NODE:
+    STAGING_SERVER:
+    STAGING_INTF:
+    STAGING_WAN:
+    STAGING_WAN_DHCP:
+    ORG_NAME:
+    ORG_ID:
+    NO_OF_VRFS:
+    PST_CREATION:
+    DG_CREATION:
+    DEV_TEMPALTE_CREATION:
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+VD1-local:
+    POD: 1
+    Solution_type:
+    Site_id:
+    PAIRED_SITE_ID:
+    Serial_Number:
+    MIN_SW_VERSION:
+    mgmt_ip: 10.91.127.194
+    username: Administrator
+    password: versa123
+    device_type: versa_director
+    GUIusername: Administrator
+    GUIpassword: Colt@123
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP:
+    VXLAN_IP:
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF:
+    START_VLAN:
+    START_LAN_IP_SUBNET:
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC:
+    WAN2_IP_ALLOC:
+    LIB1:
+    LIB2:
+    NODE:
+    STAGING_SERVER:
+    STAGING_INTF:
+    STAGING_WAN:
+    STAGING_WAN_DHCP:
+    ORG_NAME:
+    ORG_ID:
+    NO_OF_VRFS:
+    PST_CREATION:
+    DG_CREATION:
+    DEV_TEMPALTE_CREATION:
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+VD1-local-pod1:
+    POD: 1
+    Solution_type:
+    Site_id:
+    PAIRED_SITE_ID:
+    Serial_Number:
+    MIN_SW_VERSION:
+    mgmt_ip: 10.91.127.194
+    username: Administrator
+    password: versa123
+    device_type: versa_director
+    GUIusername: Administrator
+    GUIpassword: Colt@123
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP:
+    VXLAN_IP:
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF:
+    START_VLAN:
+    START_LAN_IP_SUBNET:
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC:
+    WAN2_IP_ALLOC:
+    LIB1:
+    LIB2:
+    NODE:
+    STAGING_SERVER:
+    STAGING_INTF:
+    STAGING_WAN:
+    STAGING_WAN_DHCP:
+    ORG_NAME:
+    ORG_ID:
+    NO_OF_VRFS:
+    PST_CREATION:
+    DG_CREATION:
+    DEV_TEMPALTE_CREATION:
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+VD1-pod1:
+    POD: 1
+    Solution_type:
+    Site_id:
+    PAIRED_SITE_ID:
+    Serial_Number:
+    MIN_SW_VERSION:
+    mgmt_ip: 10.91.127.194
+    username: Automated
+    password: Auto@12345
+    device_type: versa_director
+    GUIusername: Automated
+    GUIpassword: Auto@12345
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP:
+    VXLAN_IP:
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF:
+    START_VLAN:
+    START_LAN_IP_SUBNET:
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC:
+    WAN2_IP_ALLOC:
+    LIB1:
+    LIB2:
+    NODE:
+    STAGING_SERVER:
+    STAGING_INTF:
+    STAGING_WAN:
+    STAGING_WAN_DHCP:
+    ORG_NAME:
+    ORG_ID:
+    NO_OF_VRFS:
+    PST_CREATION:
+    DG_CREATION:
+    DEV_TEMPALTE_CREATION:
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE11-BLR:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 1628
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11MPLSKSA1811011
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: JAPAN
+    ORG_ID: 125
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE12-BLR:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 1629
+    PAIRED_SITE_ID:
+    Serial_Number: CPE12INTERNETKSA1812012
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.12
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.12
+    VXLAN_IP: 10.10.temporgid.12
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.46/30
+    WAN1_INTF_NEXTHOP: 172.16.7.45
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.46/30
+    WAN2_INTF_NEXTHOP: 172.16.6.45
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 610
+    START_LAN_IP_SUBNET: 192.169.111.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: JAPAN
+    ORG_ID: 125
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE12-BLR-MPLS:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 1630
+    PAIRED_SITE_ID:
+    Serial_Number: CPE12INTERNETKSA1812013
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.12
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.12
+    VXLAN_IP: 10.10.temporgid.12
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.46/30
+    WAN1_INTF_NEXTHOP: 172.16.7.45
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.46/30
+    WAN2_INTF_NEXTHOP: 172.16.6.45
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 610
+    START_LAN_IP_SUBNET: 192.169.111.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: JAPAN
+    ORG_ID: 125
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE12-MUM-SINGLE-CPE-MPLSONLY-IPC00073:
+    POD: 2
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 4279
+    PAIRED_SITE_ID:
+    Serial_Number: CPE12nov271
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.12
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.12
+    VXLAN_IP: 10.10.temporgid.12
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.46/30
+    WAN1_INTF_NEXTHOP: 172.16.7.45
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.46/30
+    WAN2_INTF_NEXTHOP: 172.16.6.45
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 610
+    START_LAN_IP_SUBNET: 192.169.111.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-13-LON-SINGLE-CPE-INTERNETONLY-IPC00070:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 4312
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4312
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.13
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.13
+    VXLAN_IP: 10.10.temporgid.13
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.50/30
+    WAN1_INTF_NEXTHOP: 172.16.6.49
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 620
+    START_LAN_IP_SUBNET: 192.169.121.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC02-N5-LON
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00070
+    ORG_ID: 70
+    NO_OF_VRFS: 2
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-13-LON-SINGLE-CPE-INTERNETONLY-IPC00071:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 4312
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4312
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.13
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.13
+    VXLAN_IP: 10.10.temporgid.13
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.50/30
+    WAN1_INTF_NEXTHOP: 172.16.6.49
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 620
+    START_LAN_IP_SUBNET: 192.169.121.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC02-N5-LON
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00071
+    ORG_ID: 71
+    NO_OF_VRFS: 10
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-13-LON-SINGLE-CPE-INTERNETONLY-IPC00073:
+    POD: 2
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 4312
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4312
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.13
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: LON-SINGLE-CPE-INTERNETONLY
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.13
+    VXLAN_IP: 10.10.temporgid.13
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.50/30
+    WAN1_INTF_NEXTHOP: 172.16.6.49
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 620
+    START_LAN_IP_SUBNET: 192.169.121.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-13-LON-SINGLE-CPE-INTERNETONLY-IPC00092:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 4312
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4312
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.13
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.13
+    VXLAN_IP: 10.10.temporgid.13
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.50/30
+    WAN1_INTF_NEXTHOP: 172.16.6.49
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 620
+    START_LAN_IP_SUBNET: 192.169.121.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC02-N5-LON
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00092
+    ORG_ID: 92
+    NO_OF_VRFS: 2
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE11-BLR-HYBRID:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 1631
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11MPLSKSA1811014
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: JAPAN
+    ORG_ID: 125
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE12-BLR-HYBRID:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 1630
+    PAIRED_SITE_ID:
+    Serial_Number: CPE12HYBRDKSA1812013
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.12
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.12
+    VXLAN_IP: 10.10.temporgid.12
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.46/30
+    WAN1_INTF_NEXTHOP: 172.16.7.45
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.46/30
+    WAN2_INTF_NEXTHOP: 172.16.6.45
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 610
+    START_LAN_IP_SUBNET: 192.169.111.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: JAPAN
+    ORG_ID: 125
+    NO_OF_VRFS: 5
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE11-BLR-INT-ONLY:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 1635
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11MPLSKSA1811016
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: JAPAN
+    ORG_ID: 125
+    NO_OF_VRFS: 5
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE-4:
+    POD: 1
+    Solution_type:
+    Site_id: 1634
+    PAIRED_SITE_ID:
+    Serial_Number: AUTOCPE4
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.4
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.14/30
+    WAN1_INTF_NEXTHOP: 172.16.7.13
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.14/30
+    WAN2_INTF_NEXTHOP: 172.16.6.13
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 530
+    START_LAN_IP_SUBNET: 192.169.31.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00012
+    ORG_ID: 16
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE-45-BLR-SINGLE-CPE-MPLSONLY-IPC00071:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 4309
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4309
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.45
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.45
+    VXLAN_IP: 10.10.temporgid.45
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.142/30
+    WAN1_INTF_NEXTHOP: 172.16.7.141
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.142/30
+    WAN2_INTF_NEXTHOP: 172.16.6.141
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 860
+    START_LAN_IP_SUBNET: 192.170.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00071
+    ORG_ID: 71
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-45-BLR-SINGLE-CPE-MPLSONLY-IPC00090:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 4309
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4309
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.45
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.45
+    VXLAN_IP: 10.10.temporgid.45
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.142/30
+    WAN1_INTF_NEXTHOP: 172.16.7.141
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.142/30
+    WAN2_INTF_NEXTHOP: 172.16.6.141
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 860
+    START_LAN_IP_SUBNET: 192.170.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00090
+    ORG_ID: 90
+    NO_OF_VRFS: 5
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-45-MUM-SINGLE-CPE-HYBRID-IPC00071:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4309
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4309
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.45
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.45
+    VXLAN_IP: 10.10.temporgid.45
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.142/30
+    WAN1_INTF_NEXTHOP: 172.16.7.141
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.142/30
+    WAN2_INTF_NEXTHOP: 172.16.6.141
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 860
+    START_LAN_IP_SUBNET: 192.170.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00071
+    ORG_ID: 71
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-45-MUM-SINGLE-CPE-HYBRID-IPC00073:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4309
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4309
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.45
+    username: Automated
+    password: Auto@12345
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.45
+    VXLAN_IP: 10.10.temporgid.45
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.142/30
+    WAN1_INTF_NEXTHOP: 172.16.7.141
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.142/30
+    WAN2_INTF_NEXTHOP: 172.16.6.141
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 860
+    START_LAN_IP_SUBNET: 192.170.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE46-HKG-HYB-IPC00172:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 786
+    PAIRED_SITE_ID:
+    Serial_Number: VOIP46KSA
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip:
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00172-HKG-PS-HS-LIB-CPE46
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.46
+    VXLAN_IP: 10.10.temporgid.46
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.146/30
+    WAN1_INTF_NEXTHOP: 172.16.7.145
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.146/30
+    WAN2_INTF_NEXTHOP: 172.16.6.145
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 870
+    START_LAN_IP_SUBNET: 192.170.111.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG:
+
+CPE47-HYB-WCHKG:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 787
+    PAIRED_SITE_ID:
+    Serial_Number: VOIP47KSA
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.47
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-HKG-LIB-CPE47
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.47
+    VXLAN_IP: 10.10.temporgid.47
+    WAN1_INTF: vni-0/5
+    WAN1_INTF_IP: 172.16.17.150/30
+    WAN1_INTF_NEXTHOP: 172.16.17.149
+    WAN2_INTF: vni-0/6
+    WAN2_INTF_IP: 172.16.16.150/30
+    WAN2_INTF_NEXTHOP: 172.16.16.149
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/8
+    START_VLAN: 880
+    START_LAN_IP_SUBNET: 192.170.121.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG:
+
+CPE-22:
+    POD: 1
+    Solution_type:
+    Site_id: 1777
+    PAIRED_SITE_ID:
+    Serial_Number: AUTOCPE22
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.22
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.86/30
+    WAN1_INTF_NEXTHOP: 172.16.7.85
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.86/30
+    WAN2_INTF_NEXTHOP: 172.16.6.85
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 710
+    START_LAN_IP_SUBNET: 192.169.211.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: AUTO_TEST
+    ORG_ID: 160
+    NO_OF_VRFS: 2
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+UAT-112:
+    POD: 1
+    Solution_type:
+    Site_id: 1981
+    PAIRED_SITE_ID:
+    Serial_Number: UAT1124106
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.116.245
+    username: admin
+    password: Versa1234
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.212
+    VXLAN_IP: 10.10.temporgid.212
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.8.10/30
+    WAN2_INTF_NEXTHOP: 172.16.8.9
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 1020
+    START_LAN_IP_SUBNET: 192.170.210.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF:
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00012
+    ORG_ID: 16
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+UAT3:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 785
+    PAIRED_SITE_ID:
+    Serial_Number: UAT3KSA
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.251
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00172-HKG-PS-HS-LIB-UAT3
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.203
+    VXLAN_IP: 10.10.temporgid.203
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.17.58/30
+    WAN1_INTF_NEXTHOP: 172.16.17.57
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.16.58/30
+    WAN2_INTF_NEXTHOP: 172.16.16.57
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 1020
+    START_LAN_IP_SUBNET: 192.169.81.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG:
+
+CPE1234:
+    POD: 1
+    Solution_type:
+    Site_id: 1628
+    PAIRED_SITE_ID:
+    Serial_Number: CPE1234MPLSKSA1811011
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: SAMPLE100-PS
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: MUM
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: JAPAN
+    ORG_ID: 125
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+
+CPE11-GGN-INTONLY:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 2011
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: GGN
+    STAGING_SERVER: NV-WC01-N3-GGN
+    STAGING_INTF:
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00142
+    ORG_ID: 42
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+
+CPE12222-SIN-MPLSONLY:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 2012
+    PAIRED_SITE_ID:
+    Serial_Number: CPE12KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.12
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.12
+    VXLAN_IP: 10.10.temporgid.12
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.46/30
+    WAN1_INTF_NEXTHOP: 172.16.7.45
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.46/30
+    WAN2_INTF_NEXTHOP: 172.16.6.45
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 610
+    START_LAN_IP_SUBNET: 192.169.111.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: SIN
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00142
+    ORG_ID: 42
+    NO_OF_VRFS: 2
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE25-HKG-HYBRID:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2025
+    PAIRED_SITE_ID:
+    Serial_Number: CPE25KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.25
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.25
+    VXLAN_IP: 10.10.temporgid.25
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.98/30
+    WAN1_INTF_NEXTHOP: 172.16.7.97
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.98/30
+    WAN2_INTF_NEXTHOP: 172.16.6.97
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 740
+    START_LAN_IP_SUBNET: 192.169.241.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF:
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE11-HKG-MPLSONLY:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 2111
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11KSAB
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00173
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE11-HKG-HYBRID1:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2211
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11HYKSAB1
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: CPE11HYD-PS
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: 1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 2
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE100-SIN-INTONLY:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 1100
+    PAIRED_SITE_ID:
+    Serial_Number: CPE100KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.100
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.100
+    VXLAN_IP: 10.10.temporgid.100
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.100.54/30
+    WAN1_INTF_NEXTHOP: 172.16.100.53
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.100.54/30
+    WAN2_INTF_NEXTHOP: 172.16.100.53
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 1100
+    START_LAN_IP_SUBNET: 192.100.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N6-SIN
+    STAGING_INTF:
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00174
+    ORG_ID: 74
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE101-HKG-HYBRID:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 1101
+    PAIRED_SITE_ID:
+    Serial_Number: CPE101KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.101
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.101
+    VXLAN_IP: 10.10.temporgid.101
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.101.98/30
+    WAN1_INTF_NEXTHOP: 172.16.101.97
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.101.98/30
+    WAN2_INTF_NEXTHOP: 172.16.101.97
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 1101
+    START_LAN_IP_SUBNET: 192.101.241.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF:
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00175
+    ORG_ID: 75
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+
+CPE26-HKG-HYBRID:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2026
+    PAIRED_SITE_ID:
+    Serial_Number: CPE26KSA
+    MIN_SW_VERSION:  16.1R2-S8
+    mgmt_ip: 10.91.116.252
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: AFTER_UPGRADE_PS3
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.102/30
+    WAN2_INTF_NEXTHOP: 172.16.6.101
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF:
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE11-HKGMPLS1:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 2311
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11KSAC
+    MIN_SW_VERSION:  16.1R2-S8
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: ABCqw_PS
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.111
+    VXLAN_IP: 10.10.temporgid.111
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00173
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE11-HKGMPLS2:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 2312
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11KSAC
+    MIN_SW_VERSION:  16.1R2-S8
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: Y
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.111
+    VXLAN_IP: 10.10.temporgid.111
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00173
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE22HKG-HYBRID:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2022
+    PAIRED_SITE_ID:
+    Serial_Number: CPE22KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.22
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00172-HKG-PS-HS-LIB-V120
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.22
+    VXLAN_IP: 10.10.temporgid.22
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.86/30
+    WAN1_INTF_NEXTHOP: 172.16.7.85
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.86/30
+    WAN2_INTF_NEXTHOP: 172.16.6.85
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 710
+    START_LAN_IP_SUBNET: 192.169.211.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF:
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 2
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE23-SIN-HYBRID:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2023
+    PAIRED_SITE_ID:
+    Serial_Number: CPE23KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.23
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00172-SIN-PS-HS-LIB-V120
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.23
+    VXLAN_IP: 10.10.temporgid.23
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.90/30
+    WAN1_INTF_NEXTHOP: 172.16.7.89
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.90/30
+    WAN2_INTF_NEXTHOP: 172.16.6.89
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 720
+    START_LAN_IP_SUBNET: 192.169.221.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N6-SIN
+    STAGING_INTF:
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 2
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+
+CPE14-SIN-INTONLY:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 2014
+    PAIRED_SITE_ID:
+    Serial_Number: CPE14KSA
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.14
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC000172-ARUN-PS
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.14
+    VXLAN_IP: 10.10.temporgid.14
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.54/30
+    WAN1_INTF_NEXTHOP: 172.16.7.53
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.54/30
+    WAN2_INTF_NEXTHOP: 172.16.6.53
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 630
+    START_LAN_IP_SUBNET: 192.169.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N6-SIN
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE1-SIN-HYBRID:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2001
+    PAIRED_SITE_ID:
+    Serial_Number: CPE01KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.1
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.1
+    VXLAN_IP: 10.10.temporgid.1
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.2/30
+    WAN1_INTF_NEXTHOP: 172.16.7.1
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.2/30
+    WAN2_INTF_NEXTHOP: 172.16.6.1
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 500
+    START_LAN_IP_SUBNET: 192.169.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N6-SIN
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 2
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE4-SIN-HYBRID:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2004
+    PAIRED_SITE_ID:
+    Serial_Number: CPE04KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.4
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.4
+    VXLAN_IP: 10.10.temporgid.4
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.14/30
+    WAN1_INTF_NEXTHOP: 172.16.7.13
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.14/30
+    WAN2_INTF_NEXTHOP: 172.16.6.13
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 530
+    START_LAN_IP_SUBNET: 192.169.31.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N6-SIN
+    STAGING_INTF:
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 2
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+
+
+CPE16-SIN-MPLSONLY:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 2016
+    PAIRED_SITE_ID:
+    Serial_Number: CPE16KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.16
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00172-SIN-PS-M-V120
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.16
+    VXLAN_IP: 10.10.temporgid.16
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.62/30
+    WAN1_INTF_NEXTHOP: 172.16.7.61
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.62/30
+    WAN2_INTF_NEXTHOP: 172.16.6.61
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 650
+    START_LAN_IP_SUBNET: 192.169.151.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: SIN
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF:
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+
+CPE11-HKG-HYBRID1-NEW:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2611
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11HYKSAB16
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: CPE11HYD-NEW-PS
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF: vni-0/1
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: 2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 2
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE27-BLR-SINGLE-CPE-HYBRID-IPC00190:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4447
+    PAIRED_SITE_ID:
+    Serial_Number: CPE27oct261
+    MIN_SW_VERSION: 16.1R2-S9
+    mgmt_ip: 10.91.240.27
+    username: admin
+    password: versa123
+    device_type: branch
+    PS_TEMPLATE_NAME: IPC00190-SIN05-NEW-PS-HYB
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.106/30
+    WAN1_INTF_NEXTHOP: 172.16.7.105
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.106/30
+    WAN2_INTF_NEXTHOP: 172.16.6.105
+    LAN_INTF: vni-0/4
+    START_VLAN: 760
+    START_LAN_IP_SUBNET: 192.170.11.0/24
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+
+
+CPE11-HKG-DUALMPLS:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 2911
+    PAIRED_SITE_ID: 2127
+    Serial_Number: CPE11HYKSAB19
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/1
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: 2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE32-SIN-MPLSONLY:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 2032
+    PAIRED_SITE_ID:
+    Serial_Number: CPE32KSA
+    MIN_SW_VERSION:  16.1R2-S2.2
+    mgmt_ip: 10.91.240.32
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.32
+    VXLAN_IP: 10.10.temporgid.32
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.126/30
+    WAN1_INTF_NEXTHOP: 172.16.7.125
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.126/30
+    WAN2_INTF_NEXTHOP: 172.16.6.125
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 820
+    START_LAN_IP_SUBNET: 192.170.61.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: SIN
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 3
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE-34:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2034
+    PAIRED_SITE_ID:
+    Serial_Number: KSA3473
+    MIN_SW_VERSION:  20.2.2
+    mgmt_ip: 10.91.240.234
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.34
+    VXLAN_IP: 10.10.temporgid.34
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.134/30
+    WAN1_INTF_NEXTHOP: 172.16.7.133
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 192.168.1.44/24
+    WAN2_INTF_NEXTHOP: 192.168.1.1
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 840
+    START_LAN_IP_SUBNET: 192.170.81.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC02-N5-LON
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE26-HKG-DUALMPLSONLY-PRIM-IPC00190:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 2926
+    PAIRED_SITE_ID: 2927
+    Serial_Number: CPE26KSAB9
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.252
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/1
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE27-HKG-DUALMPLSONLY-SEC-IPC00190:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 2927
+    PAIRED_SITE_ID: 2926
+    Serial_Number: CPE27KSAB9
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.253
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/1
+    WAN2_INTF_IP: 172.16.7.106/30
+    WAN2_INTF_NEXTHOP: 172.16.7.105
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN2
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE11-HKG-HYB-IPC00190:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2911
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11HYKSXB90
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.111
+    VXLAN_IP: 10.10.temporgid.111
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC:
+    WAN2_IP_ALLOC: STATIC
+    LIB1:
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 2
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE11-LON-HYBRD-IPC00073:
+    POD: 2
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4275
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11nov27
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: LON_HYBRID01
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE11-HKG-INT-IPC00190:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 2992
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11INTSXB90
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.211
+    VXLAN_IP: 10.10.temporgid.211
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.42/30
+    WAN1_INTF_NEXTHOP: 172.16.6.41
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC:
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 2
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE11-HKG-MPLS-IPC00190:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 2993
+    PAIRED_SITE_ID:
+    Serial_Number: CPE11INTSXB93
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC:
+    WAN2_IP_ALLOC:
+    LIB1:
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE26-DUAL:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4126
+    PAIRED_SITE_ID: 4127
+    Serial_Number: CPE26ASB01
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.252
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME: IPC001900-PS-MPLS
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/2
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE27-DUAL-SEC:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4127
+    PAIRED_SITE_ID: 4126
+    Serial_Number: CPE27ASDS02
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.253
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME: IPC001900-PS-INT
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.106/30
+    WAN2_INTF_NEXTHOP: 172.16.6.105
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE26-HKG2-DDI:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-INTERNET
+    Site_id: 4236
+    PAIRED_SITE_ID: 4237
+    Serial_Number: CPE26CSB01
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.252
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME: IPC00190-HKG-PS2-D-IOS-LIB-LS
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.102/30
+    WAN1_INTF_NEXTHOP: 172.16.6.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/2
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: ACTIVE
+    LIB2: ACTIVE
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE27-HKG2-DDI-SEC:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-INTERNET
+    Site_id: 4237
+    PAIRED_SITE_ID: 4236
+    Serial_Number: CPE27CSDS02
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.253
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.106/30
+    WAN2_INTF_NEXTHOP: 172.16.6.105
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: ACTIVE
+    LIB2: ACTIVE
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE26-HKG2-DUAL-HYB:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4240
+    PAIRED_SITE_ID: 4241
+    Serial_Number: CPE26ESB01
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.252
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/2
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE27-HKG2-DUAL-HYB:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4241
+    PAIRED_SITE_ID: 4240
+    Serial_Number: CPE27ESDS02
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.253
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.106/30
+    WAN2_INTF_NEXTHOP: 172.16.6.105
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE26-HKG2-DUAL-MPLS-P:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4242
+    PAIRED_SITE_ID: 4243
+    Serial_Number: CPE2EKSAB9
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.252
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/1
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE26-HKG2-DUAL-MPLS-S:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4243
+    PAIRED_SITE_ID: 4242
+    Serial_Number: CPE27ESAB9
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.253
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/1
+    WAN2_INTF_IP: 172.16.7.106/30
+    WAN2_INTF_NEXTHOP: 172.16.7.105
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN2
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD:
+    DEV_VRRP_LIB_CONFIG:
+
+CPE27-HKG2-SINGLE-CPE-DUAL-INTERNET18:
+    POD: 1
+    Solution_type: SINGLE-CPE-DUAL-INTERNET
+    Site_id: 4262
+    PAIRED_SITE_ID:
+    Serial_Number: CPE27ySAB9
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.253
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: YUT4
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.106/30
+    WAN1_INTF_NEXTHOP: 172.16.7.105
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.106/30
+    WAN2_INTF_NEXTHOP: 172.16.6.105
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: ACTIVE
+    LIB2: ACTIVE
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N6-SIN
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 2
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-34-HKG-DUAL-HYBRID-MPLS:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 534
+    PAIRED_SITE_ID: 535
+    Serial_Number: KSA534
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.34
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.34
+    VXLAN_IP: 10.10.temporgid.34
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.134/30
+    WAN1_INTF_NEXTHOP: 172.16.7.133
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/2
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 840
+    START_LAN_IP_SUBNET: 192.170.81.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-34-LON-DUAL-CPE-DUAL-INTERNET-IPC00090-P:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-INTERNET
+    Site_id: 4303
+    PAIRED_SITE_ID: 4304
+    Serial_Number: KSA4303
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.34
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.34
+    VXLAN_IP: 10.10.temporgid.34
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.134/30
+    WAN1_INTF_NEXTHOP: 172.16.6.133
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/2
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 840
+    START_LAN_IP_SUBNET: 192.170.81.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: ACTIVE
+    LIB2: ACTIVE
+    NODE: LON
+    STAGING_SERVER: NV-WC02-N5-LON
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00090
+    ORG_ID: 90
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-35:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-INTERNET
+    Site_id: 4304
+    PAIRED_SITE_ID: 4303
+    Serial_Number: KSA4304
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.35
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.35
+    VXLAN_IP: 10.10.temporgid.35
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.138/30
+    WAN2_INTF_NEXTHOP: 172.16.6.137
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 840
+    START_LAN_IP_SUBNET: 192.170.81.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: ACTIVE
+    LIB2: ACTIVE
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-35-HKG-DUAL-HYBRID-INT:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 535
+    PAIRED_SITE_ID: 534
+    Serial_Number: KSA535
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.35
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.35
+    VXLAN_IP: 10.10.temporgid.35
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.138/30
+    WAN2_INTF_NEXTHOP: 172.16.6.137
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 840
+    START_LAN_IP_SUBNET: 192.170.81.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-35-LON-DUAL-CPE-DUAL-INTERNET-IPC00090-S:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-INTERNET
+    Site_id: 4304
+    PAIRED_SITE_ID: 4303
+    Serial_Number: KSA4304
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.35
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.35
+    VXLAN_IP: 10.10.temporgid.35
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.138/30
+    WAN2_INTF_NEXTHOP: 172.16.6.137
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 840
+    START_LAN_IP_SUBNET: 192.170.81.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: ACTIVE
+    LIB2: ACTIVE
+    NODE: LON
+    STAGING_SERVER: NV-WC02-N5-LON
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00090
+    ORG_ID: 90
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-36-MUM-SINGLE-CPE-MPLSONLY-IPC00091:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 4311
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4311
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.36
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.36
+    VXLAN_IP: 10.10.temporgid.36
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.198/30
+    WAN1_INTF_NEXTHOP: 172.16.7.197
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 960
+    START_LAN_IP_SUBNET: 192.170.100.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00091
+    ORG_ID: 91
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+DEMO-CPE1:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4265
+    PAIRED_SITE_ID:
+    Serial_Number: CPEKSA26fgh
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.11
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-HKG3-PS-HS-LIB
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.11
+    VXLAN_IP: 10.10.temporgid.11
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.42/30
+    WAN1_INTF_NEXTHOP: 172.16.7.41
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.42/30
+    WAN2_INTF_NEXTHOP: 172.16.6.41
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: YES
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN:
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG:
+
+UAT-111-MUM-HYBRID-IPC00090:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4308
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4308
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.250
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.111
+    VXLAN_IP: 10.10.temporgid.111
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.17.54/30
+    WAN1_INTF_NEXTHOP: 172.16.17.53
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.16.54/30
+    WAN2_INTF_NEXTHOP: 172.16.16.53
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 1010
+    START_LAN_IP_SUBNET: 192.169.71.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00090
+    ORG_ID: 90
+    NO_OF_VRFS: 10
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE19:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 2219
+    PAIRED_SITE_ID:
+    Serial_Number: CPE1234MPLSKSA1921
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.19
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: CPE19-HKG-INTONLY-PS
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.19
+    VXLAN_IP: 10.10.temporgid.19
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.6.74/30
+    WAN1_INTF_NEXTHOP: 172.16.6.73
+    WAN2_INTF: vni-0/1
+    WAN2_INTF_IP: 172.16.7.74/30
+    WAN2_INTF_NEXTHOP: 172.16.7.73
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 680
+    START_LAN_IP_SUBNET: 192.169.181.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00012
+    ORG_ID: 16
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG:
+
+CPE20:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2220
+    PAIRED_SITE_ID:
+    Serial_Number: CPE1234MPLSKSA2022011
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.20
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: CPE20-SIN_02-HYBRID-PS
+    SECONDARY_PS_TEMPLATE_NAME: CPE_20-SIN_02-HYBRID-DG
+    ESP_IP: 20.20.temporgid.20
+    VXLAN_IP: 10.10.temporgid.20
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.6.78/30
+    WAN1_INTF_NEXTHOP: 172.16.6.77
+    WAN2_INTF: vni-0/1
+    WAN2_INTF_IP: 172.16.7.78/30
+    WAN2_INTF_NEXTHOP: 172.16.7.77
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 690
+    START_LAN_IP_SUBNET: 192.169.191.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: SIN
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00012
+    ORG_ID: 16
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG:
+
+CPE-21-BLR-SINGLE-CPE-INTERNETONLY-IPC00090:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 4310
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4310
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.21
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.21
+    VXLAN_IP: 10.10.temporgid.21
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.6.82/30
+    WAN1_INTF_NEXTHOP: 172.16.6.81
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 700
+    START_LAN_IP_SUBNET: 192.168.71.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00090
+    ORG_ID: 90
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-21-BLR-SINGLE-CPE-MPLSONLY-IPC00070:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 4310
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4310
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.21
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.21
+    VXLAN_IP: 10.10.temporgid.21
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.82/30
+    WAN1_INTF_NEXTHOP: 172.16.7.81
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 700
+    START_LAN_IP_SUBNET: 192.168.71.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2:
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00070
+    ORG_ID: 70
+    NO_OF_VRFS: 2
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-21-BLR-SINGLE-CPE-MPLSONLY-IPC00071:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 4310
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4310
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.21
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.21
+    VXLAN_IP: 10.10.temporgid.21
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.82/30
+    WAN1_INTF_NEXTHOP: 172.16.7.81
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 700
+    START_LAN_IP_SUBNET: 192.168.71.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00071
+    ORG_ID: 71
+    NO_OF_VRFS: 5
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-21-BLR-SINGLE-CPE-MPLSONLY-IPC00073:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 4310
+    PAIRED_SITE_ID:
+    Serial_Number: KSA4310
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.21
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.21
+    VXLAN_IP: 10.10.temporgid.21
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.82/30
+    WAN1_INTF_NEXTHOP: 172.16.7.81
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 700
+    START_LAN_IP_SUBNET: 192.168.71.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-18-DUAL-HYBRID-INT:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 2218
+    PAIRED_SITE_ID: 2217
+    Serial_Number: KSA2218
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.18
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.18
+    VXLAN_IP: 10.10.temporgid.18
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.7.70/30
+    WAN1_INTF_NEXTHOP: 172.16.7.71
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/0
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 660
+    START_LAN_IP_SUBNET: 192.169.161.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: NO
+    NODE: LON
+    STAGING_SERVER: NV-WC01-N5-LON
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00012
+    ORG_ID: 16
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-18-MUM-DUAL-CPE-DUAL-MPLS-IPC00071-P:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4301
+    PAIRED_SITE_ID: 4302
+    Serial_Number: KSA2218A
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.18
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.18
+    VXLAN_IP: 10.10.temporgid.18
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.177.70/30
+    WAN1_INTF_NEXTHOP: 172.16.177.69
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/0
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 660
+    START_LAN_IP_SUBNET: 192.169.161.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00071
+    ORG_ID: 71
+    NO_OF_VRFS: 10
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-18-MUM-DUAL-CPE-DUAL-MPLS-IPC00073-P:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4301
+    PAIRED_SITE_ID: 4302
+    Serial_Number: KSA2218A
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.18
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.18
+    VXLAN_IP: 10.10.temporgid.18
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.177.70/30
+    WAN1_INTF_NEXTHOP: 172.16.177.69
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/0
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 660
+    START_LAN_IP_SUBNET: 192.169.161.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-18-MUM-DUAL-CPE-DUAL-MPLS-IPC00090-P:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4301
+    PAIRED_SITE_ID: 4302
+    Serial_Number: KSA2218A
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.18
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.18
+    VXLAN_IP: 10.10.temporgid.18
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.177.70/30
+    WAN1_INTF_NEXTHOP: 172.16.177.69
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/0
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 660
+    START_LAN_IP_SUBNET: 192.169.161.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00090
+    ORG_ID: 90
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-17-DUAL-HYBRID-MPLS:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 2217
+    PAIRED_SITE_ID: 2218
+    Serial_Number: KSA2217
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.17
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.17
+    VXLAN_IP: 10.10.temporgid.17
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.66/30
+    WAN2_INTF_NEXTHOP: 172.16.6.65
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 660
+    START_LAN_IP_SUBNET: 192.169.161.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: NO
+    NODE: LON
+    STAGING_SERVER: NV-WC01-N5-LON
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00012
+    ORG_ID: 16
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-17-MUM-DUAL-CPE-DUAL-MPLS-IPC00071-S:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4302
+    PAIRED_SITE_ID: 4301
+    Serial_Number: KSA2217B
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.17
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.17
+    VXLAN_IP: 10.10.temporgid.17
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.7.66/30
+    WAN2_INTF_NEXTHOP: 172.16.7.65
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 660
+    START_LAN_IP_SUBNET: 192.169.161.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN2
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00071
+    ORG_ID: 71
+    NO_OF_VRFS: 10
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-17-MUM-DUAL-CPE-DUAL-MPLS-IPC00073-S:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4302
+    PAIRED_SITE_ID: 4301
+    Serial_Number: KSA2217B
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.17
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.17
+    VXLAN_IP: 10.10.temporgid.17
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.7.66/30
+    WAN2_INTF_NEXTHOP: 172.16.7.65
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 660
+    START_LAN_IP_SUBNET: 192.169.161.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN2
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-17-MUM-DUAL-CPE-DUAL-MPLS-IPC00090-S:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4302
+    PAIRED_SITE_ID: 4301
+    Serial_Number: KSA2217B
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.17
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.17
+    VXLAN_IP: 10.10.temporgid.17
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.7.66/30
+    WAN2_INTF_NEXTHOP: 172.16.7.65
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 660
+    START_LAN_IP_SUBNET: 192.169.161.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN2
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00090
+    ORG_ID: 90
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-16-HYBRID-MPLS_Demo1:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2718
+    PAIRED_SITE_ID:
+    Serial_Number: CPE16KSAA12
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.16
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: CPE16-SIN_02-HYBRID-PS-DemoTr
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.16
+    VXLAN_IP: 10.10.temporgid.16
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.62/30
+    WAN1_INTF_NEXTHOP: 172.16.7.61
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.62/30
+    WAN2_INTF_NEXTHOP: 172.16.6.61
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 650
+    START_LAN_IP_SUBNET: 192.169.151.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: NO
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N6-SIN
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE14-HKG2-DUAL-MPLS-P:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4114
+    PAIRED_SITE_ID: 4115
+    Serial_Number: CPE1415EKSA
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.14
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.14
+    VXLAN_IP: 10.10.temporgid.14
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.7.54/30
+    WAN1_INTF_NEXTHOP: 172.16.7.53
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/0
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 630
+    START_LAN_IP_SUBNET: 192.169.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-14-LON-DUAL-CPE-HYBRID-IPC00071-P:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4305
+    PAIRED_SITE_ID: 4306
+    Serial_Number: KSA4305
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.14
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.14
+    VXLAN_IP: 10.10.temporgid.14
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.7.54/30
+    WAN1_INTF_NEXTHOP: 172.16.7.53
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/0
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 630
+    START_LAN_IP_SUBNET: 192.169.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC01-N5-LON
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00071
+    ORG_ID: 71
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-14-LON-DUAL-CPE-HYBRID-IPC00073-P:
+    POD: 2
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4305
+    PAIRED_SITE_ID: 4306
+    Serial_Number: KSA4305
+    MIN_SW_VERSION:  20.2.2
+    mgmt_ip: 10.91.240.14
+    username: Automated
+    password: Auto@12345
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.14
+    VXLAN_IP: 10.10.temporgid.14
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.7.54/30
+    WAN1_INTF_NEXTHOP: 172.16.7.53
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/0
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 630
+    START_LAN_IP_SUBNET: 192.169.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC01-N5-LON
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-14-LON-DUAL-CPE-HYBRID-IPC00090-P:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4305
+    PAIRED_SITE_ID: 4306
+    Serial_Number: KSA4305
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.14
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.14
+    VXLAN_IP: 10.10.temporgid.14
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.7.54/30
+    WAN1_INTF_NEXTHOP: 172.16.7.53
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/0
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 630
+    START_LAN_IP_SUBNET: 192.169.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC01-N5-LON
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00090
+    ORG_ID: 90
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE15-HKG2-DUAL-MPLS-S:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4115
+    PAIRED_SITE_ID: 4114
+    Serial_Number: CPE1514EKSA
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.15
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.15
+    VXLAN_IP: 10.10.temporgid.15
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.58/30
+    WAN2_INTF_NEXTHOP: 172.16.6.57
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 630
+    START_LAN_IP_SUBNET: 192.169.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: NO
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00172
+    ORG_ID: 72
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-15-LON-DUAL-CPE-HYBRID-IPC00071-S:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4306
+    PAIRED_SITE_ID: 4305
+    Serial_Number: KSA4306
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.15
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.15
+    VXLAN_IP: 10.10.temporgid.15
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.58/30
+    WAN2_INTF_NEXTHOP: 172.16.6.57
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 630
+    START_LAN_IP_SUBNET: 192.169.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC02-N5-LON
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00071
+    ORG_ID: 71
+    NO_OF_VRFS: 10
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:
+    POD: 2
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4306
+    PAIRED_SITE_ID: 4305
+    Serial_Number: KSA4306
+    MIN_SW_VERSION:  20.2.2
+    mgmt_ip: 10.91.240.15
+    username: Automated
+    password: Auto@12345
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.15
+    VXLAN_IP: 10.10.temporgid.15
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.58/30
+    WAN2_INTF_NEXTHOP: 172.16.6.57
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 630
+    START_LAN_IP_SUBNET: 192.169.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC02-N5-LON
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE-15-LON-DUAL-CPE-HYBRID-IPC00090-S:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4306
+    PAIRED_SITE_ID: 4305
+    Serial_Number: KSA4306
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.15
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME:
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.15
+    VXLAN_IP: 10.10.temporgid.15
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/0
+    WAN2_INTF_IP: 172.16.6.58/30
+    WAN2_INTF_NEXTHOP: 172.16.6.57
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/1
+    LAN_INTF: vni-0/2
+    START_VLAN: 630
+    START_LAN_IP_SUBNET: 192.169.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: LON
+    STAGING_SERVER: NV-WC02-N5-LON
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00090
+    ORG_ID: 90
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE19-HKG-INT:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 4619
+    PAIRED_SITE_ID:
+    Serial_Number: CPE1234MPLSKSA1931
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.19
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: CPE19-HKG-INTONLY-PSH
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.19
+    VXLAN_IP: 10.10.temporgid.19
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.6.74/30
+    WAN1_INTF_NEXTHOP: 172.16.6.73
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 680
+    START_LAN_IP_SUBNET: 192.169.181.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00012
+    ORG_ID: 16
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE19-MYS-HYB-INT:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 651
+    PAIRED_SITE_ID:
+    Serial_Number: CPE19KSA1922HK
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.19
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00012-MYS-PS-HS-LIB2
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.19
+    VXLAN_IP: 10.10.temporgid.19
+    WAN1_INTF: vni-0/0
+    WAN1_INTF_IP: 172.16.6.74/30
+    WAN1_INTF_NEXTHOP: 172.16.6.73
+    WAN2_INTF: vni-0/1
+    WAN2_INTF_IP: 172.16.7.74/30
+    WAN2_INTF_NEXTHOP: 172.16.7.73
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/2
+    START_VLAN: 680
+    START_LAN_IP_SUBNET: 192.169.181.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: MYS
+    STAGING_SERVER: NV-WC02-N7-MYS
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00012
+    ORG_ID: 16
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-50:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 2050
+    PAIRED_SITE_ID:
+    Serial_Number: 2050
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.241
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00171-SIN-PS-1S-H-L-810a-v9
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.50
+    VXLAN_IP: 10.10.temporgid.50
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.158/30
+    WAN1_INTF_NEXTHOP: 172.16.7.157
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.158/30
+    WAN2_INTF_NEXTHOP: 172.16.6.158
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 890
+    START_LAN_IP_SUBNET: 192.170.131.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2: NO
+    NODE: SIN
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00171
+    ORG_ID: 71
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE26-HKG4-DUAL-HYB-P:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4280
+    PAIRED_SITE_ID: 4281
+    Serial_Number: CPE26FSB010
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.252
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-HKG4-PS-D-MPLS
+    SECONDARY_PS_TEMPLATE_NAME: IPC00190-HKG4-PS-D-INT
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/2
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE27-HKG4-DUAL-HYB-S:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4281
+    PAIRED_SITE_ID: 4280
+    Serial_Number: CPE27FSB020
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.116.253
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-HKG4-PS-D-INT
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.106/30
+    WAN2_INTF_NEXTHOP: 172.16.6.105
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE27-SIN-SINGLE-CPE-INTONLY-IPC00190:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 4299
+    PAIRED_SITE_ID:
+    Serial_Number: CPE27MArch312hkg
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.27
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-SIN02-NEW-PS-INT
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.106/30
+    WAN1_INTF_NEXTHOP: 172.16.6.105
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 760
+    START_LAN_IP_SUBNET: 192.170.11.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE-3:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4313
+    PAIRED_SITE_ID:
+    Serial_Number: KSD0121502
+    MIN_SW_VERSION:  20.2.2
+    mgmt_ip: 10.91.240.3
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00073-BLR-PS-HS-LIB
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.3
+    VXLAN_IP: 10.10.temporgid.3
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.10/30
+    WAN1_INTF_NEXTHOP: 172.16.7.9
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 192.168.1.213/30
+    WAN2_INTF_NEXTHOP: 192.168.1.212
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 520
+    START_LAN_IP_SUBNET: 192.169.21.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: BLR
+    STAGING_SERVER: NV-WC02-N2-BLR
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE26-HKG-SINGLE-CPE-MPLSONLY-IPC00190:
+    POD: 1
+    Solution_type: SINGLE-CPE-MPLS-ONLY
+    Site_id: 4298
+    PAIRED_SITE_ID:
+    Serial_Number: CPE26MArch312hkg
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.26
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-HKG01-NEW-PS-MPLS
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE26-SIN-DUAL-CPE-HYB-IPC00190-P:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4282
+    PAIRED_SITE_ID: 4283
+    Serial_Number: CPE26april28
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.26
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-SIN-DUAL-HYB-MPLS
+    SECONDARY_PS_TEMPLATE_NAME: IPC00190-SIN-DUAL-HYB-INT
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/2
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: SIN
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE27-SIN-DUAL-CPE-HYB-IPC00190-S:
+    POD: 1
+    Solution_type: DUAL-CPE-HYBRID
+    Site_id: 4283
+    PAIRED_SITE_ID: 4282
+    Serial_Number: CPE27april28
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.27
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-SIN-DUAL-HYB-INT
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.106/30
+    WAN2_INTF_NEXTHOP: 172.16.6.105
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N6-SIN
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE26-SIN-DUAL-CPE-DUAL-MPLS-IPC00190-P:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4284
+    PAIRED_SITE_ID: 4285
+    Serial_Number: CPE26may8
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.26
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-SIN-DUAL-DMPLSP
+    SECONDARY_PS_TEMPLATE_NAME: IPC00190-SIN-DUAL-DMPLSS
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/1
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: SIN
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE27-SIN-DUAL-CPE-DUAL-MPLS-IPC00190-S:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-MPLS
+    Site_id: 4285
+    PAIRED_SITE_ID: 4284
+    Serial_Number: CPE27may8
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.27
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-SIN-DUAL-DMPLSS
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/1
+    WAN2_INTF_IP: 172.16.7.106/30
+    WAN2_INTF_NEXTHOP: 172.16.7.105
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: NO
+    LIB2: NO
+    NODE: SIN
+    STAGING_SERVER: NV-WC02-N6-SIN
+    STAGING_INTF: WAN2
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: NO
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE26-SIN-DUAL-CPE-DUAL-INTERNET-IPC00190-P:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-INTERNET
+    Site_id: 4286
+    PAIRED_SITE_ID: 4287
+    Serial_Number: CPE26may22
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.26
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-SIN-DUAL-DINTP
+    SECONDARY_PS_TEMPLATE_NAME: IPC00190-SIN-DUAL-DINTS
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.102/30
+    WAN1_INTF_NEXTHOP: 172.16.6.101
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL: PRIMARY
+    REDU_DEV_WAN_INTF: vni-0/2
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: ACTIVE
+    LIB2: ACTIVE
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+CPE27-SIN-DUAL-CPE-DUAL-INTERNET-IPC00190-S:
+    POD: 1
+    Solution_type: DUAL-CPE-DUAL-INTERNET
+    Site_id: 4287
+    PAIRED_SITE_ID: 4286
+    Serial_Number: CPE27may22
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.27
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-SIN-DUAL-DINTS
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF:
+    WAN1_INTF_IP:
+    WAN1_INTF_NEXTHOP:
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.106/30
+    WAN2_INTF_NEXTHOP: 172.16.6.105
+    DUAL: SECONDARY
+    REDU_DEV_WAN_INTF:
+    CC_INTF: vni-0/3
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: ACTIVE
+    LIB2: ACTIVE
+    NODE: HKG
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN2
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: YES
+
+
+
+CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073:
+    POD: 2
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4300
+    PAIRED_SITE_ID:
+    Serial_Number: CPE26Nov27
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.26
+    username: admin
+    password: versa123
+    device_type: branch
+    PS_TEMPLATE_NAME: IPC00073-MUM01-NEW-PS-HYBRID1234
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.102/30
+    WAN2_INTF_NEXTHOP: 172.16.6.101
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC: YES
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: MUM
+    STAGING_SERVER: NV-WC01-N4-MUM
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00073
+    ORG_ID: 73
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+
+
+
+CPE26-HKG-SINGLE-CPE-HYBRID-IPC00190-IPV6:
+    POD: 1
+    Solution_type: SINGLE-CPE-HYBRID
+    Site_id: 4300
+    PAIRED_SITE_ID:
+    Serial_Number: CPE26july13
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.26
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-HKG01-NEW-PS-HYBRID-IPV62
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.26
+    VXLAN_IP: 10.10.temporgid.26
+    WAN1_INTF: vni-0/1
+    WAN1_INTF_IP: 172.16.7.102/30
+    WAN1_INTF_NEXTHOP: 172.16.7.101
+    WAN2_INTF: vni-0/2
+    WAN2_INTF_IP: 172.16.6.102/30
+    WAN2_INTF_NEXTHOP: 172.16.6.101
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    LAN_IPV6_STATIC: YES
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: HKG
+    STAGING_SERVER: NV-WC02-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: MPLS
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 10
+    PST_CREATION: NO
+    DG_CREATION: NO
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: YES
+    DEV_VRRP_LIB_CONFIG: NO
+
+CPE27-SIN-SINGLE-CPE-INTONLY-IPC00190-DUP:
+    POD: 1
+    Solution_type: SINGLE-CPE-INTERNET-ONLY
+    Site_id: 4444
+    PAIRED_SITE_ID:
+    Serial_Number: CPE27oct26
+    MIN_SW_VERSION:  16.1R2-S9
+    mgmt_ip: 10.91.240.27
+    username: admin
+    password: versa123
+    device_type: branch
+    GUIusername:
+    GUIpassword:
+    PS_TEMPLATE_NAME: IPC00190-SIN04-NEW-PS-INT
+    SECONDARY_PS_TEMPLATE_NAME:
+    ESP_IP: 20.20.temporgid.27
+    VXLAN_IP: 10.10.temporgid.27
+    WAN1_INTF: vni-0/2
+    WAN1_INTF_IP: 172.16.6.106/30
+    WAN1_INTF_NEXTHOP: 172.16.6.105
+    WAN2_INTF:
+    WAN2_INTF_IP:
+    WAN2_INTF_NEXTHOP:
+    DUAL:
+    REDU_DEV_WAN_INTF:
+    CC_INTF:
+    LAN_INTF: vni-0/4
+    START_VLAN: 760
+    START_LAN_IP_SUBNET: 192.170.11.0/24
+    LAN_IPV6_STATIC:
+    WAN1_IP_ALLOC: STATIC
+    WAN2_IP_ALLOC: STATIC
+    LIB1: YES
+    LIB2:
+    NODE: SIN
+    STAGING_SERVER: NV-WC01-N1-HKG
+    STAGING_INTF: WAN1
+    STAGING_WAN: INT
+    STAGING_WAN_DHCP: NO
+    ORG_NAME: IPC00190
+    ORG_ID: 90
+    NO_OF_VRFS: 1
+    PST_CREATION: YES
+    DG_CREATION: YES
+    DEV_TEMPALTE_CREATION: YES
+    DEV_ONBAORD: NO
+    DEV_VRRP_LIB_CONFIG: NO
+
+#cisco
+CISCO_ASR920_R6:
+    mgmt_ip: 10.91.240.49
+    username: colt123
+    password: colt123
+    device_type: cisco_xr
+    LAN_INTF: GigabitEthernet0/0/1
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    NO_OF_VRFS: 1
+
+CISCO_ASR920_R5:
+    mgmt_ip: 10.91.240.54
+    username: colt123
+    password: colt123
+    device_type: cisco_xr
+    LAN_INTF: GigabitEthernet0/0/1
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    NO_OF_VRFS: 1
+
+#linux
+CPE11_LAN_HOST1:
+    mgmt_ip: 10.91.125.181
+    username: sathish
+    password: sathish
+    device_type: linux
+    LAN_INTF: ens33
+    START_VLAN: 600
+    START_LAN_IP_SUBNET: 192.169.101.0/24
+    NO_OF_VRFS: 1
+
+
+CPE26_LAN_HOST1:
+    mgmt_ip: 10.91.125.184
+    username: colt123
+    password: colt123
+    device_type: linux
+    LAN_INTF: ens34
+    START_VLAN: 750
+    START_LAN_IP_SUBNET: 192.170.1.0/24
+    NO_OF_VRFS: 1
+

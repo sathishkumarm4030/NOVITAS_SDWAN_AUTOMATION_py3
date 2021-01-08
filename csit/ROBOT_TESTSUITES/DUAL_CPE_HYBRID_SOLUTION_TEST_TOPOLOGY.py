@@ -1,0 +1,15 @@
+#TOPO
+#CPE1 - DUAL-CPE-HYBRID-Primary
+#CPE2 - DUAL-CPE-HYBRID-secondary
+#CPE3 - SINGLE-CPE-HYBRID
+#VM1  - linux VM connected to LAN switch. CPE1 + CPE2 (VRRP)LAN VM
+#VM2  - linux VM connected to LAN switch. CPE3 LAN VM
+#Spirent 2 Ports connected LANswitch
+
+VD1 = "POD2_VD1"
+CPE1 = "CPE-14-LON-DUAL-CPE-HYBRID-IPC00073-P"
+CPE2 = "CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S"
+CPE3 = "CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073"
+VM1  = "CPE14_LAN_HOST1"
+VM2  = "CPE26_LAN_HOST1"
+Spirent_chasis1 = ["10.91.113.124", "10/1", "10/2"]

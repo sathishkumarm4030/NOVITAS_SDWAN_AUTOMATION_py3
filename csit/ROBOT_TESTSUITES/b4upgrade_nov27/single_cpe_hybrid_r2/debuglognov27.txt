@@ -1,0 +1,1254 @@
+==============================================================================
+20201127 20:28:54.111 - INFO - + START SUITE: SINGLE CPE HYBRID SOLUTION TEST [ ]
+==============================================================================
+20201127 20:28:54.111 - INFO - +- START SETUP: STARTUP [ ]
+20201127 20:28:54.111 - INFO - +-- START KW: VD1.Login [ ]
+20201127 20:28:54.195 - DEBUG - Adding ssh-ed25519 host key for 10.91.116.35: b'bdd651375ff69331eb30d5151aa8cb04'
+20201127 20:28:54.274 - DEBUG - [chan 0] Max packet in: 32768 bytes
+20201127 20:28:55.444 - DEBUG - read_channel: ===============================================================================
+WARNING!
+This is a Proprietary System
+You have accessed a Proprietary System
+
+If you are not authorized to use this computer system, you MUST log off now.
+Unauthorized use of this computer system, including unauthorized attempts or
+acts to deny service on, upload information to, download information from,
+change information on, or access a non-public site from, this computer system,
+are strictly prohibited and may be punishable under federal and state criminal
+and civil laws. All data contained on this computer systems may be monitored,
+intercepted, recorded, read, copied, or captured in any manner by authorized
+System personnel. System personnel may use or transfer this data as required or
+permitted under applicable law. Without limiting the previous sentence, system
+personnel may give to law enforcement officials any potential evidence of crime
+found on this computer system. Use of this system by any user, authorized or
+unauthorized, constitutes EXPRESS CONSENT to this monitoring, interception,
+recording, reading, copying, or capturing, and use and transfer. Please verify
+if this is the current version of the banner when deploying to the system.
+===============================================================================
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+Release     : 16.1R2
+Release date: 20200719
+Package ID  : eae49fb
+
+ *****************************************************************************
+ *                            IMPORTANT NOTICE                               *
+ * Access to this network is restricted to COLT authorised users and is      *
+ * permitted only for legitimate business purposes and only on the terms and *
+ * conditions of COLT's Acceptable Use Policy.  Your electronic login to     *
+ * this network indicates acceptance of the terms and conditions of COLT's   *
+ * Acceptable Use Policy.                                                    *
+ *                                                                           *
+ * COLT reserves the right to audit the network, in accordance with the      *
+ * Logging and Monitoring Policy.                                            *
+ *                                                                           *
+ *****************************************************************************
+
+Last login: Fri Nov 27 14:27:53 2020 from 10.91.194.9
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+
+Automated connected from 10.91.194.9 using ssh on Versa-Dir-BLR-1
+[?7hAutomated@Versa-Dir-BLR-1>
+20201127 20:28:55.559 - DEBUG - read_channel:
+20201127 20:28:57.563 - DEBUG - read_channel:
+20201127 20:28:57.563 - DEBUG - write_channel: b'\n'
+20201127 20:28:57.663 - DEBUG - read_channel: 
+Automated@Versa-Dir-BLR-1>
+20201127 20:28:57.663 - DEBUG - write_channel: b'cli\n'
+20201127 20:28:58.064 - DEBUG - read_channel: cli
+---------------------------^
+syntax error: expecting 
+  clear      - Clear parameter
+  compare    - Compare running configuration to another configuration or a file
+  configure  - Manipulate software configuration information
+  describe   - Display transparent command  information
+  exit       - Exit the management session
+  file       - Perform file operations
+  help       - Provide help information
+  id         - Show user id information
+  monitor    - Real-time debugging
+  ping       - Ping a host
+  quit       - Exit the management session
+  request    - Make system-level requests
+  script     - Script actions
+  set        - Set CLI properties
+  set-path   - Set relative show path
+  shell      - Open a shell
+  show       - Show information about the system
+  source     - File to source
+  ssh        - Open a secure shell on another Host
+  switch     - Change CLI style
+  telnet     - Open a telnet session to another host
+  top        - Exit to top level and optionally run command
+  traceroute - Trace the route to a remote host
+  up         - Exit one level of configuration
+[error][2020-11-27 14:58:59]
+Automated@Versa-Dir-BLR-1>
+20201127 20:28:58.064 - DEBUG - Clear buffer detects data in the channel
+20201127 20:28:58.265 - DEBUG - read_channel:
+20201127 20:28:58.365 - DEBUG - read_channel:
+20201127 20:28:58.365 - DEBUG - write_channel: b'\n'
+20201127 20:28:58.465 - DEBUG - read_channel: 
+Automated@Versa-Dir-BLR-1>
+20201127 20:28:58.665 - DEBUG - read_channel:
+20201127 20:28:58.665 - DEBUG - [find_prompt()]: prompt is Automated@Versa-Dir-BLR-1>
+20201127 20:28:58.881 - DEBUG - read_channel:
+20201127 20:28:58.881 - DEBUG - In disable_paging
+20201127 20:28:58.881 - DEBUG - Command: set screen length 0
+20201127 20:28:58.881 - DEBUG - write_channel: b'set screen length 0\n'
+20201127 20:28:58.881 - DEBUG - Pattern is: Automated@Versa\-Dir\-BLR\-1
+20201127 20:28:58.881 - DEBUG - _read_channel_expect read_data: set
+20201127 20:28:58.981 - DEBUG - _read_channel_expect read_data:  screen
+20201127 20:28:59.097 - DEBUG - _read_channel_expect read_data:  length 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1>
+20201127 20:28:59.097 - DEBUG - Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen length 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1>
+20201127 20:28:59.097 - DEBUG - set screen length 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1>
+20201127 20:28:59.097 - DEBUG - Exiting disable_paging
+20201127 20:28:59.097 - DEBUG - write_channel: b'set screen width 0\n'
+20201127 20:28:59.097 - DEBUG - Pattern is: Automated@Versa\-Dir\-BLR\-1
+20201127 20:28:59.103 - DEBUG - _read_channel_expect read_data: set
+20201127 20:28:59.219 - DEBUG - _read_channel_expect read_data:  screen width 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1>
+20201127 20:28:59.219 - DEBUG - Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen width 0
+[ok][2020-11-27 14:59:00]
+Automated@Versa-Dir-BLR-1>
+20201127 20:28:59.619 - DEBUG - read_channel:
+20201127 20:28:59.619 - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C53FE5190>
+20201127 20:29:04.729 - DEBUG - read_channel:
+20201127 20:29:04.729 - DEBUG - write_channel: b'\n'
+20201127 20:29:04.829 - DEBUG - read_channel: 
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:05.030 - DEBUG - read_channel:
+20201127 20:29:05.030 - DEBUG - [find_prompt()]: prompt is Automated@Versa-Dir-BLR-1>
+20201127 20:29:05.030 - DEBUG - versa: Automated@Versa-Dir-BLR-1>
+20201127 20:29:05.030 - INFO - +-- END KW: VD1.Login (10919)
+20201127 20:29:05.030 - INFO - +-- START KW: VD1.Get Data Dict [ ]
+20201127 20:29:05.030 - INFO - ${VD1} = {'ndb': {}, 'topofile': 'Devices.yml', 'Device_name': 'POD2_VD1', 'POD': 2, 'device_type': 'versa_director', 'MIN_SW_VERSION': '16.1R2-S9', 'mgmt_ip': '10.91.116.35', 'username': 'Automated', 'passwor...
+20201127 20:29:05.030 - INFO - +-- END KW: VD1.Get Data Dict (0)
+20201127 20:29:05.030 - INFO - +-- START KW: BuiltIn.Set Suite Variable [ ${VM1} ]
+20201127 20:29:05.030 - INFO - ${VM1} = CPE11_LAN_HOST1
+20201127 20:29:05.030 - INFO - +-- END KW: BuiltIn.Set Suite Variable (0)
+20201127 20:29:05.030 - INFO - +-- START KW: BuiltIn.Set Suite Variable [ ${VM2} ]
+20201127 20:29:05.030 - INFO - ${VM2} = CPE26_LAN_HOST1
+20201127 20:29:05.030 - INFO - +-- END KW: BuiltIn.Set Suite Variable (0)
+20201127 20:29:05.030 - INFO - +-- START KW: CPE1.Cross Login [ ]
+20201127 20:29:05.108 - DEBUG - Adding ssh-ed25519 host key for 10.91.116.35: b'bdd651375ff69331eb30d5151aa8cb04'
+20201127 20:29:05.193 - DEBUG - [chan 0] Max packet in: 32768 bytes
+20201127 20:29:06.365 - DEBUG - read_channel: ===============================================================================
+WARNING!
+This is a Proprietary System
+You have accessed a Proprietary System
+
+If you are not authorized to use this computer system, you MUST log off now.
+Unauthorized use of this computer system, including unauthorized attempts or
+acts to deny service on, upload information to, download information from,
+change information on, or access a non-public site from, this computer system,
+are strictly prohibited and may be punishable under federal and state criminal
+and civil laws. All data contained on this computer systems may be monitored,
+intercepted, recorded, read, copied, or captured in any manner by authorized
+System personnel. System personnel may use or transfer this data as required or
+permitted under applicable law. Without limiting the previous sentence, system
+personnel may give to law enforcement officials any potential evidence of crime
+found on this computer system. Use of this system by any user, authorized or
+unauthorized, constitutes EXPRESS CONSENT to this monitoring, interception,
+recording, reading, copying, or capturing, and use and transfer. Please verify
+if this is the current version of the banner when deploying to the system.
+===============================================================================
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+Release     : 16.1R2
+Release date: 20200719
+Package ID  : eae49fb
+
+ *****************************************************************************
+ *                            IMPORTANT NOTICE                               *
+ * Access to this network is restricted to COLT authorised users and is      *
+ * permitted only for legitimate business purposes and only on the terms and *
+ * conditions of COLT's Acceptable Use Policy.  Your electronic login to     *
+ * this network indicates acceptance of the terms and conditions of COLT's   *
+ * Acceptable Use Policy.                                                    *
+ *                                                                           *
+ * COLT reserves the right to audit the network, in accordance with the      *
+ * Logging and Monitoring Policy.                                            *
+ *                                                                           *
+ *****************************************************************************
+
+Last login: Fri Nov 27 14:58:55 2020 from 10.91.194.9
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+
+Automated connected from 10.91.194.9 using ssh on Versa-Dir-BLR-1
+[?7hAutomated@Versa-Dir-BLR-1>
+20201127 20:29:06.465 - DEBUG - read_channel:
+20201127 20:29:08.469 - DEBUG - read_channel:
+20201127 20:29:08.469 - DEBUG - write_channel: b'\n'
+20201127 20:29:08.569 - DEBUG - read_channel: 
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:08.569 - DEBUG - write_channel: b'cli\n'
+20201127 20:29:08.970 - DEBUG - read_channel: cli
+---------------------------^
+syntax error: expecting 
+  clear      - Clear parameter
+  compare    - Compare running configuration to another configuration or a file
+  configure  - Manipulate software configuration information
+  describe   - Display transparent command  information
+  exit       - Exit the management session
+  file       - Perform file operations
+  help       - Provide help information
+  id         - Show user id information
+  monitor    - Real-time debugging
+  ping       - Ping a host
+  quit       - Exit the management session
+  request    - Make system-level requests
+  script     - Script actions
+  set        - Set CLI properties
+  set-path   - Set relative show path
+  shell      - Open a shell
+  show       - Show information about the system
+  source     - File to source
+  ssh        - Open a secure shell on another Host
+  switch     - Change CLI style
+  telnet     - Open a telnet session to another host
+  top        - Exit to top level and optionally run command
+  traceroute - Trace the route to a remote host
+  up         - Exit one level of configuration
+[error][2020-11-27 14:59:09]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:08.970 - DEBUG - Clear buffer detects data in the channel
+20201127 20:29:09.170 - DEBUG - read_channel:
+20201127 20:29:09.273 - DEBUG - read_channel:
+20201127 20:29:09.273 - DEBUG - write_channel: b'\n'
+20201127 20:29:09.386 - DEBUG - read_channel: 
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:09.586 - DEBUG - read_channel:
+20201127 20:29:09.586 - DEBUG - [find_prompt()]: prompt is Automated@Versa-Dir-BLR-1>
+20201127 20:29:09.786 - DEBUG - read_channel:
+20201127 20:29:09.786 - DEBUG - In disable_paging
+20201127 20:29:09.786 - DEBUG - Command: set screen length 0
+20201127 20:29:09.786 - DEBUG - write_channel: b'set screen length 0\n'
+20201127 20:29:09.786 - DEBUG - Pattern is: Automated@Versa\-Dir\-BLR\-1
+20201127 20:29:09.801 - DEBUG - _read_channel_expect read_data: set
+20201127 20:29:09.901 - DEBUG - _read_channel_expect read_data:  screen length 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:09.901 - DEBUG - Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen length 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:09.901 - DEBUG - set screen length 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:09.901 - DEBUG - Exiting disable_paging
+20201127 20:29:09.901 - DEBUG - write_channel: b'set screen width 0\n'
+20201127 20:29:09.901 - DEBUG - Pattern is: Automated@Versa\-Dir\-BLR\-1
+20201127 20:29:09.901 - DEBUG - _read_channel_expect read_data: set
+20201127 20:29:10.002 - DEBUG - _read_channel_expect read_data:  screen width 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:10.002 - DEBUG - Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen width 0
+[ok][2020-11-27 14:59:11]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:10.403 - DEBUG - read_channel:
+20201127 20:29:10.403 - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C54006E50>
+20201127 20:29:15.512 - DEBUG - read_channel:
+20201127 20:29:15.512 - DEBUG - write_channel: b'\n'
+20201127 20:29:15.613 - DEBUG - read_channel: 
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:15.814 - DEBUG - read_channel:
+20201127 20:29:15.814 - DEBUG - [find_prompt()]: prompt is Automated@Versa-Dir-BLR-1>
+20201127 20:29:15.814 - DEBUG - versa: Automated@Versa-Dir-BLR-1>
+20201127 20:29:15.814 - DEBUG - write_channel: b'ssh admin@20.20.73.11\n'
+20201127 20:29:20.822 - DEBUG - read_channel: ssh admin@20.20.73.11
+admin@20.20.73.11's password:
+20201127 20:29:20.822 - DEBUG - write_channel: b'versa123\n'
+20201127 20:29:25.833 - DEBUG - read_channel: 
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| >  < \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R2 (S9)
+Release date:	20190628
+Package ID  :	80561de	
+
+Last login: Fri Nov 27 14:40:54 2020 from 10.91.194.9
+admin@CPE11-LON-HYBRD-IPC00073:~$
+20201127 20:29:26.934 - DEBUG - read_channel:
+20201127 20:29:28.937 - DEBUG - read_channel:
+20201127 20:29:28.937 - DEBUG - write_channel: b'\n'
+20201127 20:29:29.153 - DEBUG - read_channel: 
+admin@CPE11-LON-HYBRD-IPC00073:~$
+20201127 20:29:29.253 - DEBUG - read_channel:
+20201127 20:29:31.259 - DEBUG - read_channel:
+20201127 20:29:31.261 - DEBUG - write_channel: b'\n'
+20201127 20:29:31.381 - DEBUG - read_channel: 
+admin@CPE11-LON-HYBRD-IPC00073:~$
+20201127 20:29:31.381 - DEBUG - write_channel: b'cli\n'
+20201127 20:29:31.782 - DEBUG - read_channel: cli
+Access to this network/system is limited to users authorised by Colt for its legitimate business purposes. Unauthorised access, use, installation of files or modification of any data is prohibited. Use of this system/network will be audited
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' <\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.116.67 using ssh on CPE11-LON-HYBRD-IPC00073
+[?7hadmin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:31.782 - DEBUG - Clear buffer detects data in the channel
+20201127 20:29:31.983 - DEBUG - read_channel:
+20201127 20:29:32.084 - DEBUG - read_channel:
+20201127 20:29:32.084 - DEBUG - write_channel: b'\n'
+20201127 20:29:32.184 - DEBUG - read_channel: 
+admin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:32.384 - DEBUG - read_channel:
+20201127 20:29:32.384 - DEBUG - [find_prompt()]: prompt is admin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:32.584 - DEBUG - read_channel:
+20201127 20:29:32.584 - DEBUG - In disable_paging
+20201127 20:29:32.584 - DEBUG - Command: set screen length 0
+20201127 20:29:32.584 - DEBUG - write_channel: b'set screen length 0\n'
+20201127 20:29:32.584 - DEBUG - Pattern is: admin@CPE11\-LON\-HYBRD\-IPC00073\-cli
+20201127 20:29:32.647 - DEBUG - _read_channel_expect read_data: set
+20201127 20:29:32.747 - DEBUG - _read_channel_expect read_data:  screen
+20201127 20:29:32.847 - DEBUG - _read_channel_expect read_data:  length
+20201127 20:29:32.948 - DEBUG - _read_channel_expect read_data:  0
+20201127 20:29:33.048 - DEBUG - _read_channel_expect read_data: [ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:33.048 - DEBUG - Pattern found: admin@CPE11\-LON\-HYBRD\-IPC00073\-cli set screen length 0
+[ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:33.048 - DEBUG - set screen length 0
+[ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:33.048 - DEBUG - Exiting disable_paging
+20201127 20:29:33.048 - DEBUG - write_channel: b'set screen width 0\n'
+20201127 20:29:33.048 - DEBUG - Pattern is: admin@CPE11\-LON\-HYBRD\-IPC00073\-cli
+20201127 20:29:33.117 - DEBUG - _read_channel_expect read_data: set
+20201127 20:29:33.217 - DEBUG - _read_channel_expect read_data:  screen
+20201127 20:29:33.318 - DEBUG - _read_channel_expect read_data:  width
+20201127 20:29:33.418 - DEBUG - _read_channel_expect read_data:  0
+20201127 20:29:33.518 - DEBUG - _read_channel_expect read_data: [ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:33.518 - DEBUG - Pattern found: admin@CPE11\-LON\-HYBRD\-IPC00073\-cli set screen width 0
+[ok][2020-11-27 14:59:33]
+admin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:33.919 - DEBUG - read_channel:
+20201127 20:29:36.222 - DEBUG - read_channel:
+20201127 20:29:36.222 - DEBUG - write_channel: b'set idle-timeout 0\n'
+20201127 20:29:36.423 - DEBUG - read_channel: set idle-timeout
+20201127 20:29:36.623 - DEBUG - read_channel:  0
+[ok][2020-11-27 14:59:36]
+admin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:36.623 - INFO - ssh admin@20.20.73.11
+admin@20.20.73.11's password: 
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| >  < \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R2 (S9)
+Release date:	20190628
+Package ID  :	80561de	
+
+Last login: Fri Nov 27 14:40:54 2020 from 10.91.194.9
+admin@CPE11-LON-HYBRD-IPC00073:~$ 
+doing redispatch
+set idle-timeout 0
+[ok][2020-11-27 14:59:36]
+admin@CPE11-LON-HYBRD-IPC00073-cli>
+20201127 20:29:36.623 - INFO - +-- END KW: CPE1.Cross Login (31593)
+20201127 20:29:36.623 - INFO - +-- START KW: CPE2.Cross Login [ ]
+20201127 20:29:36.692 - DEBUG - Adding ssh-ed25519 host key for 10.91.116.35: b'bdd651375ff69331eb30d5151aa8cb04'
+20201127 20:29:36.776 - DEBUG - [chan 0] Max packet in: 32768 bytes
+20201127 20:29:37.925 - DEBUG - read_channel: ===============================================================================
+WARNING!
+This is a Proprietary System
+You have accessed a Proprietary System
+
+If you are not authorized to use this computer system, you MUST log off now.
+Unauthorized use of this computer system, including unauthorized attempts or
+acts to deny service on, upload information to, download information from,
+change information on, or access a non-public site from, this computer system,
+are strictly prohibited and may be punishable under federal and state criminal
+and civil laws. All data contained on this computer systems may be monitored,
+intercepted, recorded, read, copied, or captured in any manner by authorized
+System personnel. System personnel may use or transfer this data as required or
+permitted under applicable law. Without limiting the previous sentence, system
+personnel may give to law enforcement officials any potential evidence of crime
+found on this computer system. Use of this system by any user, authorized or
+unauthorized, constitutes EXPRESS CONSENT to this monitoring, interception,
+recording, reading, copying, or capturing, and use and transfer. Please verify
+if this is the current version of the banner when deploying to the system.
+===============================================================================
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+Release     : 16.1R2
+Release date: 20200719
+Package ID  : eae49fb
+
+ *****************************************************************************
+ *                            IMPORTANT NOTICE                               *
+ * Access to this network is restricted to COLT authorised users and is      *
+ * permitted only for legitimate business purposes and only on the terms and *
+ * conditions of COLT's Acceptable Use Policy.  Your electronic login to     *
+ * this network indicates acceptance of the terms and conditions of COLT's   *
+ * Acceptable Use Policy.                                                    *
+ *                                                                           *
+ * COLT reserves the right to audit the network, in accordance with the      *
+ * Logging and Monitoring Policy.                                            *
+ *                                                                           *
+ *****************************************************************************
+
+Last login: Fri Nov 27 14:59:06 2020 from 10.91.194.9
+
+             .---.,                                 
+            (      ``.                             
+       _     \        )    __      ________ _____   _____                
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\           
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \          
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \         
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \        
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\       
+           \  | /  
+            \_|/               ___ ___ ___ ___ ___ _____ ___  ___ 
+                              |   \_ _| _ \ __/ __|_   _/ _ \| _ \
+                              | |) | ||   / _| (__  | || (_) |   /
+                              |___/___|_|_\___\___| |_| \___/|_|_\
+                                    
+
+
+
+Automated connected from 10.91.194.9 using ssh on Versa-Dir-BLR-1
+[?7hAutomated@Versa-Dir-BLR-1>
+20201127 20:29:38.026 - DEBUG - read_channel:
+20201127 20:29:40.029 - DEBUG - read_channel:
+20201127 20:29:40.029 - DEBUG - write_channel: b'\n'
+20201127 20:29:40.130 - DEBUG - read_channel: 
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:40.130 - DEBUG - write_channel: b'cli\n'
+20201127 20:29:40.530 - DEBUG - read_channel: cli
+---------------------------^
+syntax error: expecting 
+  clear      - Clear parameter
+  compare    - Compare running configuration to another configuration or a file
+  configure  - Manipulate software configuration information
+  describe   - Display transparent command  information
+  exit       - Exit the management session
+  file       - Perform file operations
+  help       - Provide help information
+  id         - Show user id information
+  monitor    - Real-time debugging
+  ping       - Ping a host
+  quit       - Exit the management session
+  request    - Make system-level requests
+  script     - Script actions
+  set        - Set CLI properties
+  set-path   - Set relative show path
+  shell      - Open a shell
+  show       - Show information about the system
+  source     - File to source
+  ssh        - Open a secure shell on another Host
+  switch     - Change CLI style
+  telnet     - Open a telnet session to another host
+  top        - Exit to top level and optionally run command
+  traceroute - Trace the route to a remote host
+  up         - Exit one level of configuration
+[error][2020-11-27 14:59:41]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:40.530 - DEBUG - Clear buffer detects data in the channel
+20201127 20:29:40.730 - DEBUG - read_channel:
+20201127 20:29:40.831 - DEBUG - read_channel:
+20201127 20:29:40.831 - DEBUG - write_channel: b'\n'
+20201127 20:29:40.931 - DEBUG - read_channel: 
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:41.131 - DEBUG - read_channel:
+20201127 20:29:41.131 - DEBUG - [find_prompt()]: prompt is Automated@Versa-Dir-BLR-1>
+20201127 20:29:41.331 - DEBUG - read_channel:
+20201127 20:29:41.331 - DEBUG - In disable_paging
+20201127 20:29:41.331 - DEBUG - Command: set screen length 0
+20201127 20:29:41.331 - DEBUG - write_channel: b'set screen length 0\n'
+20201127 20:29:41.331 - DEBUG - Pattern is: Automated@Versa\-Dir\-BLR\-1
+20201127 20:29:41.331 - DEBUG - _read_channel_expect read_data: set
+20201127 20:29:41.431 - DEBUG - _read_channel_expect read_data:  screen length 0
+20201127 20:29:41.532 - DEBUG - _read_channel_expect read_data: [ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:41.532 - DEBUG - Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen length 0
+[ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:41.532 - DEBUG - set screen length 0
+[ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:41.532 - DEBUG - Exiting disable_paging
+20201127 20:29:41.532 - DEBUG - write_channel: b'set screen width 0\n'
+20201127 20:29:41.532 - DEBUG - Pattern is: Automated@Versa\-Dir\-BLR\-1
+20201127 20:29:41.532 - DEBUG - _read_channel_expect read_data: set
+20201127 20:29:41.648 - DEBUG - _read_channel_expect read_data:  screen width 0
+[ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:41.648 - DEBUG - Pattern found: Automated@Versa\-Dir\-BLR\-1 set screen width 0
+[ok][2020-11-27 14:59:42]
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:42.048 - DEBUG - read_channel:
+20201127 20:29:42.048 - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x0000027C540B22E0>
+20201127 20:29:47.153 - DEBUG - read_channel:
+20201127 20:29:47.153 - DEBUG - write_channel: b'\n'
+20201127 20:29:47.254 - DEBUG - read_channel: 
+Automated@Versa-Dir-BLR-1>
+20201127 20:29:47.469 - DEBUG - read_channel:
+20201127 20:29:47.469 - DEBUG - [find_prompt()]: prompt is Automated@Versa-Dir-BLR-1>
+20201127 20:29:47.469 - DEBUG - versa: Automated@Versa-Dir-BLR-1>
+20201127 20:29:47.469 - DEBUG - write_channel: b'ssh admin@20.20.73.26\n'
+20201127 20:29:52.481 - DEBUG - read_channel: ssh admin@20.20.73.26
+admin@20.20.73.26's password:
+20201127 20:29:52.481 - DEBUG - write_channel: b'versa123\n'
+20201127 20:29:57.484 - DEBUG - read_channel: 
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| >  < \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R2 (S9)
+Release date:	20190628
+Package ID  :	80561de	
+
+Last login: Fri Nov 27 14:28:08 2020 from 10.91.116.67
+[admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073: ~] $
+20201127 20:29:58.587 - DEBUG - read_channel:
+20201127 20:30:00.590 - DEBUG - read_channel:
+20201127 20:30:00.590 - DEBUG - write_channel: b'\n'
+20201127 20:30:00.807 - DEBUG - read_channel: 
+[admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073: ~] $
+20201127 20:30:00.907 - DEBUG - read_channel:
+20201127 20:30:02.911 - DEBUG - read_channel:
+20201127 20:30:02.911 - DEBUG - write_channel: b'\n'
+20201127 20:30:03.011 - DEBUG - read_channel: 
+[admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073: ~] $
+20201127 20:30:03.011 - DEBUG - write_channel: b'cli\n'
+20201127 20:30:03.433 - DEBUG - read_channel: cli
+Access to this network/system is limited to users authorised by Colt for its legitimate business purposes. Unauthorised access, use, installation of files or modification of any data is prohibited. Use of this system/network will be audited
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' <\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.116.67 using ssh on CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073
+[?7hadmin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:03.433 - DEBUG - Clear buffer detects data in the channel
+20201127 20:30:03.634 - DEBUG - read_channel:
+20201127 20:30:03.734 - DEBUG - read_channel:
+20201127 20:30:03.734 - DEBUG - write_channel: b'\n'
+20201127 20:30:03.834 - DEBUG - read_channel: 
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:04.035 - DEBUG - read_channel:
+20201127 20:30:04.035 - DEBUG - [find_prompt()]: prompt is admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:04.250 - DEBUG - read_channel:
+20201127 20:30:04.250 - DEBUG - In disable_paging
+20201127 20:30:04.250 - DEBUG - Command: set screen length 0
+20201127 20:30:04.250 - DEBUG - write_channel: b'set screen length 0\n'
+20201127 20:30:04.250 - DEBUG - Pattern is: admin@CPE26\-MUM\-SINGLE\-CPE\-HYBRID\-IPC00073\-cli
+20201127 20:30:04.297 - DEBUG - _read_channel_expect read_data: set screen
+20201127 20:30:04.398 - DEBUG - _read_channel_expect read_data:  length 0
+[ok][2020-11-27 15:00:04]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:04.398 - DEBUG - Pattern found: admin@CPE26\-MUM\-SINGLE\-CPE\-HYBRID\-IPC00073\-cli set screen length 0
+[ok][2020-11-27 15:00:04]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:04.398 - DEBUG - set screen length 0
+[ok][2020-11-27 15:00:04]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:04.398 - DEBUG - Exiting disable_paging
+20201127 20:30:04.398 - DEBUG - write_channel: b'set screen width 0\n'
+20201127 20:30:04.398 - DEBUG - Pattern is: admin@CPE26\-MUM\-SINGLE\-CPE\-HYBRID\-IPC00073\-cli
+20201127 20:30:04.435 - DEBUG - _read_channel_expect read_data: set
+20201127 20:30:04.551 - DEBUG - _read_channel_expect read_data:  screen width 0
+20201127 20:30:04.651 - DEBUG - _read_channel_expect read_data: [ok][2020-11-27 15:00:05]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:04.651 - DEBUG - Pattern found: admin@CPE26\-MUM\-SINGLE\-CPE\-HYBRID\-IPC00073\-cli set screen width 0
+[ok][2020-11-27 15:00:05]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:05.067 - DEBUG - read_channel:
+20201127 20:30:07.385 - DEBUG - read_channel:
+20201127 20:30:07.385 - DEBUG - write_channel: b'set idle-timeout 0\n'
+20201127 20:30:07.585 - DEBUG - read_channel: set idle-timeout 0
+[ok][2020-11-27 15:00:08]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:07.585 - INFO - ssh admin@20.20.73.26
+admin@20.20.73.26's password: 
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| >  < \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R2 (S9)
+Release date:	20190628
+Package ID  :	80561de	
+
+Last login: Fri Nov 27 14:28:08 2020 from 10.91.116.67
+[admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073: ~] $ 
+doing redispatch
+set idle-timeout 0
+[ok][2020-11-27 15:00:08]
+admin@CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073-cli>
+20201127 20:30:07.585 - INFO - +-- END KW: CPE2.Cross Login (30962)
+20201127 20:30:07.585 - INFO - +-- START KW: spirent1.Connect And Reserve Ports [ ]
+20201127 20:30:22.467 - INFO - reserved ports 10/1 : port1 : port_handle[0]
+
+ reserved ports 10/2 : port2 : port_handle[1]
+***** run sth.interface_config successfully
+***** run sth.interface_config successfully
+20201127 20:30:22.467 - INFO - +-- END KW: spirent1.Connect And Reserve Ports (14882)
+20201127 20:30:22.467 - INFO - +-- START KW: CPE1.Get Device Info [ ]
+20201127 20:30:22.467 - DEBUG - Starting new HTTPS connection (1): 10.91.116.35:9182
+20201127 20:30:22.899 - DEBUG - https://10.91.116.35:9182 "GET /vnms/appliance/appliance?offset=0&limit=1000 HTTP/1.1" 200 None
+20201127 20:30:22.946 - INFO - ${CPE1_dev_info_on_vd} = {'name': 'CPE11-LON-HYBRD-IPC00073', 'uuid': 'c1e0f817-ef0c-432c-904b-958c36014471', 'ipAddress': '20.20.73.11', 'ownerOrg': 'IPC00073', 'type': 'branch', 'ping_status': 'REACHABLE', 'sync_status': 'I...
+20201127 20:30:22.946 - INFO - +-- END KW: CPE1.Get Device Info (479)
+20201127 20:30:22.946 - INFO - +-- START KW: CPE1.Get Data Dict [ ]
+20201127 20:30:22.952 - INFO - ${CPE1} = {'ndb': {}, 'topofile': 'Devices.yml', 'Device_name': 'CPE11-LON-HYBRD-IPC00073', 'POD': 2, 'Solution_type': 'SINGLE-CPE-HYBRID', 'Site_id': 4275, 'Serial_Number': 'CPE11nov27', 'MIN_SW_VERSION': '16....
+20201127 20:30:22.952 - INFO - +-- END KW: CPE1.Get Data Dict (6)
+20201127 20:30:22.952 - INFO - +-- START KW: CPE2.Get Data Dict [ ]
+20201127 20:30:22.952 - INFO - ${CPE2} = {'ndb': {}, 'topofile': 'Devices.yml', 'Device_name': 'CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073', 'POD': 2, 'Solution_type': 'SINGLE-CPE-HYBRID', 'Site_id': 4300, 'Serial_Number': 'CPE26Nov27', 'MIN_SW_VE...
+20201127 20:30:22.952 - INFO - +-- END KW: CPE2.Get Data Dict (0)
+20201127 20:30:22.952 - INFO - +-- START KW: CPE1.Create Controller List [ ${CPE1['ORG_NAME']} | ${CPE1['ORG_ID']} | ${CPE1['NO_OF_VRFS']} | ${CPE1['NODE']} ]
+20201127 20:30:22.983 - INFO - +-- END KW: CPE1.Create Controller List (31)
+20201127 20:30:22.983 - INFO - +-- START KW: CPE1.Create Gateway List [ ${CPE1['ORG_NAME']} | ${CPE1['ORG_ID']} | ${CPE1['NO_OF_VRFS']} | ${CPE1['NODE']} ]
+20201127 20:30:22.999 - INFO - +-- END KW: CPE1.Create Gateway List (16)
+20201127 20:30:22.999 - INFO - +-- START KW: CPE1.Create Cpe Data [ ]
+20201127 20:30:22.999 - INFO - +-- END KW: CPE1.Create Cpe Data (0)
+20201127 20:30:22.999 - INFO - +-- START KW: CPE2.Create Controller List [ ${CPE2['ORG_NAME']} | ${CPE2['ORG_ID']} | ${CPE2['NO_OF_VRFS']} | ${CPE2['NODE']} ]
+20201127 20:30:23.015 - INFO - +-- END KW: CPE2.Create Controller List (16)
+20201127 20:30:23.015 - INFO - +-- START KW: CPE2.Create Gateway List [ ${CPE2['ORG_NAME']} | ${CPE2['ORG_ID']} | ${CPE2['NO_OF_VRFS']} | ${CPE2['NODE']} ]
+20201127 20:30:23.030 - INFO - +-- END KW: CPE2.Create Gateway List (15)
+20201127 20:30:23.030 - INFO - +-- START KW: CPE2.Create Cpe Data [ ]
+20201127 20:30:23.030 - INFO - +-- END KW: CPE2.Create Cpe Data (0)
+20201127 20:30:23.030 - INFO - +-- START KW: CPE1.Get Data Dict [ ]
+20201127 20:30:23.030 - INFO - ${CPE1} = {'ndb': {'NV-WC01-N2-BLR': {'DEVICE_NAME': 'NV-WC01-N2-BLR', 'POD': 2, 'NODE': 'BLR', 'MANAGEMENT_NW_SUBNET': '10.91.140.0/22', 'ESP_IP': '10.73.64.23', 'VXLAN_IP': '10.73.0.23', 'AUTH_STRING': 'NV-WC...
+20201127 20:30:23.030 - INFO - +-- END KW: CPE1.Get Data Dict (0)
+20201127 20:30:23.046 - INFO - +-- START KW: BuiltIn.Set Suite Variable [ ${CPE1} ]
+20201127 20:30:23.046 - INFO - ${CPE1} = {'ndb': {'NV-WC01-N2-BLR': {'DEVICE_NAME': 'NV-WC01-N2-BLR', 'POD': 2, 'NODE': 'BLR', 'MANAGEMENT_NW_SUBNET': '10.91.140.0/22', 'ESP_IP': '10.73.64.23', 'VXLAN_IP': '10.73.0.23', 'AUTH_STRING': 'NV-WC...
+20201127 20:30:23.046 - INFO - +-- END KW: BuiltIn.Set Suite Variable (0)
+20201127 20:30:23.046 - INFO - +-- START KW: CPE2.Get Data Dict [ ]
+20201127 20:30:23.046 - INFO - ${CPE2} = {'ndb': {'NV-WC01-N2-BLR': {'DEVICE_NAME': 'NV-WC01-N2-BLR', 'POD': 2, 'NODE': 'BLR', 'MANAGEMENT_NW_SUBNET': '10.91.140.0/22', 'ESP_IP': '10.73.64.23', 'VXLAN_IP': '10.73.0.23', 'AUTH_STRING': 'NV-WC...
+20201127 20:30:23.046 - INFO - +-- END KW: CPE2.Get Data Dict (0)
+20201127 20:30:23.046 - INFO - +-- START KW: BuiltIn.Set Suite Variable [ ${CPE2} ]
+20201127 20:30:23.053 - INFO - ${CPE2} = {'ndb': {'NV-WC01-N2-BLR': {'DEVICE_NAME': 'NV-WC01-N2-BLR', 'POD': 2, 'NODE': 'BLR', 'MANAGEMENT_NW_SUBNET': '10.91.140.0/22', 'ESP_IP': '10.73.64.23', 'VXLAN_IP': '10.73.0.23', 'AUTH_STRING': 'NV-WC...
+20201127 20:30:23.053 - INFO - +-- END KW: BuiltIn.Set Suite Variable (7)
+20201127 20:30:23.053 - INFO - +-- START KW: VM1.VM Pre Op [ ]
+20201127 20:30:23.131 - DEBUG - Adding ssh-ed25519 host key for 10.91.125.181: b'5069f436e0563c6eefeef785ce2cb013'
+20201127 20:30:23.215 - DEBUG - [chan 0] Max packet in: 32768 bytes
+20201127 20:30:24.802 - DEBUG - read_channel: Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-178-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+141 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.5 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Fri Nov 27 17:39:07 2020 from 10.91.194.9
+sathish@VM1:~$
+20201127 20:30:24.903 - DEBUG - read_channel:
+20201127 20:30:26.908 - DEBUG - read_channel:
+20201127 20:30:27.008 - DEBUG - read_channel:
+20201127 20:30:27.008 - DEBUG - write_channel: b'\n'
+20201127 20:30:27.108 - DEBUG - read_channel: 
+sathish@VM1:~$
+20201127 20:30:27.309 - DEBUG - read_channel:
+20201127 20:30:27.309 - DEBUG - [find_prompt()]: prompt is sathish@VM1:~$
+20201127 20:30:27.725 - DEBUG - read_channel:
+20201127 20:30:27.841 - DEBUG - read_channel:
+20201127 20:30:27.841 - DEBUG - write_channel: b'\n'
+20201127 20:30:27.941 - DEBUG - read_channel: 
+sathish@VM1:~$
+20201127 20:30:28.141 - DEBUG - read_channel:
+20201127 20:30:28.141 - DEBUG - [find_prompt()]: prompt is sathish@VM1:~$
+20201127 20:30:28.141 - DEBUG - write_channel: b'\n'
+20201127 20:30:28.141 - DEBUG - Pattern is: sathish@VM1:\~
+20201127 20:30:28.141 - DEBUG - _read_channel_expect read_data:
+20201127 20:30:28.241 - DEBUG - _read_channel_expect read_data: sathish@VM1:~$
+20201127 20:30:28.241 - DEBUG - Pattern found: sathish@VM1:\~ 
+sathish@VM1:~$
+20201127 20:30:28.241 - DEBUG - write_channel: b'sudo -s\n'
+20201127 20:30:28.542 - DEBUG - read_channel: sudo -s
+[sudo] password for sathish:
+20201127 20:30:28.542 - DEBUG - write_channel: b'sathish\n'
+20201127 20:30:28.642 - DEBUG - read_channel:
+20201127 20:30:28.642 - DEBUG - Clear buffer detects data in the channel
+20201127 20:30:28.842 - DEBUG - read_channel: root@VM1:~#
+20201127 20:30:28.842 - DEBUG - Clear buffer detects data in the channel
+20201127 20:30:29.243 - DEBUG - read_channel:
+20201127 20:30:29.243 - DEBUG - write_channel: b'\n'
+20201127 20:30:29.343 - DEBUG - read_channel: 
+root@VM1:~#
+20201127 20:30:29.559 - DEBUG - read_channel:
+20201127 20:30:29.559 - DEBUG - [find_prompt()]: prompt is root@VM1:~#
+20201127 20:30:29.559 - DEBUG - write_channel: b'\n'
+20201127 20:30:29.559 - DEBUG - Pattern is: root@VM1:\~
+20201127 20:30:29.565 - DEBUG - _read_channel_expect read_data:
+20201127 20:30:29.681 - DEBUG - _read_channel_expect read_data: root@VM1:~#
+20201127 20:30:29.681 - DEBUG - Pattern found: root@VM1:\~ 
+root@VM1:~#
+20201127 20:30:29.781 - DEBUG - read_channel:
+20201127 20:30:29.781 - DEBUG - write_channel: b'\n'
+20201127 20:30:29.881 - DEBUG - read_channel: 
+root@VM1:~#
+20201127 20:30:30.082 - DEBUG - read_channel:
+20201127 20:30:30.082 - DEBUG - [find_prompt()]: prompt is root@VM1:~#
+20201127 20:30:30.382 - DEBUG - read_channel:
+20201127 20:30:30.382 - DEBUG - write_channel: b'sudo ifconfig ens33 up\n'
+20201127 20:30:30.382 - DEBUG - Pattern is: sudo\ ifconfig\ ens33\ up
+20201127 20:30:30.382 - DEBUG - _read_channel_expect read_data: su
+20201127 20:30:30.498 - DEBUG - _read_channel_expect read_data: do ifconfig ens33 up
+root@VM1:~#
+20201127 20:30:30.498 - DEBUG - Pattern found: sudo\ ifconfig\ ens33\ up sudo ifconfig ens33 up
+root@VM1:~#
+20201127 20:30:30.798 - DEBUG - read_channel:
+20201127 20:30:30.798 - DEBUG - write_channel: b'sudo vconfig add ens33 600\n'
+20201127 20:30:30.798 - DEBUG - Pattern is: sudo\ vconfig\ add\ ens33\ 600
+20201127 20:30:30.813 - DEBUG - _read_channel_expect read_data: su
+20201127 20:30:30.914 - DEBUG - _read_channel_expect read_data: do vconfig add ens33 600
+ERROR: trying to add VLAN #600 to IF -:ens33:-  error: File exists
+root@VM1:~#
+20201127 20:30:30.914 - DEBUG - Pattern found: sudo\ vconfig\ add\ ens33\ 600 sudo vconfig add ens33 600
+ERROR: trying to add VLAN #600 to IF -:ens33:-  error: File exists
+root@VM1:~#
+20201127 20:30:31.230 - DEBUG - read_channel:
+20201127 20:30:31.230 - DEBUG - write_channel: b'sudo ifconfig ens33.600 up\n'
+20201127 20:30:31.230 - DEBUG - Pattern is: sudo\ ifconfig\ ens33\.600\ up
+20201127 20:30:31.230 - DEBUG - _read_channel_expect read_data: sudo ifconfig ens33.600 up
+20201127 20:30:31.230 - DEBUG - Pattern found: sudo\ ifconfig\ ens33\.600\ up sudo ifconfig ens33.600 up
+20201127 20:30:31.430 - DEBUG - read_channel: root@VM1:~#
+20201127 20:30:31.746 - DEBUG - read_channel:
+20201127 20:30:31.746 - DEBUG - write_channel: b'sudo ifconfig ens33.600 192.169.101.2 netmask 255.255.255.0\n'
+20201127 20:30:31.746 - DEBUG - Pattern is: sudo\ ifconfig\ ens33\.600\ 192\.169\.101\.2\ netmask\ 255\.255\.255\.0
+20201127 20:30:31.746 - DEBUG - _read_channel_expect read_data: sudo ifconfig ens33.600 192.169.101.2 netmask 255.255.255.0
+20201127 20:30:31.746 - DEBUG - Pattern found: sudo\ ifconfig\ ens33\.600\ 192\.169\.101\.2\ netmask\ 255\.255\.255\.0 sudo ifconfig ens33.600 192.169.101.2 netmask 255.255.255.0
+20201127 20:30:31.947 - DEBUG - read_channel: root@VM1:~#
+20201127 20:30:32.263 - DEBUG - read_channel:
+20201127 20:30:32.263 - DEBUG - write_channel: b'sudo ifconfig ens33.600 inet6 add 2001:192:169:101::2/64\n'
+20201127 20:30:32.263 - DEBUG - Pattern is: sudo\ ifconfig\ ens33\.600\ inet6\ add\ 2001:192:169:101::2/64
+20201127 20:30:32.269 - DEBUG - _read_channel_expect read_data: su
+20201127 20:30:32.385 - DEBUG - _read_channel_expect read_data: do ifconfig ens33.600 inet6 add 2001:192:169:101::2/64
+SIOCSIFADDR: File exists
+root@VM1:~#
+20201127 20:30:32.385 - DEBUG - Pattern found: sudo\ ifconfig\ ens33\.600\ inet6\ add\ 2001:192:169:101::2/64 sudo ifconfig ens33.600 inet6 add 2001:192:169:101::2/64
+SIOCSIFADDR: File exists
+root@VM1:~#
+20201127 20:30:32.385 - INFO - sathish@VM1:~$
+linux: root@VM1:~#
+None
+20201127 20:30:32.385 - INFO - +-- END KW: VM1.VM Pre Op (9332)
+20201127 20:30:32.385 - INFO - +-- START KW: VM2.VM Pre Op [ ]
+20201127 20:30:32.469 - DEBUG - Adding ssh-ed25519 host key for 10.91.125.184: b'aed820eb3e88e17b6683ce014419f0c7'
+20201127 20:30:32.569 - DEBUG - [chan 0] Max packet in: 32768 bytes
+20201127 20:30:33.987 - DEBUG - read_channel: Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-187-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+127 packages can be updated.
+1 update is a security update.
+
+New release '18.04.5 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Fri Nov 27 07:09:17 2020 from 10.91.194.9
+colt123@ubuntu:~$
+20201127 20:30:34.088 - DEBUG - read_channel:
+20201127 20:30:36.091 - DEBUG - read_channel:
+20201127 20:30:36.191 - DEBUG - read_channel:
+20201127 20:30:36.191 - DEBUG - write_channel: b'\n'
+20201127 20:30:36.291 - DEBUG - read_channel: 
+colt123@ubuntu:~$
+20201127 20:30:36.491 - DEBUG - read_channel:
+20201127 20:30:36.491 - DEBUG - [find_prompt()]: prompt is colt123@ubuntu:~$
+20201127 20:30:36.891 - DEBUG - read_channel:
+20201127 20:30:36.992 - DEBUG - read_channel:
+20201127 20:30:36.992 - DEBUG - write_channel: b'\n'
+20201127 20:30:37.093 - DEBUG - read_channel: 
+colt123@ubuntu:~$
+20201127 20:30:37.293 - DEBUG - read_channel:
+20201127 20:30:37.293 - DEBUG - [find_prompt()]: prompt is colt123@ubuntu:~$
+20201127 20:30:37.293 - DEBUG - write_channel: b'\n'
+20201127 20:30:37.293 - DEBUG - Pattern is: colt123@ubuntu:\~
+20201127 20:30:37.293 - DEBUG - _read_channel_expect read_data: 
+colt123@ubuntu:~$
+20201127 20:30:37.293 - DEBUG - Pattern found: colt123@ubuntu:\~ 
+colt123@ubuntu:~$
+20201127 20:30:37.293 - DEBUG - write_channel: b'sudo -s\n'
+20201127 20:30:37.593 - DEBUG - read_channel: sudo -s
+[sudo] password for colt123:
+20201127 20:30:37.593 - DEBUG - write_channel: b'colt123\n'
+20201127 20:30:37.693 - DEBUG - read_channel:
+20201127 20:30:37.693 - DEBUG - Clear buffer detects data in the channel
+20201127 20:30:37.894 - DEBUG - read_channel: root@ubuntu:~#
+20201127 20:30:37.894 - DEBUG - Clear buffer detects data in the channel
+20201127 20:30:38.295 - DEBUG - read_channel:
+20201127 20:30:38.295 - DEBUG - write_channel: b'\n'
+20201127 20:30:38.395 - DEBUG - read_channel: 
+root@ubuntu:~#
+20201127 20:30:38.611 - DEBUG - read_channel:
+20201127 20:30:38.611 - DEBUG - [find_prompt()]: prompt is root@ubuntu:~#
+20201127 20:30:38.611 - DEBUG - write_channel: b'\n'
+20201127 20:30:38.611 - DEBUG - Pattern is: root@ubuntu:\~
+20201127 20:30:38.626 - DEBUG - _read_channel_expect read_data:
+20201127 20:30:38.726 - DEBUG - _read_channel_expect read_data: root@ubuntu:~#
+20201127 20:30:38.726 - DEBUG - Pattern found: root@ubuntu:\~ 
+root@ubuntu:~#
+20201127 20:30:38.827 - DEBUG - read_channel:
+20201127 20:30:38.827 - DEBUG - write_channel: b'\n'
+20201127 20:30:38.927 - DEBUG - read_channel: 
+root@ubuntu:~#
+20201127 20:30:39.127 - DEBUG - read_channel:
+20201127 20:30:39.127 - DEBUG - [find_prompt()]: prompt is root@ubuntu:~#
+20201127 20:30:39.428 - DEBUG - read_channel:
+20201127 20:30:39.428 - DEBUG - write_channel: b'sudo ifconfig ens34 up\n'
+20201127 20:30:39.428 - DEBUG - Pattern is: sudo\ ifconfig\ ens34\ up
+20201127 20:30:39.428 - DEBUG - _read_channel_expect read_data: s
+20201127 20:30:39.543 - DEBUG - _read_channel_expect read_data: udo ifconfig ens34 up
+root@ubuntu:~#
+20201127 20:30:39.543 - DEBUG - Pattern found: sudo\ ifconfig\ ens34\ up sudo ifconfig ens34 up
+root@ubuntu:~#
+20201127 20:30:39.844 - DEBUG - read_channel:
+20201127 20:30:39.844 - DEBUG - write_channel: b'sudo vconfig add ens34 750\n'
+20201127 20:30:39.844 - DEBUG - Pattern is: sudo\ vconfig\ add\ ens34\ 750
+20201127 20:30:39.844 - DEBUG - _read_channel_expect read_data: s
+20201127 20:30:39.944 - DEBUG - _read_channel_expect read_data: udo vconfig add ens34 750
+ERROR: trying to add VLAN #750 to IF -:ens34:-  error: File exists
+root@ubuntu:~#
+20201127 20:30:39.944 - DEBUG - Pattern found: sudo\ vconfig\ add\ ens34\ 750 sudo vconfig add ens34 750
+ERROR: trying to add VLAN #750 to IF -:ens34:-  error: File exists
+root@ubuntu:~#
+20201127 20:30:40.245 - DEBUG - read_channel:
+20201127 20:30:40.245 - DEBUG - write_channel: b'sudo ifconfig ens34.750 up\n'
+20201127 20:30:40.245 - DEBUG - Pattern is: sudo\ ifconfig\ ens34\.750\ up
+20201127 20:30:40.245 - DEBUG - _read_channel_expect read_data: s
+20201127 20:30:40.345 - DEBUG - _read_channel_expect read_data: udo ifconfig ens34.750 up
+root@ubuntu:~#
+20201127 20:30:40.345 - DEBUG - Pattern found: sudo\ ifconfig\ ens34\.750\ up sudo ifconfig ens34.750 up
+root@ubuntu:~#
+20201127 20:30:40.646 - DEBUG - read_channel:
+20201127 20:30:40.646 - DEBUG - write_channel: b'sudo ifconfig ens34.750 192.170.1.2 netmask 255.255.255.0\n'
+20201127 20:30:40.646 - DEBUG - Pattern is: sudo\ ifconfig\ ens34\.750\ 192\.170\.1\.2\ netmask\ 255\.255\.255\.0
+20201127 20:30:40.646 - DEBUG - _read_channel_expect read_data: s
+20201127 20:30:40.746 - DEBUG - _read_channel_expect read_data: udo ifconfig ens34.750 192.170.1.2 netmask 255.255.255.0
+root@ubuntu:~#
+20201127 20:30:40.746 - DEBUG - Pattern found: sudo\ ifconfig\ ens34\.750\ 192\.170\.1\.2\ netmask\ 255\.255\.255\.0 sudo ifconfig ens34.750 192.170.1.2 netmask 255.255.255.0
+root@ubuntu:~#
+20201127 20:30:41.077 - DEBUG - read_channel:
+20201127 20:30:41.077 - DEBUG - write_channel: b'sudo ifconfig ens34.750 inet6 add 2001:192:170:1::2/64\n'
+20201127 20:30:41.077 - DEBUG - Pattern is: sudo\ ifconfig\ ens34\.750\ inet6\ add\ 2001:192:170:1::2/64
+20201127 20:30:41.083 - DEBUG - _read_channel_expect read_data: s
+20201127 20:30:41.199 - DEBUG - _read_channel_expect read_data: udo ifconfig ens34.750 inet6 add 2001:192:170:1::2/64
+SIOCSIFADDR: File exists
+root@ubuntu:~#
+20201127 20:30:41.199 - DEBUG - Pattern found: sudo\ ifconfig\ ens34\.750\ inet6\ add\ 2001:192:170:1::2/64 sudo ifconfig ens34.750 inet6 add 2001:192:170:1::2/64
+SIOCSIFADDR: File exists
+root@ubuntu:~#
+20201127 20:30:41.199 - INFO - colt123@ubuntu:~$
+linux: root@ubuntu:~#
+None
+20201127 20:30:41.199 - INFO - +-- END KW: VM2.VM Pre Op (8814)
+20201127 20:30:41.199 - INFO - +-- START KW: VM1.Get Data Dict [ ]
+20201127 20:30:41.283 - INFO - ${VM1} = {'data_dict': {'mgmt_ip': '10.91.125.181', 'username': 'sathish', 'password': 'sathish', 'device_type': 'linux', 'LAN_INTF': 'ens33', 'START_VLAN': 600, 'START_LAN_IP_SUBNET': '192.169.101.0/24', 'NO_...
+20201127 20:30:41.283 - INFO - +-- END KW: VM1.Get Data Dict (84)
+20201127 20:30:41.283 - INFO - +-- START KW: VM2.Get Data Dict [ ]
+20201127 20:30:41.314 - INFO - ${VM2} = {'data_dict': {'mgmt_ip': '10.91.125.184', 'username': 'colt123', 'password': 'colt123', 'device_type': 'linux', 'LAN_INTF': 'ens34', 'START_VLAN': 750, 'START_LAN_IP_SUBNET': '192.170.1.0/24', 'NO_OF...
+20201127 20:30:41.314 - INFO - +-- END KW: VM2.Get Data Dict (31)
+20201127 20:30:41.314 - INFO - +-- START KW: BuiltIn.Set Suite Variable [ ${VM1} ]
+20201127 20:30:41.330 - INFO - ${VM1} = {'data_dict': {'mgmt_ip': '10.91.125.181', 'username': 'sathish', 'password': 'sathish', 'device_type': 'linux', 'LAN_INTF': 'ens33', 'START_VLAN': 600, 'START_LAN_IP_SUBNET': '192.169.101.0/24', 'NO_...
+20201127 20:30:41.330 - INFO - +-- END KW: BuiltIn.Set Suite Variable (16)
+20201127 20:30:41.330 - INFO - +-- START KW: BuiltIn.Set Suite Variable [ ${VM2} ]
+20201127 20:30:41.361 - INFO - ${VM2} = {'data_dict': {'mgmt_ip': '10.91.125.184', 'username': 'colt123', 'password': 'colt123', 'device_type': 'linux', 'LAN_INTF': 'ens34', 'START_VLAN': 750, 'START_LAN_IP_SUBNET': '192.170.1.0/24', 'NO_OF...
+20201127 20:30:41.361 - INFO - +-- END KW: BuiltIn.Set Suite Variable (31)
+20201127 20:30:41.361 - INFO - +-- START KW: ${i} IN RANGE [ 1 | ${VM1['NO_OF_VRFS']} + 1 ] [ ]
+20201127 20:30:41.361 - INFO - +--- START KW: ${i} = 1 [ ]
+20201127 20:30:41.361 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM1['lan'][${i}]['first_host']} ]
+20201127 20:30:41.361 - INFO - ${gw} = 192.169.101.1
+20201127 20:30:41.361 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:30:41.361 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM1['lan'][${i}]['vlan']} ]
+20201127 20:30:41.361 - INFO - ${vlan} = 600
+20201127 20:30:41.361 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:30:41.361 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM2['lan'][${i}]['nw']} ]
+20201127 20:30:41.361 - INFO - ${destination_nw} = 192.170.1.0/24
+20201127 20:30:41.361 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:30:41.361 - INFO - +---- START KW: VM1.Send Commands And Expect [ sudo ip route add ${destination_nw} via ${gw} dev ${VM1['LAN_INTF']}.${vlan} ]
+20201127 20:30:41.661 - DEBUG - read_channel:
+20201127 20:30:41.661 - DEBUG - write_channel: b'sudo ip route add 192.170.1.0/24 via 192.169.101.1 dev ens33.600\n'
+20201127 20:30:41.661 - DEBUG - Pattern is: sudo\ ip\ route\ add\ 192\.170\.1\.0/24\ via\ 192\.169\.101\.1\ dev\ ens33\.600
+20201127 20:30:41.661 - DEBUG - _read_channel_expect read_data: s
+20201127 20:30:41.762 - DEBUG - _read_channel_expect read_data: udo ip route add 192.170.1.0/24 via 192.169.101.1 dev ens33.600
+root@VM1:~#
+20201127 20:30:41.762 - DEBUG - Pattern found: sudo\ ip\ route\ add\ 192\.170\.1\.0/24\ via\ 192\.169\.101\.1\ dev\ ens33\.600 sudo ip route add 192.170.1.0/24 via 192.169.101.1 dev ens33.600
+root@VM1:~#
+20201127 20:30:41.762 - INFO - +---- END KW: VM1.Send Commands And Expect (401)
+20201127 20:30:41.762 - INFO - +--- END KW: ${i} = 1 (401)
+20201127 20:30:41.762 - INFO - +-- END KW: ${i} IN RANGE [ 1 | ${VM1['NO_OF_VRFS']} + 1 ] (401)
+20201127 20:30:41.762 - INFO - +-- START KW: ${i} IN RANGE [ 1 | ${VM2['NO_OF_VRFS']} + 1 ] [ ]
+20201127 20:30:41.762 - INFO - +--- START KW: ${i} = 1 [ ]
+20201127 20:30:41.762 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM2['lan'][${i}]['first_host']} ]
+20201127 20:30:41.762 - INFO - ${gw} = 192.170.1.1
+20201127 20:30:41.762 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:30:41.762 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM2['lan'][${i}]['vlan']} ]
+20201127 20:30:41.762 - INFO - ${vlan} = 750
+20201127 20:30:41.762 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:30:41.762 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM1['lan'][${i}]['nw']} ]
+20201127 20:30:41.762 - INFO - ${destination_nw} = 192.169.101.0/24
+20201127 20:30:41.762 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:30:41.762 - INFO - +---- START KW: VM2.Send Commands And Expect [ sudo ip route add ${destination_nw} via ${gw} dev ${VM2['LAN_INTF']}.${vlan} ]
+20201127 20:30:42.062 - DEBUG - read_channel:
+20201127 20:30:42.062 - DEBUG - write_channel: b'sudo ip route add 192.169.101.0/24 via 192.170.1.1 dev ens34.750\n'
+20201127 20:30:42.062 - DEBUG - Pattern is: sudo\ ip\ route\ add\ 192\.169\.101\.0/24\ via\ 192\.170\.1\.1\ dev\ ens34\.750
+20201127 20:30:42.062 - DEBUG - _read_channel_expect read_data: s
+20201127 20:30:42.162 - DEBUG - _read_channel_expect read_data: udo ip route add 192.169.101.0/24 via 192.170.1.1 dev ens34.750
+root@ubuntu:~#
+20201127 20:30:42.162 - DEBUG - Pattern found: sudo\ ip\ route\ add\ 192\.169\.101\.0/24\ via\ 192\.170\.1\.1\ dev\ ens34\.750 sudo ip route add 192.169.101.0/24 via 192.170.1.1 dev ens34.750
+root@ubuntu:~#
+20201127 20:30:42.162 - INFO - +---- END KW: VM2.Send Commands And Expect (400)
+20201127 20:30:42.162 - INFO - +--- END KW: ${i} = 1 (400)
+20201127 20:30:42.162 - INFO - +-- END KW: ${i} IN RANGE [ 1 | ${VM2['NO_OF_VRFS']} + 1 ] (400)
+20201127 20:30:42.162 - INFO - +-- START KW: SPIRENT_STARTUP [ ]
+20201127 20:30:42.162 - INFO - +--- START KW: spirent1.Create Device [ port=0 | vlanid=${CPE1['lan'][1]['vlan']} | intf_ip_addr=${CPE1['lan'][1]['third_host']} | gateway_ip_addr=${CPE1['lan'][1]['first_host']} ]
+20201127 20:30:43.381 - INFO - ***** run sth.emulation_device_config successfully
+20201127 20:30:43.381 - INFO - ${device1} = {'handle': 'host1', 'status': '1', 'port': 'port1', 'gateway_ip_addr': '192.169.101.1', 'vlanid': 600, 'intf_ip_addr': '192.169.101.3'}
+20201127 20:30:43.381 - INFO - +--- END KW: spirent1.Create Device (1219)
+20201127 20:30:43.381 - INFO - +--- START KW: spirent1.Create Device [ port=1 | vlanid=${CPE2['lan'][1]['vlan']} | intf_ip_addr=${CPE2['lan'][1]['third_host']} | gateway_ip_addr=${CPE2['lan'][1]['first_host']} ]
+20201127 20:30:43.866 - INFO - ***** run sth.emulation_device_config successfully
+20201127 20:30:43.866 - INFO - ${device2} = {'handle': 'host2', 'status': '1', 'port': 'port2', 'gateway_ip_addr': '192.170.1.1', 'vlanid': 750, 'intf_ip_addr': '192.170.1.3'}
+20201127 20:30:43.866 - INFO - +--- END KW: spirent1.Create Device (485)
+20201127 20:30:43.866 - INFO - +--- START KW: spirent1.Create Tcp Stream Block [ ${device1} | ${device2} | src_port=2000 | rate_mbps=2 ]
+20201127 20:30:47.991 - INFO - ***** run sth.traffic_config successfully
+20201127 20:30:47.991 - INFO - ${stream1} = {'stream_id': 'streamblock1', 'status': '1'}
+20201127 20:30:47.991 - INFO - +--- END KW: spirent1.Create Tcp Stream Block (4125)
+20201127 20:30:47.991 - INFO - +--- START KW: spirent1.Create Tcp Stream Block [ ${device1} | ${device2} | src_port=2001 | rate_mbps=2 ]
+20201127 20:30:51.465 - INFO - +--- END KW: spirent1.Create Tcp Stream Block (3474)
+20201127 20:30:51.465 - INFO - +-- END KW: SPIRENT_STARTUP (9303)
+20201127 20:30:51.465 - INFO - +- END SETUP: STARTUP (117354)
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_SANITY_01 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_SANITY_01 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_SANITY_02 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_SANITY_02 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_SANITY_03 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_SANITY_03 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_SANITY_04 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_SANITY_04 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_01 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_01 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.465 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_02 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_02 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_03 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_03 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_04 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_TRAFFIC_STEERING_04 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_QOS_01 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_QOS_01 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_QOS_02 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_QOS_02 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.480 - INFO - +- START TEST: NV_SINGLE_CPE_HYBRID_QOS_03 [ ]
+------------------------------------------------------------------------------
+20201127 20:30:51.496 - INFO - +- END TEST: NV_SINGLE_CPE_HYBRID_QOS_03 (0)
+------------------------------------------------------------------------------
+20201127 20:30:51.496 - INFO - +- START TEARDOWN: CLEANUP [ ]
+20201127 20:30:51.496 - INFO - +-- START KW: DELETE FWD PROFILE [ ]
+20201127 20:30:51.496 - INFO - +--- START KW: CPE1.Delete Service Object [ ${serviceobj_1} ]
+20201127 20:30:51.496 - INFO - 
+DELETE Service Object
+20201127 20:30:51.496 - DEBUG - Starting new HTTPS connection (1): 10.91.116.35:9182
+20201127 20:30:54.824 - DEBUG - https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/objects/services/service/src_port_2000 HTTP/1.1" 404 0
+20201127 20:30:54.824 - ERROR - b''
+20201127 20:30:54.824 - INFO - 
+FAIL : b''
+20201127 20:30:54.824 - INFO - >>>>>>>>>> ADDRESS OBJECT DELETION FAILED. <<<<<<<<<<<
+20201127 20:30:54.824 - INFO - <Response [404]>
+20201127 20:30:54.824 - INFO - +--- END KW: CPE1.Delete Service Object (3328)
+20201127 20:30:54.824 - INFO - +--- START KW: CPE1.Delete Address Object [ ${ipaddobj_1} ]
+20201127 20:30:54.824 - INFO - 
+DELETE IPaddress Object
+20201127 20:30:54.824 - DEBUG - Starting new HTTPS connection (1): 10.91.116.35:9182
+20201127 20:30:57.429 - DEBUG - https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/objects/addresses/address/src_ip_add_obj11 HTTP/1.1" 404 0
+20201127 20:30:57.429 - ERROR - b''
+20201127 20:30:57.429 - INFO - 
+FAIL : b''
+20201127 20:30:57.429 - INFO - >>>>>>>>>> ADDRESS OBJECT DELETION FAILED. <<<<<<<<<<<
+20201127 20:30:57.444 - INFO - <Response [404]>
+20201127 20:30:57.444 - INFO - +--- END KW: CPE1.Delete Address Object (2620)
+20201127 20:30:57.444 - INFO - +--- START KW: CPE1.Delete Address Object [ ${ipaddobj_2} ]
+20201127 20:30:57.444 - INFO - 
+DELETE IPaddress Object
+20201127 20:30:57.444 - DEBUG - Starting new HTTPS connection (1): 10.91.116.35:9182
+20201127 20:30:59.577 - DEBUG - https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/objects/addresses/address/dst_ip_add_obj11 HTTP/1.1" 404 0
+20201127 20:30:59.577 - ERROR - b''
+20201127 20:30:59.577 - INFO - 
+FAIL : b''
+20201127 20:30:59.577 - INFO - >>>>>>>>>> ADDRESS OBJECT DELETION FAILED. <<<<<<<<<<<
+20201127 20:30:59.577 - INFO - <Response [404]>
+20201127 20:30:59.577 - INFO - +--- END KW: CPE1.Delete Address Object (2133)
+20201127 20:30:59.577 - INFO - +--- START KW: CPE1.Delete Fowarding Profile [ ${fwp_1} ]
+20201127 20:30:59.577 - INFO - 
+DELETE FWD PROFILE
+20201127 20:30:59.577 - DEBUG - Starting new HTTPS connection (1): 10.91.116.35:9182
+20201127 20:31:02.049 - DEBUG - https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/sd-wan/forwarding-profiles/forwarding-profile/FWP112 HTTP/1.1" 404 0
+20201127 20:31:02.064 - ERROR - b''
+20201127 20:31:02.064 - INFO - 
+FAIL : b''
+20201127 20:31:02.064 - INFO - >>>>>>>>>> FORWARDING PROFILE DELETION FAILED. <<<<<<<<<<<
+20201127 20:31:02.064 - INFO - <Response [404]>
+20201127 20:31:02.064 - INFO - +--- END KW: CPE1.Delete Fowarding Profile (2487)
+20201127 20:31:02.064 - INFO - +--- START KW: CPE1.Delete Sla Profile [ ${sla_prf_1} ]
+20201127 20:31:02.064 - INFO - 
+DELETE SLA profile
+20201127 20:31:02.064 - DEBUG - Starting new HTTPS connection (1): 10.91.116.35:9182
+20201127 20:31:04.984 - DEBUG - https://10.91.116.35:9182 "DELETE /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/orgs/org-services/IPC00073/sd-wan/sla-profiles/sla-profile/SLA112 HTTP/1.1" 404 0
+20201127 20:31:04.984 - ERROR - b''
+20201127 20:31:04.984 - INFO - 
+FAIL : b''
+20201127 20:31:04.984 - INFO - >>>>>>>>>> DELETE SLA Profile FAILED. <<<<<<<<<<<
+20201127 20:31:04.984 - INFO - <Response [404]>
+20201127 20:31:05.000 - INFO - +--- END KW: CPE1.Delete Sla Profile (2936)
+20201127 20:31:05.000 - INFO - +--- START KW: CPE1.Get Vni Interface Bw [ ${CPE1['WAN1_INTF']} ]
+20201127 20:31:05.000 - DEBUG - Starting new HTTPS connection (1): 10.91.116.35:9182
+20201127 20:31:07.141 - DEBUG - https://10.91.116.35:9182 "GET /api/config/devices/device/CPE11-LON-HYBRD-IPC00073/config/interfaces/vni/%22vni-0/1%22/bandwidth HTTP/1.1" 200 None
+20201127 20:31:07.157 - INFO - +--- END KW: CPE1.Get Vni Interface Bw (2157)
+20201127 20:31:07.157 - INFO - +-- END KW: DELETE FWD PROFILE (15661)
+20201127 20:31:07.157 - INFO - +-- START KW: BuiltIn.Log To Console [ "cleanup done" ]
+20201127 20:31:07.157 - INFO - +-- END KW: BuiltIn.Log To Console (0)
+20201127 20:31:07.157 - INFO - +-- START KW: spirent1.Release Ports [ ]
+20201127 20:31:07.157 - INFO - Release resources
+20201127 20:31:07.203 - FAIL - ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+20201127 20:31:07.203 - DEBUG - Traceback (most recent call last):
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\HltapiLib.py", line 299, in release_ports
+    self.interface_config_delete(0)
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\HltapiLib.py", line 81, in interface_config_delete
+    int_ret0 = sth.interface_config(
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\sth.py", line 1651, in interface_config
+    return _process_cmd("interface_config",**arg)
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\sth.py", line 1072, in _process_cmd
+    retVal=_private_invoke("set ret [sth::"+cmd_name+cmdline+"]")
+  File "C:\Softwares_mine\Code_base\NOVITAS_SDWAN_AUTOMATION_py3\csit\libraries\sth.py", line 421, in _private_invoke
+    tclserversocket.send(bytes(cmd+'\n','UTF-8'))
+20201127 20:31:07.203 - INFO - +-- END KW: spirent1.Release Ports (46)
+20201127 20:31:07.203 - INFO - +-- START KW: ${i} IN RANGE [ 1 | ${VM1['NO_OF_VRFS']} + 1 ] [ ]
+20201127 20:31:07.203 - INFO - +--- START KW: ${i} = 1 [ ]
+20201127 20:31:07.203 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM1['lan'][${i}]['first_host']} ]
+20201127 20:31:07.203 - INFO - ${gw} = 192.169.101.1
+20201127 20:31:07.203 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:31:07.203 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM1['lan'][${i}]['vlan']} ]
+20201127 20:31:07.203 - INFO - ${vlan} = 600
+20201127 20:31:07.203 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:31:07.203 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM2['lan'][${i}]['nw']} ]
+20201127 20:31:07.219 - INFO - ${destination_nw} = 192.170.1.0/24
+20201127 20:31:07.219 - INFO - +---- END KW: BuiltIn.Set Variable (16)
+20201127 20:31:07.219 - INFO - +---- START KW: VM1.Send Commands And Expect [ sudo ip route del ${destination_nw} via ${gw} dev ${VM1['LAN_INTF']}.${vlan} ]
+20201127 20:31:07.542 - DEBUG - read_channel:
+20201127 20:31:07.542 - DEBUG - write_channel: b'sudo ip route del 192.170.1.0/24 via 192.169.101.1 dev ens33.600\n'
+20201127 20:31:07.542 - DEBUG - Pattern is: sudo\ ip\ route\ del\ 192\.170\.1\.0/24\ via\ 192\.169\.101\.1\ dev\ ens33\.600
+20201127 20:31:07.542 - DEBUG - _read_channel_expect read_data: s
+20201127 20:31:07.642 - DEBUG - _read_channel_expect read_data: udo ip route del 192.170.1.0/24 via 192.169.101.1 dev ens33.600
+root@VM1:~#
+20201127 20:31:07.642 - DEBUG - Pattern found: sudo\ ip\ route\ del\ 192\.170\.1\.0/24\ via\ 192\.169\.101\.1\ dev\ ens33\.600 sudo ip route del 192.170.1.0/24 via 192.169.101.1 dev ens33.600
+root@VM1:~#
+20201127 20:31:07.642 - INFO - +---- END KW: VM1.Send Commands And Expect (423)
+20201127 20:31:07.642 - INFO - +--- END KW: ${i} = 1 (439)
+20201127 20:31:07.642 - INFO - +-- END KW: ${i} IN RANGE [ 1 | ${VM1['NO_OF_VRFS']} + 1 ] (439)
+20201127 20:31:07.642 - INFO - +-- START KW: ${i} IN RANGE [ 1 | ${VM2['NO_OF_VRFS']} + 1 ] [ ]
+20201127 20:31:07.642 - INFO - +--- START KW: ${i} = 1 [ ]
+20201127 20:31:07.642 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM2['lan'][${i}]['first_host']} ]
+20201127 20:31:07.642 - INFO - ${gw} = 192.170.1.1
+20201127 20:31:07.642 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:31:07.642 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM2['lan'][${i}]['vlan']} ]
+20201127 20:31:07.642 - INFO - ${vlan} = 750
+20201127 20:31:07.642 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:31:07.642 - INFO - +---- START KW: BuiltIn.Set Variable [ ${VM1['lan'][${i}]['nw']} ]
+20201127 20:31:07.642 - INFO - ${destination_nw} = 192.169.101.0/24
+20201127 20:31:07.642 - INFO - +---- END KW: BuiltIn.Set Variable (0)
+20201127 20:31:07.642 - INFO - +---- START KW: VM2.Send Commands And Expect [ sudo ip route del ${destination_nw} via ${gw} dev ${VM2['LAN_INTF']}.${vlan} ]
+20201127 20:31:07.943 - DEBUG - read_channel:
+20201127 20:31:07.943 - DEBUG - write_channel: b'sudo ip route del 192.169.101.0/24 via 192.170.1.1 dev ens34.750\n'
+20201127 20:31:07.943 - DEBUG - Pattern is: sudo\ ip\ route\ del\ 192\.169\.101\.0/24\ via\ 192\.170\.1\.1\ dev\ ens34\.750
+20201127 20:31:07.958 - DEBUG - _read_channel_expect read_data: sudo ip route del 192.169.101.0/24 via 192.170.1.1 dev ens34.750
+20201127 20:31:07.958 - DEBUG - Pattern found: sudo\ ip\ route\ del\ 192\.169\.101\.0/24\ via\ 192\.170\.1\.1\ dev\ ens34\.750 sudo ip route del 192.169.101.0/24 via 192.170.1.1 dev ens34.750
+20201127 20:31:08.160 - DEBUG - read_channel: root@ubuntu:~#
+20201127 20:31:08.160 - INFO - +---- END KW: VM2.Send Commands And Expect (518)
+20201127 20:31:08.160 - INFO - +--- END KW: ${i} = 1 (518)
+20201127 20:31:08.160 - INFO - +-- END KW: ${i} IN RANGE [ 1 | ${VM2['NO_OF_VRFS']} + 1 ] (518)
+20201127 20:31:08.160 - INFO - +- END TEARDOWN: CLEANUP (16664)
+==============================================================================
+20201127 20:31:08.160 - INFO - + END SUITE: SINGLE CPE HYBRID SOLUTION TEST (162214)
+==============================================================================

@@ -1,0 +1,12 @@
+delete devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} router-id {{ ospf_router_id }}
+delete devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} area {{ ospf_area_id }} network-name LAN{{ lan_number }} authentication type none
+delete devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} area {{ ospf_area_id }} network-name LAN{{ lan_number }} network-type broadcast
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} router-id {{ ospf_router_id }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} area {{ ospf_area_id }} network-name LAN{{ lan_number }} authentication type simple-password
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} area {{ ospf_area_id }} network-name LAN{{ lan_number }} authentication authentication-key {{ password }}
+set devices device {{ Device_name }} config routing-instances LAN{{ lan_number }}-VRF protocols ospf {{ ospf_instance_id }} area {{ ospf_area_id }} network-name LAN{{ lan_number }} network-type broadcast
+
+
+
+
+
