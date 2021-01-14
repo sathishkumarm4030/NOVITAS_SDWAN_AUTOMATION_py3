@@ -35,11 +35,12 @@ def get_vd_details():
 
 def DO_config_in_VD_For_CPEs():
     vd_dict = get_vd_details()
+    csv_file = input("Enter Production devices csv file name:\n")
     vd_dict['device_type'] = 'versa_director'
     VD1 = VersaLib('Versa_director', **vd_dict)
     VD1.vdnc = VD1.login()
     # VD1.vdnc = "1234"
-    VD1.config_function(nc=VD1.vdnc, csv_file="Prod_devices_jan12_2021.csv", template_file="bgp_grt.j2", config_for="bgp_grt", type="devices")
+    VD1.config_function(nc=VD1.vdnc, csv_file=csv_file, template_file="bgp_grt.j2", config_for="bgp_grt", type="devices")
     #VD1.config_function(nc=VD1.vdnc, csv_file="LAB_DEVICES_JAN7.csv", template_file="bgp_grt.j2", config_for="bgp_grt", type="devices")
     VD1.close(VD1.vdnc)
 
