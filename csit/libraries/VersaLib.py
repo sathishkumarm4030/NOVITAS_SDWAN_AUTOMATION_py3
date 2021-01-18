@@ -1759,13 +1759,15 @@ class VersaLib:
     def check_device_status(self, nc, device_name):
         if self.request_ping(nc, device_name) == "True":
             if self.request_connect(nc, device_name) == "True":
-                if self.request_check_sync(nc, device_name) == "True":
-                    return "PASS"
-                else:
-                    if self.request_sync_from_cpe(nc, device_name):
-                        return "PASS"
-                    else:
-                        return "VD --> CPE req sync failed"
+                return "PASS"
+                # if self.request_check_sync(nc, device_name) == "True":
+                #     return "PASS"
+                # else:
+                #     # if self.request_sync_from_cpe(nc, device_name):
+                #     #     return "PASS"
+                #     # else:
+                #     #     return "VD --> CPE req sync failed"
+                #     return "CPE out-of sync."
             else:
                 return "VD --> CPE Request connect failed."
         else:
@@ -1939,6 +1941,27 @@ class VersaLib:
                         for k, v in list(result_dict.items()):
                             self.main_logger.info([k, v])
                         continue
+                elif type == "ps":
+                    pass
+                device_cmds = template.render(dev_dict)
+            elif config_for == "bgp_loop_prevention":
+                if type == "devices":
+                    check_state_result = self.check_device_status(nc, dev_dict['NAME'])
+                    if check_state_result != "PASS":
+                        res_check += check_state_result
+                        result_dict[dev_dict['NAME']] = res_check
+                        self.main_logger.info("CONFIG_RESULT:")
+                        for k, v in list(result_dict.items()):
+                            self.main_logger.info([k, v])
+                        continue
+                    # checkbgp_nbr_state = self.check_dev_bgp_nbr(nc, dev_dict['NAME'], dev_dict['ORG_NAME'])
+                    # if 'fail' in checkbgp_nbr_state:
+                    #     res_check += checkbgp_nbr_state
+                    #     result_dict[dev_dict['NAME']] = res_check
+                    #     self.main_logger.info("CONFIG_RESULT:")
+                    #     for k, v in list(result_dict.items()):
+                    #         self.main_logger.info([k, v])
+                    #     continue
                 elif type == "ps":
                     pass
                 device_cmds = template.render(dev_dict)
@@ -2276,7 +2299,7 @@ class VersaLib:
 
 
     def build_csv(self, device_list):
-        with open(curr_file_dir + "/Topology/" + self.cpe_list_file_name, 'wb') as file_writer1:
+        with open(curr_file_dir + "/Topology/" + self.cpe_list_file_name, 'w') as file_writer1:
             data_header = ['NAME', 'ip', 'day', 'batch', 'type', 'softwareVersion', 'ping-status',
                            'sync-status']
             writer = csv.writer(file_writer1)
