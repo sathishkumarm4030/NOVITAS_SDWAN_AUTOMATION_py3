@@ -1,0 +1,2 @@
+NAME,ip,sw version,ping-status,sync-status,last-updated-time,script-executed-time
+CPE26-MUM-SINGLE-CPE-HYBRID-IPC00073,20.20.73.126,20.2.2-GA 63668a2 20200606,UNREACHABLE,UNKNOWN,2021-02-24 06:46:47.0,2021-02-24 12:19:27.078003

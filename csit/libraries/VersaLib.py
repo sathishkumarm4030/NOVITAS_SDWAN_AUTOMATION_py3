@@ -1989,6 +1989,44 @@ class VersaLib:
         return
 
 
+    def commit_config_commands_function(self, nc, config_file):
+        start_time = datetime.now()
+        # self.main_logger = self.setup_logger('Versa-director', 'Config_devices_template')
+        config_lines = open(curr_file_dir + "/DATA/" + config_file, "r")
+        result_dict = {}
+        data = config_lines.read()
+        device_list_raw = re.findall("set devices device (\S+) ", data, re.M)
+        device_list = []
+        for dev in device_list_raw:
+            if dev not in device_list:
+                device_list.append(dev)
+        #print(len(device_list))
+        #print(device_list)
+        for device in device_list:
+            res_check = ""
+            device_cmds = ""
+            config_cmds_list = re.findall("^set devices device " + device + " .*$", data, re.M)
+            for cmd in config_cmds_list:
+                device_cmds += cmd+"\n"
+            self.main_logger.info(device_cmds)
+            # result_dict[device] = "success"
+            # print("success")
+            result = self.device_config_commands_wo_split(nc, device_cmds)
+            self.main_logger.info(result)
+            res_check = self.Do_commit_and_check_commit(nc, result)
+            self.main_logger.debug(res_check)
+            result_dict[device] = res_check
+            # main_logger.info(result_dict)
+            self.main_logger.info("CONFIG_RESULT:")
+            for k, v in list(result_dict.items()):
+                self.main_logger.info([k, v])
+        write_result_from_dict(result_dict)
+        #write_result_from_dict(result_dict)
+        self.main_logger.info("Time elapsed: {}\n".format(datetime.now() - start_time))
+        self.main_logger.info("LOGS Stored in : " + logfile_dir)
+        return
+
+
     def Do_commit_and_check_commit(self, nc, result):
         self.main_logger.debug(result)
         # return "Commit success"

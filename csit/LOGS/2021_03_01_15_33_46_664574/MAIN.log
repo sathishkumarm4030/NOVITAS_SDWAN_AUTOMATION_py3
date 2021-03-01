@@ -1,0 +1,23 @@
+2021-03-01 15:34:07,110 - Versa_director - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x0000027911661CD0>
+2021-03-01 15:34:12,513 - Versa_director - DEBUG - versa: Automated@VD-PB-01>
+2021-03-01 15:34:12,534 - Versa_director - INFO - set devices device BRE001040 config orgs org-services IPC060302230 lef collectors LEF-Collector-log_collector1 destination-address 10.5.22.100
+set devices device BRE001040 config orgs org-services IPC060302230 lef collectors LEF-Collector-log_collector2 destination-address 10.5.22.101
+
+2021-03-01 15:34:19,410 - Versa_director - INFO - configure private
+Entering configuration mode private
+[ok][2021-03-01 10:02:43]
+
+[edit]
+Automated@VD-PB-01% set devices device BRE001040 config orgs org-services IPC060302230 lef collectors LEF-Collector-log_collector1 destination-address 10.5.22.100
+Value for 'destination-port' (<unsignedShort>): set devices device BRE001040 config orgs org-services IPC060302230 lef collectors LEF-Collector-log_collector2 destination-address 10.5.22.101
+Error: bad value: "set devices device BRE001040 config orgs org-services IPC060302230 lef collectors LEF-Collector-log_collector2 destination-address 10.5.22.101" is not a valid value.
+Value for 'destination-port' (<unsignedShort>): 
+2021-03-01 15:34:19,416 - Versa_director - DEBUG - configure private
+Entering configuration mode private
+[ok][2021-03-01 10:02:43]
+
+[edit]
+Automated@VD-PB-01% set devices device BRE001040 config orgs org-services IPC060302230 lef collectors LEF-Collector-log_collector1 destination-address 10.5.22.100
+Value for 'destination-port' (<unsignedShort>): set devices device BRE001040 config orgs org-services IPC060302230 lef collectors LEF-Collector-log_collector2 destination-address 10.5.22.101
+Error: bad value: "set devices device BRE001040 config orgs org-services IPC060302230 lef collectors LEF-Collector-log_collector2 destination-address 10.5.22.101" is not a valid value.
+Value for 'destination-port' (<unsignedShort>): 
