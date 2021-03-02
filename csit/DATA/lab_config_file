@@ -1,0 +1,2 @@
+set devices device CPE12-mum-demo config orgs org-services IPC00073 lef collectors LEF-Collector-log_collector1 destination-address 10.5.22.100
+set devices device CPE12-mum-demo config orgs org-services IPC00073 lef collectors LEF-Collector-log_collector2 destination-address 10.5.22.101

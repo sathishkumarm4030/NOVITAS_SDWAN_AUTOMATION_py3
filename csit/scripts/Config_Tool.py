@@ -35,8 +35,8 @@ def get_vd_details():
 
 def DO_config_in_VD_For_CPEs():
     vd_dict = get_vd_details()
-    # config_txt_file = input("Enter txt config file name:\n")
-    config_txt_file = "sample_config_file"
+    config_txt_file = input("Enter txt config file name:\n")
+    # config_txt_file = "sample_config_file"
     vd_dict['device_type'] = 'versa_director'
     VD1 = VersaLib('Versa_director', **vd_dict)
     VD1.vdnc = VD1.login()
