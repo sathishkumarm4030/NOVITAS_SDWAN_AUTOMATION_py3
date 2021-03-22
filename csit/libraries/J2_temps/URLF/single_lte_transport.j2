@@ -1,0 +1,47 @@
+set devices device {{ NAME }} config orgs org {{ ORG_NAME }} appliance-owner
+set devices device {{ NAME }} config orgs org {{ ORG_NAME }} services [ nextgen-firewall ]
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} dns-proxy settings routing-instance LAN1-VRF
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} dns-proxy settings forwarders [ 4.2.2.2 8.8.8.8 ]
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects snat SNAT-POOL-URLF-CLP description "used for Cloud look up profile" egress-networks [ LAN1 ] routing-instance LAN1-VRF
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects cloud-profile CLOUD-PROFILE-URLF snat-pool SNAT-POOL-URLF-CLP connection-pool 50 activation enabled timeout 120 type urlf-cloud-profile
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} url-filtering settings match-type http-host-uri
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} url-filtering settings logging url-parameter enabled
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} url-filtering settings logging max-url-length 255
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} url-filtering settings cloud-lookup state enabled
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} url-filtering settings cloud-lookup mode synchronous
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} url-filtering settings cloud-lookup cloud-lookup-profile CLOUD-PROFILE-URLF
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} url-filtering settings cloud-lookup cache-limit 100000
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} url-filtering settings cloud-lookup cache-time-to-live 86400
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} url-filtering settings cloud-lookup timeout 1000
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} cgnat rules DIA-Rule-LAN-CL-SNAT-1 then translated translation-type napt-44 source-pool DIA-Pool-LTE-WAN filtering-type none mapping-type none
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} cgnat rules DIA-Rule-LAN-CL-SNAT-1 from source-zone [ W-ST-LAN1-VRF-LTE-WAN ] source-address [ 169.254.0.3/32 {{ LAN1_VRF_IP_prefix_32 }} ]
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} cgnat rules DIA-Rule-LAN-CL-SNAT-1 precedence 201
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} cgnat rules DIA-Rule-LAN-CL-SNAT-1 paired-site false
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects addresses LAN1-VRF-TVI-603 ipv4-prefix 169.254.0.3/32
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects addresses LAN1-VRF-VNI ipv4-prefix {{ LAN1_VRF_IP_prefix_32 }}
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects services CL-dns protocol UDP
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects services CL-dns destination-port 53
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects services CL-http protocol TCP
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects services CL-http destination-port 80
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects services CL-https protocol TCP
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects services CL-https destination-port 443
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE cloud-lookup enabled
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE lef-profile Default-Logging-Profile
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE decrypt-bypass true
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE default-action predefined block
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE blacklist evaluate-referrer false
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE whitelist patterns [ .*database.brightcloud.com* .*service.brightcloud.com* .*spack.versanetworks.com/versa-updates* ]
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE whitelist log-enable true
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE whitelist evaluate-referrer false
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE set action allow
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE match source zone zone-list [ Intf-LAN1-Zone W-ST-LAN1-VRF-LTE-WAN ]
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE match source address address-list [ LAN1-VRF-TVI-603 LAN1-VRF-VNI ]
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE match source user user-type any
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE match destination zone zone-list [ Intf-LTE-WAN-Zone L-ST-LAN1-VRF-LTE-WAN ]
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE match services services-list [ CL-dns CL-http CL-https ]
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE match ip-version ipv4
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE set security-profile url-filtering user-defined CLP-SP-URLF-PROFILE
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE set tcp-session-keepalive disabled
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE set lef profile Default-Logging-Profile
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE set lef event both
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE set lef options send-pcap-data enable false

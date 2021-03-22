@@ -3282,6 +3282,131 @@ class VersaLib:
             res_check += "Commit failed."
         self.main_logger.info(org_data['DEVICE_NAME'] + " : " + res_check)
         return res_check
+    #below function is needed for URLF config 
+    def urlf_config_devices_template(self, nc, device_file, single_lte_only=None):
+        #this function read the cvs file and push the config to CPE from VD and commit.
+        start_time = datetime.now()
+        main_logger = self.main_logger
+        csv_data_read = pd.read_csv(curr_file_dir + "/DATA/" + device_file)
+        result_dict = {}
+        for idx, row in csv_data_read.iterrows():
+            res_check = ""
+            dev_dict = row.to_dict()
+            device_name = dev_dict['NAME']
+            device_org = dev_dict['ORG_NAME']
+            print ("check device reachability by ping")
+            #net_connect.send_command_expect("cli", strip_prompt=False, strip_command=False, expect_string=">")
+            cmd = "request devices device " + device_name + " ping"
+            main_logger.info("CMD>> : " + cmd)
+            output = nc.send_command_expect(cmd, strip_prompt=False, strip_command=False, expect_string=">",
+                                                     cmd_verify=False)
+            # net_connect.send_command_expect("quit", strip_prompt=False, strip_command=False)
+            main_logger.info(output)
+            if ", 0% packet loss," not in output:
+                print (device_name + " is not reachable from VD")
+                res_check += (device_name + " is not reachable from VD\n")
+                continue
+            print(device_name + " is reachable from VD")
+            res_check += (device_name + " is reachable from VD\n")
+            print("Check for device in SYNC with VD")
+            cmd = "request devices device " + device_name + " check-sync"
+            main_logger.info("CMD>> : " + cmd)
+            output = nc.send_command_expect(cmd, strip_prompt=False, strip_command=False)
+            main_logger.info(output)
+            if "result in-sync" not in output:
+                cmd = "request devices device " + device_name + " sync-from"
+                main_logger.info("CMD>> : " + cmd)
+                output = nc.send_command_expect(cmd, strip_prompt=False, strip_command=False, max_loops=5000)
+                main_logger.info(output)
+                if "result true" not in output:
+                    print (device_name + " not able to sync to VD, skipping the rest of the config\n")
+                    res_check += (device_name + " not able to sync to VD, skipping the rest of the config\n")
+                    continue
+            print(device_name + " is in sync with VD")
+            res_check += (device_name + " is in sync with VD\n")
+            print("Going to check if device is NGFW enabled")
+            cmd1 ="show configuration devices device " + device_name + " config orgs org " + device_org + " services | display set | match nextgen-firewall | nomore"
+            output_ngfw = nc.send_command_expect(cmd1, expect_string=">", strip_prompt=False, strip_command=False)
+            ngfw_avl = re.findall("\s+nextgen-firewall\s+", output_ngfw, re.M)
+            if ' nextgen-firewall ' not in ngfw_avl:
+                res_check += ("NGFW servcie is not enabled on " + device_name + "\n")
+                print ("NGFW servcie is not enabled on " + device_name + " : skipping the URLF configuration")
+                res_check += ("NGFW servcie is not enabled on " + device_name + " : skipping the URLF configuration")
+                continue
+            else:
+                print(output_ngfw)
+                print ("NGFW servcie is enabled on " + device_name)
+                res_check +=  ("NGFW servcie is enabled on " + device_name)
+            #print("Going to check avialble netwrok")
+            cmd2 = "show configuration devices device " + device_name + " config orgs org " + device_org + " available-networks | display set | nomore"
+            output_avl_net = nc.send_command_expect(cmd2, expect_string=">", strip_prompt=False, strip_command=False)
+            int_wan_cnt = re.findall("INT-WAN", output_avl_net, re.M)
+            lte_wan_cnt = re.findall("LTE-WAN", output_avl_net, re.M)
+            int_wan_cnt = (len(int_wan_cnt))
+            lte_wan_cnt = (len(lte_wan_cnt))
+            curr_file_loader = FileSystemLoader(curr_file_dir + "/libraries/J2_temps/URLF/")
+            curr_env = Environment(loader=curr_file_loader)
+            if int_wan_cnt > 0 and lte_wan_cnt > 0 :
+                if int_wan_cnt == 1 and lte_wan_cnt == 1:
+                    SOLUTION_TYPE = "Single_int_single_lte_transport"
+                elif int_wan_cnt == 2 and lte_wan_cnt == 1:
+                    SOLUTION_TYPE = "Dual_int_single_lte_transport"
+                elif int_wan_cnt == 1 and lte_wan_cnt == 2:
+                    SOLUTION_TYPE = "Single_int_dual_lte_transport"
+            elif int_wan_cnt <= 0 and lte_wan_cnt > 0 :
+                if lte_wan_cnt == 1:
+                    SOLUTION_TYPE = "single_lte_transport"
+                if lte_wan_cnt == 2:
+                    SOLUTION_TYPE = "Dual_lte_transport"
+            elif int_wan_cnt > 0 and lte_wan_cnt <= 0 :
+                if int_wan_cnt == 1:
+                    SOLUTION_TYPE = "single_int_transport"
+                elif int_wan_cnt == 2:
+                    SOLUTION_TYPE = "Dual_int_transport"
+                elif int_wan_cnt == 3:
+                    SOLUTION_TYPE = "Triple_int_transport"
+                elif int_wan_cnt == 4:
+                    SOLUTION_TYPE = "Quad_int_transport"
+            elif int_wan_cnt <= 0 and lte_wan_cnt <= 0 :
+                print ("No URLF config needed as its MPLS only setup")
+                continue
+            #print ("SOLUTION_TYPE is ",SOLUTION_TYPE)
+
+            urlf_template = curr_env.get_template(SOLUTION_TYPE + ".j2")
+            device_cmds = urlf_template.render(dev_dict)
+            self.main_logger.info(device_cmds)
+            result = self.device_config_commands_wo_split(nc, device_cmds)
+            self.main_logger.info(result)
+            if "syntax error:" in result:
+                res_check += "syntax error found.\n"
+            elif "Error: element not found" in result:
+                res_check += "element not found error.\n"
+            commit_result = nc.send_command_expect("commit and-quit", \
+                                                   expect_string='>|error', \
+                                                   strip_prompt=False, strip_command=False, max_loops=5000)
+
+            #return output
+            self.main_logger.info(commit_result)
+            if "No modifications to commit." in commit_result:
+                res_check += "No modifications to commit.\n"
+            elif "Commit complete." in commit_result:
+                res_check += "Commit success.\n"
+            elif "error" in commit_result:
+                res_check += "commit failed." + commit_result
+                nc.send_command_expect("exit no-confirm", \
+                                                       expect_string='>', \
+                                                       strip_prompt=False, strip_command=False, max_loops=5000)
+            else:
+                res_check += "commit failed.Check log\n"
+            result_dict[dev_dict['NAME']] = res_check
+            # main_logger.info(result_dict)
+            main_logger.info("CONFIG_RESULT:")
+            for k, v in list(result_dict.items()):
+                main_logger.info([k, v])
+        write_result_from_dict(result_dict)
+        main_logger.info("Time elapsed: {}\n".format(datetime.now() - start_time))
+        main_logger.info("LOGS Stored in : " + logfile_dir)
+        return
 
 
 def main():
