@@ -1,5 +1,5 @@
 set devices device {{ NAME }} config orgs org {{ ORG_NAME }} appliance-owner
-set devices device {{ NAME }} config orgs org {{ ORG_NAME }} services [ nextgen-firewall ]
+set devices device {{ NAME }} config orgs org {{ ORG_NAME }} services nextgen-firewall
 set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} dns-proxy settings routing-instance LAN1-VRF
 set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} dns-proxy settings forwarders [ 4.2.2.2 8.8.8.8 ]
 set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} objects snat SNAT-POOL-URLF-CLP description "used for Cloud look up profile" egress-networks [ LAN1 ] routing-instance LAN1-VRF
@@ -49,7 +49,7 @@ set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security p
 set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE decrypt-bypass true
 set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE default-action predefined block
 set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE blacklist evaluate-referrer false
-set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE whitelist patterns [ .*database.brightcloud.com* .*service.brightcloud.com* .*spack.versanetworks.com/versa-updates* ]
+set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE whitelist patterns [ .*database\.brightcloud\.com.* .*service\.brightcloud\.com.* .*spack\.versanetworks\.com\/versa-updates.* ]
 set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE whitelist log-enable true
 set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security profiles url-filtering CLP-SP-URLF-PROFILE whitelist evaluate-referrer false
 set devices device {{ NAME }} config orgs org-services {{ ORG_NAME }} security access-policies FW-ACCESS-POLICY rules COLT-DEFAULT-CLP-RULE set action allow

@@ -3324,19 +3324,19 @@ class VersaLib:
                     continue
             print(device_name + " is in sync with VD")
             res_check += (device_name + " is in sync with VD\n")
-            print("Going to check if device is NGFW enabled")
-            cmd1 ="show configuration devices device " + device_name + " config orgs org " + device_org + " services | display set | match nextgen-firewall | nomore"
+            print("Going to check if device is CGNAT & NGFW enabled")
+            cmd1 ="show configuration devices device " + device_name + " config orgs org " + device_org + " services | display set | nomore"
             output_ngfw = nc.send_command_expect(cmd1, expect_string=">", strip_prompt=False, strip_command=False)
-            ngfw_avl = re.findall("\s+nextgen-firewall\s+", output_ngfw, re.M)
-            if ' nextgen-firewall ' not in ngfw_avl:
-                res_check += ("NGFW servcie is not enabled on " + device_name + "\n")
-                print ("NGFW servcie is not enabled on " + device_name + " : skipping the URLF configuration")
-                res_check += ("NGFW servcie is not enabled on " + device_name + " : skipping the URLF configuration")
+            #ngfw_avl = re.findall("\s+nextgen-firewall\s+", output_ngfw, re.M)
+            if ' nextgen-firewall ' and ' cgnat ' not in output_ngfw:
+                res_check += ("NGFW or CGNAT servcie is not enabled on " + device_name + "\n")
+                print ("NGFW or CGNAT servcie is not enabled on " + device_name + " : skipping the URLF configuration")
+                res_check += ("NGFW or CGNAT servcie is not enabled on " + device_name + " : skipping the URLF configuration")
                 continue
             else:
                 print(output_ngfw)
-                print ("NGFW servcie is enabled on " + device_name)
-                res_check +=  ("NGFW servcie is enabled on " + device_name)
+                print ("CGNAT and NGFW servcie is enabled on " + device_name)
+                res_check +=  ("CGNAT and NGFW servcie is enabled on " + device_name)
             #print("Going to check avialble netwrok")
             cmd2 = "show configuration devices device " + device_name + " config orgs org " + device_org + " available-networks | display set | nomore"
             output_avl_net = nc.send_command_expect(cmd2, expect_string=">", strip_prompt=False, strip_command=False)
